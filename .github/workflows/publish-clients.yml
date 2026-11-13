@@ -1,0 +1,40 @@
+name: Publish Windows and Android clients
+on:
+  push:
+    paths: ['.github/workflows/publish-clients.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: publish-clients-0.4.0-242
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
+      RELEASE_TAG: clients-0.4.0-242
+    steps:
+      - name: Download exact deployed clients and verify SHA256
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl --fail --location --retry 3 --connect-timeout 20 --max-time 300 'https://using-genetic-dsl-containers.trycloudflare.com/download/7dbb4ac2e0f740769f5b40953a726a4b/Kronos-Mobile.apk?v=0.4.0-e125c9ff' -o Kronos-Mobile.apk
+          curl --fail --location --retry 3 --connect-timeout 20 --max-time 300 'https://using-genetic-dsl-containers.trycloudflare.com/download/7dbb4ac2e0f740769f5b40953a726a4b/Kronos-Windows.zip?v=242-1626dfc3' -o Kronos-Windows.zip
+          printf '%s\n' 'e125c9ffc1b35bbb63a10c13032c981e926c3387840204a03b4dd0bc8b0f64e4  Kronos-Mobile.apk' '1626dfc35ea96316eea13f3390fef924a54b2dc7e2bfff9febc8b30235133c08  Kronos-Windows.zip' > SHA256SUMS
+          sha256sum --check SHA256SUMS
+          test "$(stat -c%s Kronos-Mobile.apk)" = 92679212
+          test "$(stat -c%s Kronos-Windows.zip)" = 78500771
+      - name: Publish direct GitHub release downloads
+        shell: bash
+        run: |
+          set -euo pipefail
+          printf '%s\n' 'Windows: download Kronos-Windows.zip, extract the entire ZIP to a folder, then run the included launcher. The bundled runtime means a separate Java install is not required.' '' 'Android: download Kronos-Mobile.apk and install version 0.4.0 as an update. Keep the existing app installed to preserve its data and preferences.' '' 'SHA256SUMS contains the exact verified file hashes. No source restoration or build is needed to play.' > CLIENT-INSTRUCTIONS.txt
+          printf '%s\n' 'Ready-to-play clients for the deployed revision242 content update on the existing184 protocol.' '' '- Windows ZIP: extract fully and run the included launcher.' '- Android APK: version0.4.0, including the chat tap-through fix; install as an update.' '- Assets are downloaded from the existing delivery service, checked against pinned SHA256/size, and uploaded without rebuilding.' '' 'This repository is private. Downloads require repository access.' > RELEASE-NOTES.md
+          if gh release view "$RELEASE_TAG" >/dev/null 2>&1; then
+            gh release upload "$RELEASE_TAG" Kronos-Mobile.apk Kronos-Windows.zip SHA256SUMS CLIENT-INSTRUCTIONS.txt --clobber
+          else
+            gh release create "$RELEASE_TAG" Kronos-Mobile.apk Kronos-Windows.zip SHA256SUMS CLIENT-INSTRUCTIONS.txt --target "$GITHUB_SHA" --title 'Kronos 242 — Windows and Android 0.4.0' --notes-file RELEASE-NOTES.md
+          fi
