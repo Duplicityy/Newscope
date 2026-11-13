@@ -1,24 +1,19 @@
-# Newscope — Kronos with staged 242 content
+# NewScope — ready-to-play clients
 
-Complete project snapshot: Kronos server and revision-184 RuneLite client, RuneMobile Android sources, Windows client support, game cache/data, autonomous adventurers, and build/import/test tools.
+Download the clients for the live revision 242 content update:
 
-**Status: staged and tested locally; not deployed to the live server.** The original client protocol, home and mobile interface are preserved.
+| Device | Download | Install |
+|---|---|---|
+| Windows | [Kronos-Windows.zip](https://github.com/Duplicityy/Newscope/releases/download/clients-0.4.0-242/Kronos-Windows.zip) — 78.5 MB | Extract the entire ZIP, then run the included launcher. Java is bundled. |
+| Android | [Kronos-Mobile.apk](https://github.com/Duplicityy/Newscope/releases/download/clients-0.4.0-242/Kronos-Mobile.apk) — 92.7 MB | Install version 0.4.0 as an update to preserve existing app data and preferences. Includes the chat tap-through fix. |
 
-The content backport adds 10,001 item records (including notes/placeholders), 1,647 basic equippable records, 5,976 models, 131 legacy animation sequences, 669 standard-gear visual refreshes, and six connected Varlamore scenery regions. This is not a full revision-242 engine or gameplay port. New special attacks, passives, set effects, quests and boss scripts are not implemented. Bowfa and Tumeken’s shadow remain inventory-only.
+**This repository and its downloads are private.** Sign in with a GitHub account that has repository access. The owner must invite your friend as a collaborator if they do not already have access.
 
-## Preview and verification
+No source build or asset-restoration step is needed to play. Both downloads are the existing deployed client packages, verified by SHA256 and file size before publication; they were not rebuilt by the upload workflow.
 
-- [Feature page with real screenshots](content-release/Kronos-242-Features.html) — download and open locally.
-- [Checks and limitations](content-release/VERIFICATION.txt)
-- [Build prerequisites and private configuration](PUBLISH-AND-BUILD.txt)
-- [Isolated staging instructions](tools/content242/STAGING.txt)
+[Release page, checksums and instructions](https://github.com/Duplicityy/Newscope/releases/tag/clients-0.4.0-242)
 
-## Restore assets, then build
+- Android SHA256: `e125c9ffc1b35bbb63a10c13032c981e926c3387840204a03b4dd0bc8b0f64e4`
+- Windows SHA256: `1626dfc35ea96316eea13f3390fef924a54b2dc7e2bfff9febc8b30235133c08`
 
-After cloning, run `python tools/content242/restore_assets.py` from the repository root. Binary assets are included losslessly in `assets-payload/`; restoration verifies their hashes. Java/Kotlin/C++ sources remain directly readable in Git.
-
-Install the JDK/Android prerequisites listed in `PUBLISH-AND-BUILD.txt`, configure a private local server configuration and RSA key, then run `Build-Kronos.cmd`. Android and Windows builds use `Build-Kronos-Mobile.ps1` and `Build-Kronos-Windows.ps1`.
-
-Live account/player data, passwords, private keys, signing material, SDK installations and build outputs are intentionally excluded. Existing private RSA configuration is required to preserve compatibility when deploying this copy; never commit it.
-
-The production VM has a separately sealed one-step installer. Nothing in this repository automatically deploys the staged content.
+The update retains the existing revision-184 game protocol and controls. It adds revision-242 content; it is not a claim of complete OSRS gameplay parity.
