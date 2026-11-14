@@ -1,0 +1,40 @@
+HOLLOW DEPTHS — KRONOS REVISION 184
+
+Getting in
+Use the red Kronos Teleporter at home, choose Minigames, select Hollow Depths,
+then choose Novice, Veteran, or Nightmare. Be near the home portal, out of
+combat, and pick up your pet before entering. Bring your normal combat gear,
+food, and potions.
+
+The dungeon
+Each run belongs to one account and has a newly generated layout. Explore
+14–16 rooms, open treasure chests, and defeat three sigil guardians to unlock
+the final boss. Defeat that boss, open its chest, then use the dungeon exit
+to secure your haul. The ::hollow command shows progress or lets you abandon.
+
+Traps and doors
+Agility shortcuts have different level requirements and can fail. A longer
+corridor with enemies is available when you cannot use a shortcut. Click the
+door at either end to walk through; it closes behind you. The corridor's mobs
+stay inside their area. Both routes reach the same obstacle-room chest.
+
+Rewards and death
+Chest treasure is unbanked until you successfully extract. After extraction,
+choose Collect secured rewards from the Hollow Depths menu. Resources that
+do not fit remain in your mailbox. Dungeon shards and progression fragments
+remain account-bound credits; no custom cosmetic redemption shop is included.
+Death or abandoning keeps your carried gear and inventory, but loses that
+run's unbanked treasure. Completed Agility XP awards are retained.
+
+Disconnects and maintenance
+An ordinary disconnect allows up to three minutes to resume the same run
+while that server process remains running. Runs expire after 36 minutes,
+or nine minutes without activity. Maintenance closes active runs safely and
+loses their unbanked treasure; already committed rewards remain secured.
+An extraction already being saved is retried using the same transaction.
+
+Compatibility
+This implementation uses the existing revision 184 client, cache, and server
+protocol. It does not install the separate revision 242 upgrade or require
+a new Android APK. The intended 15–20 minute completion time is a design
+target; automated fixtures do not establish normal-player completion time.

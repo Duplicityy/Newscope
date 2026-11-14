@@ -1,0 +1,88 @@
+{
+  "canSellToStore": false,
+  "currency": "COINS",
+  "defaultStock": [
+    {
+      "amount": 5000,
+      "id": 556,
+      "price": 4
+    },
+    {
+      "amount": 5000,
+      "id": 555,
+      "price": 4
+    },
+    {
+      "amount": 5000,
+      "id": 557,
+      "price": 4
+    },
+    {
+      "amount": 5000,
+      "id": 554,
+      "price": 4
+    },
+    {
+      "amount": 3000,
+      "id": 558,
+      "price": 3
+    },
+    {
+      "amount": 3000,
+      "id": 559,
+      "price": 3
+    },
+    {
+      "amount": 1000,
+      "id": 562,
+      "price": 90
+    },
+    {
+      "amount": 500,
+      "id": 561,
+      "price": 180
+    },
+    {
+      "amount": 500,
+      "id": 563,
+      "price": 240
+    },
+    {
+      "amount": 500,
+      "id": 560,
+      "price": 180
+    },
+    {
+      "amount": 100,
+      "id": 12728,
+      "price": 430
+    },
+    {
+      "amount": 100,
+      "id": 12730,
+      "price": 430
+    },
+    {
+      "amount": 100,
+      "id": 12732,
+      "price": 430
+    },
+    {
+      "amount": 100,
+      "id": 12734,
+      "price": 430
+    },
+    {
+      "amount": 50,
+      "id": 12736,
+      "price": 330
+    },
+    {
+      "amount": 30,
+      "id": 12738,
+      "price": 9950
+    }
+  ],
+  "identifier": "content242-shop-1342-0",
+  "title": "The Runic Emporium"
+}

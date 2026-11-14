@@ -1,0 +1,20 @@
+{
+  "release": "content242-full-final-01",
+  "deploymentConfirmed": true,
+  "deploymentDate": "2026-11-13",
+  "clientProtocol": 184,
+  "contentSourceRevision": 242,
+  "serverJarSha256": "05fdd675d0746ab8b9b0d6f3ca6347dd62eb1886cc451f4a01b4c2f14e2fcb0b",
+  "desktopAndAndroidClientJarSha256": "54f3a2a594303455992e279f2ff634a902a10354140ceffbfd5b2251dc7c7ba2",
+  "androidVersion": "0.4.0",
+  "androidVersionCode": 9,
+  "androidApkSha256": "e125c9ffc1b35bbb63a10c13032c981e926c3387840204a03b4dd0bc8b0f64e4",
+  "packagedChatRoutingAssertions": 49,
+  "physicalAndroidDeviceTested": false,
+  "postDeploymentMobileBridgeLoginPassed": true,
+  "limitations": [
+    "Content port retaining revision184 protocol, not complete OSRS gameplay parity.",
+    "Native combat and lifecycle QA used controlled disposable fixtures; organic balance is not exhaustively measured.",
+    "Runtime private key and machine-bound protected attestations are deliberately excluded or disabled in this source export. Rebuilt jars have different hashes and require their own audits."
+  ]
+}

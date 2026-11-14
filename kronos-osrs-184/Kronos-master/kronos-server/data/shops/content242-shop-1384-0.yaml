@@ -1,0 +1,43 @@
+{
+  "canSellToStore": false,
+  "currency": "COINS",
+  "defaultStock": [
+    {
+      "amount": 15,
+      "id": 2309,
+      "price": 12
+    },
+    {
+      "amount": 5,
+      "id": 1891,
+      "price": 50
+    },
+    {
+      "amount": 5,
+      "id": 2325,
+      "price": 12
+    },
+    {
+      "amount": 5,
+      "id": 2327,
+      "price": 15
+    },
+    {
+      "amount": 5,
+      "id": 2323,
+      "price": 30
+    },
+    {
+      "amount": 5,
+      "id": 7178,
+      "price": 24
+    },
+    {
+      "amount": 5,
+      "id": 7188,
+      "price": 100
+    }
+  ],
+  "identifier": "content242-shop-1384-0",
+  "title": "Yarnio's Baked Goods"
+}

@@ -1,0 +1,138 @@
+{
+  "canSellToStore": false,
+  "currency": "COINS",
+  "defaultStock": [
+    {
+      "amount": 50,
+      "id": 4155,
+      "price": 1
+    },
+    {
+      "amount": 100,
+      "id": 4156,
+      "price": 5000
+    },
+    {
+      "amount": 50,
+      "id": 4158,
+      "price": 31000
+    },
+    {
+      "amount": 50000,
+      "id": 4160,
+      "price": 60
+    },
+    {
+      "amount": 5000,
+      "id": 4161,
+      "price": 10
+    },
+    {
+      "amount": 50,
+      "id": 4162,
+      "price": 500
+    },
+    {
+      "amount": 50,
+      "id": 4164,
+      "price": 200
+    },
+    {
+      "amount": 50,
+      "id": 4166,
+      "price": 200
+    },
+    {
+      "amount": 50,
+      "id": 4168,
+      "price": 200
+    },
+    {
+      "amount": 50,
+      "id": 4170,
+      "price": 21000
+    },
+    {
+      "amount": 50,
+      "id": 4551,
+      "price": 650
+    },
+    {
+      "amount": 5000,
+      "id": 6664,
+      "price": 60
+    },
+    {
+      "amount": 5000,
+      "id": 6696,
+      "price": 1
+    },
+    {
+      "amount": 50,
+      "id": 6720,
+      "price": 200
+    },
+    {
+      "amount": 50,
+      "id": 7051,
+      "price": 130
+    },
+    {
+      "amount": 50,
+      "id": 7159,
+      "price": 200
+    },
+    {
+      "amount": 50,
+      "id": 7421,
+      "price": 300
+    },
+    {
+      "amount": 5000,
+      "id": 7432,
+      "price": 10
+    },
+    {
+      "amount": 50,
+      "id": 8923,
+      "price": 900
+    },
+    {
+      "amount": 50,
+      "id": 10952,
+      "price": 150
+    },
+    {
+      "amount": 3000,
+      "id": 11874,
+      "price": 55
+    },
+    {
+      "amount": 800,
+      "id": 11885,
+      "price": 5500
+    },
+    {
+      "amount": 5000,
+      "id": 11876,
+      "price": 55
+    },
+    {
+      "amount": 1000,
+      "id": 11887,
+      "price": 5500
+    },
+    {
+      "amount": 5000,
+      "id": 21754,
+      "price": 200
+    },
+    {
+      "amount": 50,
+      "id": 23037,
+      "price": 200
+    }
+  ],
+  "identifier": "content242-shop-1324-0",
+  "title": "Slayer Equipment (shop)"
+}

@@ -1,0 +1,10 @@
+// Resolved public Java dependencies retained for historical repositories.
+def repo = System.getenv('NEWSCOPE_MAVEN_REPO')
+if (!repo) throw new GradleException('NEWSCOPE_MAVEN_REPO must point to the restored vendor/maven directory')
+settingsEvaluated { s ->
+    s.pluginManagement.repositories { maven { url uri(repo) }; gradlePluginPortal() }
+}
+allprojects {
+    buildscript.repositories { maven { url uri(repo) } }
+    repositories { maven { url uri(repo) } }
+}

@@ -1,0 +1,51 @@
+Isolated Android242 build
+
+Current source snapshot: C:\K242-Mobile-QA, branch codex/content242-mobile-isolated.
+This is a separate Git worktree copied from the current dirty mobile source,
+including its existing UI/controls/bridge/shared tests. No chat changes were made.
+Crash dumps, generated runtime/build output and private signing keys were excluded.
+The original mobile checkout and mobile-release/Kronos-Mobile.apk were preserved.
+
+Build entry point: tools/content242/Build-Content242-Mobile.ps1
+Default extended desktop source: this Kronos-master worktree.
+Desktop client SHA256 is required/pinned; assets/jvm/client.jar inside the APK
+must match that same desktop JAR byte for byte. Mobile-only Client and UI overlays
+are compiled against the extended source/JAR into bridge.jar.
+
+Prerequisites already installed in the workspace:
+ JDK21, JDK8 jar tool, Android SDK35, NDK27.0.12077973, CMake3.22.1;
+ SHA-verified ARM64 JRE21 and Cacio1.18 distributions;
+ existing Android Gradle dependency cache and private tools/android-user signing
+ identity. Gradle runs offline, one worker,768MiB heap; javac uses384MiB.
+
+Output only: local-runtime/content242-mobile-release/Kronos-Mobile-242-staged.apk.
+Application ID local.kronos.mobile, signing certificate, endpoint/preferences,
+version and UI remain the existing mobile values. No APK is installed, run,
+published or copied over mobile-release by the staged builder.
+Receipts: source-snapshot.json, build-receipt.json, package-verification.json.
+
+2026-11-13 staged build passed; APK SHA256:
+76f69038554d5eca633c647f2aba6f09c1c5df91176d6dfa552c43e49a3d9405
+Embedded desktop client SHA256:
+54f3a2a594303455992e279f2ff634a902a10354140ceffbfd5b2251dc7c7ba2
+Signature verification passed and certificate matches the existing APK.
+All3588 input source hashes and the original APK remained unchanged.
+
+Desktop bridge validation entry point: Test-Content242-Mobile.ps1 -StageName
+content242-expanded-test-04 -ProductionPaused. Its guarded socket overlay forces
+loopback cache17304/game14302. Default checks the login screen. Optional
+-ControlsTest checks existing canvas resizing and requires a sufficiently wide
+desktop display. Optional -InputTest requires -PasswordFile inside that private stage
+for disposable c242qa; never uses a production account. It writes screenshots and
+logs under the stage/mobile-bridge-smoke. No ARM device validation is claimed.
+
+Desktop bridge login/input smoke passed on expanded-test-04 with the exact client
+and bridge hashes above. Touch/text/Tab/Enter authenticated c242qa; the completed
+frame rendered the new Civitas map and gear. The test exited normally and its
+temporary password file was removed. The separate legacy resize test requested
+1090pixels on a desktop that clamps the viewport to992pixels; its failure log was
+retained. Wide-screen resizing and physical ARM Android execution remain untested.
+
+The final chat change is explicitly deferred to the parent task. After an
+intentional mobile source change, refresh/review the source snapshot and rebuild;
+do not bypass the snapshot/hash checks or reuse this APK as if it contained it.

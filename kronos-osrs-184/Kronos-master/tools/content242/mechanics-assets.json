@@ -1,0 +1,20 @@
+{
+  "sourceRevision": 242,
+  "features": {
+    "fang": {"items": [26219, 27246], "animations": [11222], "graphics": [2833]},
+    "voidwaker": {"items": [27690], "animations": [11275], "graphics": [2834, 2363]},
+    "inquisitor": {"items": [24419, 24420, 24421], "animations": [], "graphics": []},
+    "shadow": {"items": [27275, 27277, 562, 566], "animations": [9493], "graphics": [2125, 2126, 2127]},
+    "bowfa": {"items": [25865, 25862, 25867, 23962], "animations": [426], "graphics": [1887, 1888, 1922, 1923]},
+    "crystal_armour": {"items": [23971, 23973, 23975, 23977, 23979, 23981, 23962], "animations": [], "graphics": []},
+    "soulreaper": {"items": [28338, 33335], "animations": [10173], "graphics": [2430, 4008]},
+    "virtus": {"items": [26241, 26243, 26245], "animations": [], "graphics": []},
+    "ancient_sceptre": {"items": [27624], "animations": [], "graphics": []},
+    "burning_claws": {"items": [29577], "animations": [11140], "graphics": [2814]},
+    "scorching_bow": {"items": [29591], "animations": [426, 11133], "graphics": [2806, 2807, 2908]},
+    "scurrius": {"npcs": [7221, 7222, 7223], "regions": [13210], "animations": [10686, 10693, 10694, 10695, 10696, 10697, 10698, 10699, 10689, 10703, 10705, 10706], "graphics": [2638, 2639, 2640, 2641, 2642, 2643, 2644]},
+    "amoxliatl": {"npcs": [13685, 13688], "regions": [5446], "objects": [54279, 54282], "animations": [11527, 11530, 11531, 11533, 11536, 11035], "graphics": [2942, 2938, 2936, 2935]},
+    "phantom_muspah": {"npcs": [12077, 12078, 12079, 12080, 12082, 12083], "regions": [11330], "objects": [46599, 46695, 46693, 46694, 46697], "animations": [9938, 9922, 9918, 9920, 9936, 9937, 1114, 9923, 9928, 9930, 9932, 9948, 9925, 9941], "graphics": [2293, 2319, 2320, 2321, 2322, 2323, 2324, 2325, 2326, 2327, 2328, 2329, 2330, 2331, 2332, 2333, 2334, 2335]}
+  },
+  "policy": "Source identifiers only. Runtime resolves every identifier through schemaVersion 2 mappings; missing bindings never fall back to source IDs. Special registration also requires actual loaded sequence frames and graphic cache records."
+}

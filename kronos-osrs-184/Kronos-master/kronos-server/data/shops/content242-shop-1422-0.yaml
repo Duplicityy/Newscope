@@ -1,0 +1,208 @@
+{
+  "canSellToStore": false,
+  "currency": "COINS",
+  "defaultStock": [
+    {
+      "amount": 5,
+      "id": 33836,
+      "price": 50000
+    },
+    {
+      "amount": 5,
+      "id": 33839,
+      "price": 50000
+    },
+    {
+      "amount": 5,
+      "id": 33842,
+      "price": 50000
+    },
+    {
+      "amount": 5,
+      "id": 33845,
+      "price": 50000
+    },
+    {
+      "amount": 5,
+      "id": 33848,
+      "price": 50000
+    },
+    {
+      "amount": 5,
+      "id": 33851,
+      "price": 50000
+    },
+    {
+      "amount": 5,
+      "id": 33854,
+      "price": 50000
+    },
+    {
+      "amount": 5,
+      "id": 33857,
+      "price": 40000
+    },
+    {
+      "amount": 5,
+      "id": 33860,
+      "price": 40000
+    },
+    {
+      "amount": 5,
+      "id": 33863,
+      "price": 40000
+    },
+    {
+      "amount": 5,
+      "id": 33866,
+      "price": 40000
+    },
+    {
+      "amount": 5,
+      "id": 33869,
+      "price": 40000
+    },
+    {
+      "amount": 5,
+      "id": 33872,
+      "price": 40000
+    },
+    {
+      "amount": 5,
+      "id": 33875,
+      "price": 40000
+    },
+    {
+      "amount": 5,
+      "id": 33884,
+      "price": 500
+    },
+    {
+      "amount": 5,
+      "id": 33887,
+      "price": 500
+    },
+    {
+      "amount": 5,
+      "id": 33890,
+      "price": 500
+    },
+    {
+      "amount": 5,
+      "id": 33893,
+      "price": 500
+    },
+    {
+      "amount": 5,
+      "id": 33896,
+      "price": 500
+    },
+    {
+      "amount": 5,
+      "id": 33899,
+      "price": 500
+    },
+    {
+      "amount": 5,
+      "id": 33902,
+      "price": 500
+    },
+    {
+      "amount": 5,
+      "id": 33905,
+      "price": 500
+    },
+    {
+      "amount": 5,
+      "id": 33908,
+      "price": 400
+    },
+    {
+      "amount": 5,
+      "id": 33911,
+      "price": 400
+    },
+    {
+      "amount": 5,
+      "id": 33914,
+      "price": 400
+    },
+    {
+      "amount": 5,
+      "id": 33917,
+      "price": 400
+    },
+    {
+      "amount": 5,
+      "id": 33920,
+      "price": 400
+    },
+    {
+      "amount": 5,
+      "id": 33923,
+      "price": 400
+    },
+    {
+      "amount": 5,
+      "id": 33926,
+      "price": 400
+    },
+    {
+      "amount": 5,
+      "id": 33929,
+      "price": 400
+    },
+    {
+      "amount": 5,
+      "id": 33932,
+      "price": 400
+    },
+    {
+      "amount": 5,
+      "id": 33935,
+      "price": 400
+    },
+    {
+      "amount": 5,
+      "id": 33938,
+      "price": 400
+    },
+    {
+      "amount": 5,
+      "id": 33941,
+      "price": 400
+    },
+    {
+      "amount": 5,
+      "id": 33944,
+      "price": 400
+    },
+    {
+      "amount": 5,
+      "id": 33947,
+      "price": 400
+    },
+    {
+      "amount": 5,
+      "id": 33950,
+      "price": 500
+    },
+    {
+      "amount": 5,
+      "id": 33953,
+      "price": 500
+    },
+    {
+      "amount": 5,
+      "id": 33956,
+      "price": 500
+    },
+    {
+      "amount": 5,
+      "id": 33959,
+      "price": 500
+    }
+  ],
+  "identifier": "content242-shop-1422-0",
+  "title": "Where Wyrmscraig's Wear Wares Were (1)"
+}

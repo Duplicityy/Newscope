@@ -1,0 +1,58 @@
+{
+  "canSellToStore": false,
+  "currency": "COINS",
+  "defaultStock": [
+    {
+      "amount": 10,
+      "id": 1351,
+      "price": 16
+    },
+    {
+      "amount": 5,
+      "id": 1349,
+      "price": 56
+    },
+    {
+      "amount": 3,
+      "id": 1353,
+      "price": 200
+    },
+    {
+      "amount": 2,
+      "id": 1355,
+      "price": 520
+    },
+    {
+      "amount": 1,
+      "id": 1357,
+      "price": 1280
+    },
+    {
+      "amount": 4,
+      "id": 1375,
+      "price": 52
+    },
+    {
+      "amount": 3,
+      "id": 1363,
+      "price": 182
+    },
+    {
+      "amount": 2,
+      "id": 1365,
+      "price": 650
+    },
+    {
+      "amount": 1,
+      "id": 1369,
+      "price": 1690
+    },
+    {
+      "amount": 1,
+      "id": 1371,
+      "price": 4160
+    }
+  ],
+  "identifier": "content242-shop-1223-0",
+  "title": "Lunami's Axe Shop"
+}

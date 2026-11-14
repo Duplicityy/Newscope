@@ -1,0 +1,71 @@
+CONTENT 242 / REVISION 184 ISOLATED TEST HARNESS
+
+These tools never switch the production cache or restart production processes.
+Expected live listeners at the audit were game 13302 (PID3544) and cache 7304
+(PID8396). The preparation records current PID/start times and verifier checks
+they remain unchanged.
+
+1. Finish import and static validation into local-runtime/content242-stage/Cache
+   and local-runtime/content242-stage/data. Never put live cache paths there via
+   a junction. Neither input may be edited while a staging server is running.
+2. Run tools/content242/Prepare-Content242-Test.ps1. Choose a new -StageName for
+   every attempt. It compiles two small harness classes with 128MB javac limits.
+   No Gradle build or process launch occurs. No existing client/server source or
+   production data is changed. Default server release matches the audited live
+   build; pass -ReleaseName to select a newly built tested release when needed.
+3. Check available RAM. Start-Content242-Test.ps1 -Component Cache -HeapMb 256;
+   wait for CACHE READY in local-runtime/content242-test/cache.out.log. Then
+   Test-Content242-Isolation.ps1 -CacheOnly verifies JS5 revision184 and isolation.
+4. Start-Content242-Test.ps1 -Component Game -HeapMb 2048. If startup needs more,
+   stop only this verified test process, check RAM and choose a suitable heap.
+   Wait for listening 127.0.0.1:14302; run Test-Content242-Isolation.ps1.
+5. Start-Content242-Test.ps1 -Component Client -HeapMb 768. This opens the actual
+   Windows revision184 UI through its existing windows-support.jar/client.jar.
+   A generated TaskHandler class redirects only sockets to 14302/17304. The
+   original client.jar hash is checked; no protocol, widgets or layout are edited.
+   The test client has its own empty client-home directory. The bounded smoke
+   harness logs in disposable local character c242qa and saves captures/home.png.
+   Wait for captures/home.captured, then run Set-Content242-Fixture.ps1 -Phase gear.
+   It uses the normal equipment rules for Torva + Fang and adds representative
+   inventory items. After captures/gear.captured, run -Phase map to teleport to
+   949,3135,0 in the imported region. It captures map.png and exits. Each handoff
+   has a three-minute timeout. Override -ItemIds/-EquipIds/-Destination as needed.
+   Fixtures require both test flags, loopback14302 and the exact verified stage PID.
+   Never copy production accounts or player saves.
+6. Inspect captured home/gear/map images and logs: inventory/equipment, item/worn
+   models, animations, new regions, existing home terrain and UI. Record logs
+   and screenshots. Cache handshake alone does not prove asset/game correctness.
+7. Close the test client. Stop only PID files belonging to this stage after
+   validating CommandLine includes both kronos.content242.test=true and this
+   exact stage name. Prefer the existing test-only AdventurerProbe shutdown for
+   game state, or Java graceful termination. Do not use Stop-Kronos.ps1.
+
+The new update entry point serves existing 184 JS5 protocol on loopback17304.
+Unmodified update Server.java hardcodes7304; launching it would collide with live.
+Existing Start-Adventurer-Test.ps1 points at live Cache and Test-Kronos-Mobile.ps1
+only overrides game port, so those alone are unsuitable for imported cache tests.
+The launcher keeps offline_mode=true, no production account registry,
+adventurers disabled, market disabled, fresh player data and user.home. The server can still need
+additional home-path test directories depending on future code; inspect logs.
+
+If the owner explicitly allows pausing the original game to free VM memory,
+pass -ProductionPaused to the client launcher, verifier and fixture calls. This
+accepts only the original game PID being gone with port13302 closed; the original
+cache PID/start time/listener must still match. It never stops production itself.
+Restore the original release before sealing a deployment manifest.
+
+After inspecting successful screenshots and restoring the original live server,
+Apply-Content242.ps1 -Prepare -ContentPath PATH -TestStageName NAME seals the tested
+Cache/data, immutable server release and original production identities/hashes.
+This writes a manifest only. The later, explicit -Apply command backs up, invokes
+the normal one-minute logout/save, swaps Cache/data, selects the tested release,
+restarts and checks handshakes. Failure restores original Cache/data/release
+selection. Saves/accounts/home/bot state are preserved and backed up privately.
+Do not execute -Apply while preparing an upgrade that must remain one step away.
+
+Publishing: prepare_publish.py --inventory-only reports current included source,
+safe omission categories, redaction paths and large files without credential
+values. After staged Cache/data is complete, --output PATH creates a new copy
+with current uncommitted work included and original layouts retained. The script
+does not run git, create commits or publish. Existing output directories fail
+closed; rerun to a new directory after later changes. Review every sanitization.

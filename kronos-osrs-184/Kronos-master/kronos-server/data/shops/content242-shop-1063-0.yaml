@@ -1,0 +1,33 @@
+{
+  "canSellToStore": false,
+  "currency": "COINS",
+  "defaultStock": [
+    {
+      "amount": 1000,
+      "id": 8794,
+      "price": 13
+    },
+    {
+      "amount": 1000,
+      "id": 8790,
+      "price": 650
+    },
+    {
+      "amount": 1000,
+      "id": 4819,
+      "price": 2
+    },
+    {
+      "amount": 1000,
+      "id": 4820,
+      "price": 5
+    },
+    {
+      "amount": 1000,
+      "id": 1539,
+      "price": 3
+    }
+  ],
+  "identifier": "content242-shop-1063-0",
+  "title": "Construction supplies"
+}

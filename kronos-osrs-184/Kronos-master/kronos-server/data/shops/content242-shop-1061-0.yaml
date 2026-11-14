@@ -1,0 +1,103 @@
+{
+  "canSellToStore": false,
+  "currency": "COINS",
+  "defaultStock": [
+    {
+      "amount": 20,
+      "id": 1955,
+      "price": 1
+    },
+    {
+      "amount": 15,
+      "id": 2114,
+      "price": 2
+    },
+    {
+      "amount": 10,
+      "id": 1963,
+      "price": 2
+    },
+    {
+      "amount": 10,
+      "id": 1982,
+      "price": 4
+    },
+    {
+      "amount": 10,
+      "id": 1942,
+      "price": 1
+    },
+    {
+      "amount": 10,
+      "id": 1957,
+      "price": 3
+    },
+    {
+      "amount": 10,
+      "id": 1965,
+      "price": 1
+    },
+    {
+      "amount": 2,
+      "id": 2108,
+      "price": 2
+    },
+    {
+      "amount": 2,
+      "id": 1951,
+      "price": 3
+    },
+    {
+      "amount": 10,
+      "id": 1985,
+      "price": 4
+    },
+    {
+      "amount": 10,
+      "id": 1973,
+      "price": 10
+    },
+    {
+      "amount": 5,
+      "id": 2138,
+      "price": 1
+    },
+    {
+      "amount": 5,
+      "id": 2132,
+      "price": 1
+    },
+    {
+      "amount": 5,
+      "id": 3226,
+      "price": 20
+    },
+    {
+      "amount": 5,
+      "id": 345,
+      "price": 10
+    },
+    {
+      "amount": 5,
+      "id": 341,
+      "price": 10
+    },
+    {
+      "amount": 5,
+      "id": 359,
+      "price": 40
+    },
+    {
+      "amount": 3,
+      "id": 363,
+      "price": 40
+    },
+    {
+      "amount": 2,
+      "id": 371,
+      "price": 80
+    }
+  ],
+  "identifier": "content242-shop-1061-0",
+  "title": "Cobado's Groceries"
+}

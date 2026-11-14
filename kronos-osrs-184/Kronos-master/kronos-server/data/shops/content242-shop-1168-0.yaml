@@ -1,0 +1,43 @@
+{
+  "canSellToStore": false,
+  "currency": "COINS",
+  "defaultStock": [
+    {
+      "amount": 5,
+      "id": 233,
+      "price": 4
+    },
+    {
+      "amount": 100,
+      "id": 229,
+      "price": 2
+    },
+    {
+      "amount": 100,
+      "id": 227,
+      "price": 2
+    },
+    {
+      "amount": 50,
+      "id": 221,
+      "price": 3
+    },
+    {
+      "amount": 100,
+      "id": 11877,
+      "price": 200
+    },
+    {
+      "amount": 100,
+      "id": 11879,
+      "price": 201
+    },
+    {
+      "amount": 50,
+      "id": 12859,
+      "price": 300
+    }
+  ],
+  "identifier": "content242-shop-1168-0",
+  "title": "Huito's Herbal Supplies"
+}

@@ -1,0 +1,43 @@
+{
+  "canSellToStore": false,
+  "currency": "COINS",
+  "defaultStock": [
+    {
+      "amount": 100000,
+      "id": 6036,
+      "price": 40
+    },
+    {
+      "amount": 100000,
+      "id": 6032,
+      "price": 20
+    },
+    {
+      "amount": 100000,
+      "id": 5341,
+      "price": 6
+    },
+    {
+      "amount": 100000,
+      "id": 5350,
+      "price": 1
+    },
+    {
+      "amount": 100000,
+      "id": 5331,
+      "price": 8
+    },
+    {
+      "amount": 100000,
+      "id": 5325,
+      "price": 12
+    },
+    {
+      "amount": 100000,
+      "id": 5343,
+      "price": 6
+    }
+  ],
+  "identifier": "content242-shop-1113-0",
+  "title": "Farming Supplies"
+}

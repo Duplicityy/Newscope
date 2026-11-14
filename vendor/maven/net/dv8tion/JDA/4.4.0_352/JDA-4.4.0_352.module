@@ -1,0 +1,191 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "net.dv8tion",
+    "module": "JDA",
+    "version": "4.4.0_352",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.8.3",
+      "buildId": "hyohcvsblzgq7d7cviuz2jmnee"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "com.google.code.findbugs",
+          "module": "jsr305",
+          "version": {
+            "requires": "3.0.2"
+          }
+        },
+        {
+          "group": "org.jetbrains",
+          "module": "annotations",
+          "version": {
+            "requires": "16.0.1"
+          }
+        },
+        {
+          "group": "org.slf4j",
+          "module": "slf4j-api",
+          "version": {
+            "requires": "1.7.25"
+          }
+        },
+        {
+          "group": "com.neovisionaries",
+          "module": "nv-websocket-client",
+          "version": {
+            "requires": "2.14"
+          }
+        },
+        {
+          "group": "com.squareup.okhttp3",
+          "module": "okhttp",
+          "version": {
+            "requires": "3.13.0"
+          }
+        },
+        {
+          "group": "club.minnced",
+          "module": "opus-java",
+          "version": {
+            "requires": "1.1.0"
+          },
+          "thirdPartyCompatibility": {
+            "artifactSelector": {
+              "name": "opus-java",
+              "type": "pom",
+              "extension": "pom"
+            }
+          }
+        },
+        {
+          "group": "org.apache.commons",
+          "module": "commons-collections4",
+          "version": {
+            "requires": "4.1"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "JDA-4.4.0_352.jar",
+          "url": "JDA-4.4.0_352.jar",
+          "size": 1520012,
+          "sha512": "341858dbce09870f7aeecdfd4cee2cd1a55ac6cc70ad392f5940b9757d5f259a2bd0b129c49aa34bf7ce6fcbfbd0efa9cf4d54dea1dc95c8e4d8644e18a1fc9d",
+          "sha256": "7d5d8765f3c349e1160542baacd180457cfe7b06a4b895c9f249322e31d47e59",
+          "sha1": "8ef08ed507b03e94d506c28a3713917dcc6805a8",
+          "md5": "017e06c7eb77ce4667c5a9b4d0fc618c"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "net.sf.trove4j",
+          "module": "trove4j",
+          "version": {
+            "requires": "3.0.3"
+          }
+        },
+        {
+          "group": "com.fasterxml.jackson.core",
+          "module": "jackson-databind",
+          "version": {
+            "requires": "2.10.1"
+          }
+        },
+        {
+          "group": "com.google.code.findbugs",
+          "module": "jsr305",
+          "version": {
+            "requires": "3.0.2"
+          }
+        },
+        {
+          "group": "org.jetbrains",
+          "module": "annotations",
+          "version": {
+            "requires": "16.0.1"
+          }
+        },
+        {
+          "group": "org.slf4j",
+          "module": "slf4j-api",
+          "version": {
+            "requires": "1.7.25"
+          }
+        },
+        {
+          "group": "com.neovisionaries",
+          "module": "nv-websocket-client",
+          "version": {
+            "requires": "2.14"
+          }
+        },
+        {
+          "group": "com.squareup.okhttp3",
+          "module": "okhttp",
+          "version": {
+            "requires": "3.13.0"
+          }
+        },
+        {
+          "group": "club.minnced",
+          "module": "opus-java",
+          "version": {
+            "requires": "1.1.0"
+          },
+          "thirdPartyCompatibility": {
+            "artifactSelector": {
+              "name": "opus-java",
+              "type": "pom",
+              "extension": "pom"
+            }
+          }
+        },
+        {
+          "group": "org.apache.commons",
+          "module": "commons-collections4",
+          "version": {
+            "requires": "4.1"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "JDA-4.4.0_352.jar",
+          "url": "JDA-4.4.0_352.jar",
+          "size": 1520012,
+          "sha512": "341858dbce09870f7aeecdfd4cee2cd1a55ac6cc70ad392f5940b9757d5f259a2bd0b129c49aa34bf7ce6fcbfbd0efa9cf4d54dea1dc95c8e4d8644e18a1fc9d",
+          "sha256": "7d5d8765f3c349e1160542baacd180457cfe7b06a4b895c9f249322e31d47e59",
+          "sha1": "8ef08ed507b03e94d506c28a3713917dcc6805a8",
+          "md5": "017e06c7eb77ce4667c5a9b4d0fc618c"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+Kronos Mobile UI preview - 2026-11-12
+Branch: codex/osrs-mobile-ui
+APK 0.3.0 (versionCode 5) packaged and published after user approval. SHA-256: 030f347791c68b6f24d2048a325a703df7dfe49cfaba0ba41429dad1ba672848.
+
+In-game Menu > Edit layout:
+- Drag individual tab buttons, all five hotkeys, menu/chat/keyboard/collapse/logout controls, minimap and chat panel.
+- Panel chooser selects a real client panel; each tab remembers its own panel position.
+- Select a button, then Size / opacity. Size: 60-180%; opacity: 10-100%.
+- Save persists on this device. Cancel restores the starting positions and styles. Reset restores defaults, which can then be saved or cancelled.
+- Edit outlines remain visible for faint buttons. All edit touches are consumed; no world mouse events are sent. A second finger cancels the drag.
+- Positions use relative available travel and clamp within the safe game canvas across screen sizes. Rendering and touch geometry share MobileGeometry.
+- Buttons can deliberately overlap; the editor selects the smallest target at the touch point. Move it aside to reach another underneath.
+
+Implementation:
+android/kronos/src/main/java/local/kronos/mobile/MainActivity.java
+android/kronos/src/main/java/local/kronos/mobile/LayoutDrag.java
+android/kronos/src/main/java/local/kronos/mobile/TouchControls.java
+android/kronos/src/main/java/local/kronos/mobile/ScreenLayout.java
+android/kronos/src/main/cpp/kronos_jvm.cpp
+shared/src/local/kronos/ui/MobileGeometry.java
+kronos-bridge/src/net/runelite/standalone/MobileLayout.java
+kronos-bridge/src/KronosBoot.java
+kronos-bridge/src/MobileLayoutTest.java
+Tests: tests/MobileControlsTest.java and tests/LayoutCustomizationTest.java
+Workspace build/test scripts: ../Build-Kronos-Mobile.ps1, ../Test-Kronos-Mobile.ps1
+
+Validation completed:
+- Java gesture tests: taps, hold-drag, stationary context hold, pinch, transitions, cancellation, UI ownership; 21 display/scale combinations.
+- Customization tests: coordinates, independent panel positions, size/opacity clamps, settings round-trip, reset/cancel, five aspect ratios, editor selection and pointer cancellation.
+- Real revision-184 game client using the Cacio runtime connected to the live server with a regular test account: login, all fourteen native tab actions, panel collapse/reopen, native item context menu, prayer toggle, spell selection, camera movement without a new destination, five landscape sizes, classic/mobile restoration.
+- Live moved button and panel geometry, larger and translucent buttons, saved settings, cancel and reset passed. Moved inventory/combat buttons activated their correct real tabs.
+- Android Java and ARM64 native compilation passed; Android lint: 0 errors, 33 warnings.
+- Screenshot 07-customized-layout.png is the actual running engine, not a mockup. Android's edit toolbar is not present in this desktop harness screenshot.
+
+Not physically tested: Android editor dialogs, gesture/cutout insets, keyboard and touch rendering on the user's phone. No Android device/emulator is attached to this VM. Bank/chat/minimap gameplay interactions were not fully exercised in this UI test pass.
+
+From the parent Windows workspace:
+  ./Build-Kronos-Mobile.ps1 -StageOnly
+  ./Test-Kronos-Mobile.ps1 -Cacio -RegistrationTest -MobileUiTest
+
+For Android compile/lint only, set JAVA_HOME to the bundled tools/jdk21 JDK, ANDROID_HOME to tools/android-sdk, ANDROID_USER_HOME to tools/android-user, GRADLE_USER_HOME to .gradle-home-mobile, then from android:
+  ./gradlew.bat :kronos:compileDebugJavaWithJavac :kronos:externalNativeBuildDebug :kronos:lintDebug --no-daemon --max-workers=2
+
+After preview review, the full workspace command ./Build-Kronos-Mobile.ps1 creates and copies the APK to ../mobile-release/Kronos-Mobile.apk. It was run after the user reviewed the preview and requested packaging.

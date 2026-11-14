@@ -1,0 +1,108 @@
+{
+  "canSellToStore": false,
+  "currency": "COINS",
+  "defaultStock": [
+    {
+      "amount": 5,
+      "id": 33962,
+      "price": 500
+    },
+    {
+      "amount": 5,
+      "id": 33965,
+      "price": 500
+    },
+    {
+      "amount": 5,
+      "id": 33968,
+      "price": 500
+    },
+    {
+      "amount": 5,
+      "id": 33971,
+      "price": 400
+    },
+    {
+      "amount": 5,
+      "id": 33974,
+      "price": 400
+    },
+    {
+      "amount": 5,
+      "id": 33977,
+      "price": 400
+    },
+    {
+      "amount": 5,
+      "id": 33980,
+      "price": 400
+    },
+    {
+      "amount": 5,
+      "id": 33983,
+      "price": 400
+    },
+    {
+      "amount": 5,
+      "id": 33986,
+      "price": 400
+    },
+    {
+      "amount": 5,
+      "id": 33989,
+      "price": 400
+    },
+    {
+      "amount": 5,
+      "id": 33992,
+      "price": 400
+    },
+    {
+      "amount": 5,
+      "id": 33995,
+      "price": 400
+    },
+    {
+      "amount": 5,
+      "id": 33998,
+      "price": 400
+    },
+    {
+      "amount": 5,
+      "id": 34001,
+      "price": 400
+    },
+    {
+      "amount": 5,
+      "id": 34004,
+      "price": 400
+    },
+    {
+      "amount": 5,
+      "id": 34007,
+      "price": 400
+    },
+    {
+      "amount": 5,
+      "id": 34010,
+      "price": 400
+    },
+    {
+      "amount": 5,
+      "id": 34013,
+      "price": 400
+    },
+    {
+      "amount": 5,
+      "id": 33878,
+      "price": 10000
+    },
+    {
+      "amount": 5,
+      "id": 33881,
+      "price": 10000
+    }
+  ],
+  "identifier": "content242-shop-1422-1",
+  "title": "Where Wyrmscraig's Wear Wares Were (2)"
+}

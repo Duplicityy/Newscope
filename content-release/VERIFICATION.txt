@@ -1,0 +1,64 @@
+KRONOS 242 CONTENT EXPANSION — STAGED BUILD 04
+Verified 13 November 2026. Awaiting release; not deployed to the live world.
+
+WHAT IS INCLUDED
+- 10,001 imported item records, including notes and placeholders. This is not
+  a count of unique usable items or unique equipment sets.
+- 1,647 basic wearable records; 5,976 added models; 669 standard-gear visual
+  refreshes; 131 added legacy animation sequences.
+- Six connected Varlamore map squares in a separate 3-by-2 area. Entry is
+  949, 3135, plane 0. The original home and existing map regions are preserved.
+- Original desktop and Android interface/protocol retained on revision 184.
+  No new client code or interface redesign is included.
+
+CHECKS COMPLETED
+- Actual desktop login and ordinary onboarding: Hard XP, no Ironman,
+  no tutorial. Existing interface and home rendered successfully.
+- Torva and Fang were equipped through the normal equipment method.
+  Actual home, equipment and relocated Civitas scenery screenshots are
+  embedded in Kronos-242-Features.html. The selected 3-by-2 area rendered.
+- All 13,166 complete male/female wearable assemblies in the final stage 04
+  cache passed actual revision 184 model merging, geometry and lighting.
+- Four full outfits passed: Torva and Sanguine Torva, male and female,
+  with Fang, Avernic defender, Fire cape, boots, gloves and amulet.
+- Imported animation validation passed for 131 sequences, 127 frame groups,
+  1,677 frames and one skeleton. All 132 tested applied frames moved the
+  tested outfits. Stage 04 sequence/frame/skeleton payloads are byte-for-byte
+  identical to the previously verified stage 03 animation payloads.
+- Terrain-noise results matched the original client across all 24,576 source
+  tiles in the six regions. Relocation preserves their original heights.
+- Optional command manifest checks passed: missing/invalid/disabled states,
+  coordinate bounds, supported-only catalogue, name/ID search, duplicate
+  filtering, result cap and on-demand reload.
+- Feature page checked at desktop and mobile widths. It is one standalone
+  HTML file with embedded real screenshots and no external assets.
+
+NOT CONFIRMED
+- Direct live NPC damage is not confirmed. The guarded combat probe failed
+  during setup before an ordinary attack; this is not a combat pass.
+- A physical Android handset has not been retested.
+- Compatibility checks do not certify every possible multi-slot outfit,
+  combat interaction, camera angle or device.
+
+SUPPORT LIMITS
+- This is a revision 242 asset backport on the revision 184 engine, not a
+  complete protocol or modern-content upgrade.
+- Torva, Masori, Virtus, Inquisitor and supported Moons pieces have basic
+  equipment support. Special attacks, passives and set effects are excluded.
+- Fang and Soulreaper axe have base melee support; their signature OSRS
+  effects and mechanics are not implemented.
+- Tumeken's shadow and Bow of faerdhinen remain inventory-only. Powered
+  staff and Bowfa combat behaviour are not enabled.
+- Varlamore quests, NPCs, bosses, shops and scripted object interactions
+  are not imported. Two oversized decorative Hoisted sail placements are
+  omitted to stay within the unchanged renderer's limits.
+- Modern weighted skeletal animations and unsupported per-pixel-alpha
+  materials are not silently approximated.
+- ::newitems is a read-only catalogue; it grants no equipment. ::varlamore
+  uses the existing teleport checks. Both require an enabled manifest.
+- No new grants, loot tables, shops or progression sources are created.
+
+REGENERATION
+Run tools/content242/build_feature_page.py with the stage 04 import report
+and local-runtime/content242-test-04/captures as its screenshots directory.
+The page is local-only. It has not been published to a website.

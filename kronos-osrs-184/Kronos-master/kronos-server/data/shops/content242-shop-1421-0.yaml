@@ -1,0 +1,68 @@
+{
+  "canSellToStore": false,
+  "currency": "COINS",
+  "defaultStock": [
+    {
+      "amount": 5,
+      "id": 1931,
+      "price": 1
+    },
+    {
+      "amount": 2,
+      "id": 1935,
+      "price": 1
+    },
+    {
+      "amount": 5,
+      "id": 20742,
+      "price": 182
+    },
+    {
+      "amount": 2,
+      "id": 1735,
+      "price": 1
+    },
+    {
+      "amount": 3,
+      "id": 1925,
+      "price": 2
+    },
+    {
+      "amount": 15,
+      "id": 22660,
+      "price": 650
+    },
+    {
+      "amount": 20,
+      "id": 1734,
+      "price": 1
+    },
+    {
+      "amount": 5,
+      "id": 1733,
+      "price": 1
+    },
+    {
+      "amount": 2,
+      "id": 590,
+      "price": 1
+    },
+    {
+      "amount": 2,
+      "id": 1755,
+      "price": 1
+    },
+    {
+      "amount": 5,
+      "id": 2347,
+      "price": 1
+    },
+    {
+      "amount": 5,
+      "id": 954,
+      "price": 23
+    }
+  ],
+  "identifier": "content242-shop-1421-0",
+  "title": "Supplies's Supplies"
+}

@@ -1,0 +1,48 @@
+{
+  "canSellToStore": false,
+  "currency": "COINS",
+  "defaultStock": [
+    {
+      "amount": 6,
+      "id": 2347,
+      "price": 1
+    },
+    {
+      "amount": 6,
+      "id": 1755,
+      "price": 1
+    },
+    {
+      "amount": 6,
+      "id": 1265,
+      "price": 1
+    },
+    {
+      "amount": 5,
+      "id": 1267,
+      "price": 140
+    },
+    {
+      "amount": 4,
+      "id": 1269,
+      "price": 500
+    },
+    {
+      "amount": 3,
+      "id": 1273,
+      "price": 1300
+    },
+    {
+      "amount": 2,
+      "id": 1271,
+      "price": 3200
+    },
+    {
+      "amount": 1,
+      "id": 1275,
+      "price": 32000
+    }
+  ],
+  "identifier": "content242-shop-1349-0",
+  "title": "Tizoro's Pickaxes"
+}

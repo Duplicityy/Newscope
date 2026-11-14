@@ -1,0 +1,158 @@
+{
+  "canSellToStore": false,
+  "currency": "COINS",
+  "defaultStock": [
+    {
+      "amount": 5,
+      "id": 1117,
+      "price": 160
+    },
+    {
+      "amount": 4,
+      "id": 1115,
+      "price": 560
+    },
+    {
+      "amount": 4,
+      "id": 1119,
+      "price": 2000
+    },
+    {
+      "amount": 3,
+      "id": 1121,
+      "price": 5200
+    },
+    {
+      "amount": 2,
+      "id": 1123,
+      "price": 16640
+    },
+    {
+      "amount": 5,
+      "id": 1075,
+      "price": 80
+    },
+    {
+      "amount": 4,
+      "id": 1067,
+      "price": 280
+    },
+    {
+      "amount": 4,
+      "id": 1069,
+      "price": 1000
+    },
+    {
+      "amount": 3,
+      "id": 1071,
+      "price": 2600
+    },
+    {
+      "amount": 2,
+      "id": 1073,
+      "price": 6400
+    },
+    {
+      "amount": 5,
+      "id": 1087,
+      "price": 80
+    },
+    {
+      "amount": 4,
+      "id": 1081,
+      "price": 280
+    },
+    {
+      "amount": 4,
+      "id": 1083,
+      "price": 1000
+    },
+    {
+      "amount": 3,
+      "id": 1085,
+      "price": 2600
+    },
+    {
+      "amount": 2,
+      "id": 1091,
+      "price": 6400
+    },
+    {
+      "amount": 5,
+      "id": 1291,
+      "price": 40
+    },
+    {
+      "amount": 4,
+      "id": 1293,
+      "price": 140
+    },
+    {
+      "amount": 4,
+      "id": 1295,
+      "price": 500
+    },
+    {
+      "amount": 3,
+      "id": 1299,
+      "price": 1300
+    },
+    {
+      "amount": 2,
+      "id": 1301,
+      "price": 3200
+    },
+    {
+      "amount": 5,
+      "id": 1321,
+      "price": 32
+    },
+    {
+      "amount": 4,
+      "id": 1323,
+      "price": 112
+    },
+    {
+      "amount": 4,
+      "id": 1325,
+      "price": 400
+    },
+    {
+      "amount": 3,
+      "id": 1329,
+      "price": 1040
+    },
+    {
+      "amount": 2,
+      "id": 1331,
+      "price": 2560
+    },
+    {
+      "amount": 5,
+      "id": 1237,
+      "price": 26
+    },
+    {
+      "amount": 4,
+      "id": 1239,
+      "price": 91
+    },
+    {
+      "amount": 4,
+      "id": 1241,
+      "price": 325
+    },
+    {
+      "amount": 3,
+      "id": 1243,
+      "price": 845
+    },
+    {
+      "amount": 2,
+      "id": 1245,
+      "price": 2080
+    }
+  ],
+  "identifier": "content242-shop-1128-0",
+  "title": "Fortis Blacksmith"
+}

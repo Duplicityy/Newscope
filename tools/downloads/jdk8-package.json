@@ -1,0 +1,10 @@
+{
+  "checksum": "20f248ddd600f900cd9b235d50d54cdb27e7b750f140d381176a7612c53663cd",
+  "checksum_link": "https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u512-b09/OpenJDK8U-jdk_x64_windows_hotspot_8u512b09.zip.sha256.txt",
+  "download_count": 28280,
+  "link": "https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u512-b09/OpenJDK8U-jdk_x64_windows_hotspot_8u512b09.zip",
+  "metadata_link": "https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u512-b09/OpenJDK8U-jdk_x64_windows_hotspot_8u512b09.zip.json",
+  "name": "OpenJDK8U-jdk_x64_windows_hotspot_8u512b09.zip",
+  "signature_link": "https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u512-b09/OpenJDK8U-jdk_x64_windows_hotspot_8u512b09.zip.sig",
+  "size": 106490535
+}

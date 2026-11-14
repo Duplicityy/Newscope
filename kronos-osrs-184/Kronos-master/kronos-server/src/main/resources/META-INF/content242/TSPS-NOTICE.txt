@@ -1,0 +1,58 @@
+The gear rules in ModernGear/ModernGearRules and the Content242Fang/Content242Voidwaker
+specials adapt the following files from TSPS commit
+1ccb548be725c70900b604968354dd3147b839ea:
+server/plugins/combat/effects/OsmumtensFang.EquipmentEffects.js
+server/plugins/combat/effects/InquisitorsArmour.EquipmentEffects.js
+server/plugins/combat/specials/OsmumtensFang.SpecialAttack.js
+server/plugins/combat/specials/Voidwaker.SpecialAttack.js
+server/plugins/items/TumekensShadow.plugin.js
+server/plugins/items/CrystalWeapon.js
+server/plugins/items/BowOfFaerdhinen.plugin.js
+server/plugins/items/CrystalArmour.plugin.js
+server/src/main/typescript/elvarg/game/content/combat/ranged/CrystalBow.ts
+
+BSD 2-Clause License
+Copyright (c) 2022-2026, dennisdev, xrsps
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+* Redistributions of source code must retain the above copyright notice, this
+  list of conditions and the following disclaimer.
+* Redistributions in binary form must reproduce the above copyright notice,
+  this list of conditions and the following disclaimer in the documentation
+  and/or other materials provided with the distribution.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+Behavior references checked during port:
+https://oldschool.runescape.wiki/w/Osmumten%27s_fang
+https://oldschool.runescape.wiki/w/Voidwaker
+https://oldschool.runescape.wiki/w/Inquisitor%27s_armour
+The pinned donor's Fang/Voidwaker special files say untested; these are not
+treated as prior runtime verification. Native port tests are separate evidence.
+Additional adapted sources for native boss and equipment handlers:
+server/plugins/combat/specials/SoulreaperAxe.SpecialAttack.js
+server/plugins/items/AncientSceptre.plugin.js
+server/plugins/bosses/scurrius/Common.Scurrius.js
+server/plugins/bosses/scurrius/Fight.Scurrius.js
+server/plugins/bosses/scurrius/Lair.Scurrius.js
+server/plugins/bosses/amoxliatl/Fight.Amoxliatl.js
+server/plugins/bosses/amoxliatl/UnstableIce.Amoxliatl.js
+server/plugins/bosses/data/amoxliatl.json
+Virtus additional Ancient damage reference: https://oldschool.runescape.wiki/w/Virtus_robes
+Additional Muspah sources adapted under the BSD2 notice above:
+server/plugins/bosses/phantommuspah/{Fight,Attacks,Spikes,Clouds,Shield,Corruption,Lair,Hits}.PhantomMuspah.js
+server/plugins/bosses/data/phantom-muspah.json
+Behavior cross-check: https://oldschool.runescape.wiki/w/Phantom_Muspah/Strategies
+Captured data labels melee stationary scaling, cloud placement and some hazard damage as estimates.
+The native port retains those estimates; gameplay verification is independent of donor tests.

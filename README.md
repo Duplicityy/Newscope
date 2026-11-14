@@ -17,3 +17,9 @@ No source build or asset-restoration step is needed to play. Both downloads are 
 - Windows SHA256: `1626dfc35ea96316eea13f3390fef924a54b2dc7e2bfff9febc8b30235133c08`
 
 The update retains the existing revision-184 game protocol and controls. It adds revision-242 content; it is not a claim of complete OSRS gameplay parity.
+
+## Project source
+
+The full sanitized Kronos project is in this private repository: server source under `kronos-osrs-184/Kronos-master/`, Android client source under `kronos-mobile/`, Windows client files under `windows-client/`, build scripts at the repository root, and the revision 242 asset payload under `assets-payload/`. See `PUBLISH-AND-BUILD.txt` and `SOURCE_EXPORT_CHANGES.txt` for setup and export notes. The cache payload is split into text parts for GitHub transport; restore it before building or editing models.
+
+Private player saves, account passwords, local keys, and live server configuration are intentionally excluded. The Soulbound Ancestral model generator and its outputs are not included.

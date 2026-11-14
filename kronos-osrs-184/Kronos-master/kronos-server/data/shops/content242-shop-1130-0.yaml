@@ -1,0 +1,23 @@
+{
+  "canSellToStore": false,
+  "currency": "COINS",
+  "defaultStock": [
+    {
+      "amount": 2,
+      "id": 1607,
+      "price": 375
+    },
+    {
+      "amount": 1,
+      "id": 1605,
+      "price": 750
+    },
+    {
+      "amount": 1,
+      "id": 1603,
+      "price": 1500
+    }
+  ],
+  "identifier": "content242-shop-1130-0",
+  "title": "Fortis Gem Stall"
+}

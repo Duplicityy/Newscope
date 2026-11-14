@@ -1,0 +1,11 @@
+{
+  "allowed_groups": [
+    "ADMINISTRATOR",
+    "DEVELOPER",
+    "MODERATOR",
+    "BETA_TESTER",
+    "SUPPORT"
+  ],
+  "allowed_names": [],
+  "deny_response": "PRIVATE_ACCESS"
+}

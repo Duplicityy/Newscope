@@ -1,0 +1,43 @@
+{
+  "canSellToStore": false,
+  "currency": "COINS",
+  "defaultStock": [
+    {
+      "amount": 3,
+      "id": 1607,
+      "price": 250
+    },
+    {
+      "amount": 2,
+      "id": 1605,
+      "price": 500
+    },
+    {
+      "amount": 2,
+      "id": 1603,
+      "price": 1000
+    },
+    {
+      "amount": 3,
+      "id": 1635,
+      "price": 350
+    },
+    {
+      "amount": 3,
+      "id": 1654,
+      "price": 450
+    },
+    {
+      "amount": 3,
+      "id": 1692,
+      "price": 350
+    },
+    {
+      "amount": 3,
+      "id": 11069,
+      "price": 550
+    }
+  ],
+  "identifier": "content242-shop-1062-0",
+  "title": "Conara's Jewels"
+}

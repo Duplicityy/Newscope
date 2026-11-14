@@ -1,0 +1,10 @@
+{
+  "allowed_groups": [
+    "ADMINISTRATOR",
+    "DEVELOPER",
+    "MODERATOR",
+    "YOUTUBER"
+  ],
+  "allowed_names": [],
+  "deny_response": "PRIVATE_ACCESS"
+}
