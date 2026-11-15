@@ -7,7 +7,7 @@ on:
 permissions:
   contents: write
 concurrency:
-  group: publish-clients-0.5.1-six-systems
+  group: publish-clients-0.5.2-session-close
   cancel-in-progress: false
 jobs:
   publish:
@@ -16,26 +16,26 @@ jobs:
     env:
       GH_TOKEN: ${{ github.token }}
       GH_REPO: ${{ github.repository }}
-      RELEASE_TAG: clients-0.5.1-six-systems
+      RELEASE_TAG: clients-0.5.2-session-close
     steps:
       - name: Download exact deployed clients and verify SHA256
         shell: bash
         run: |
           set -euo pipefail
-          curl --fail --location --retry 3 --limit-rate 2M --connect-timeout 20 --max-time 300 'https://menu-awesome-planners-wider.trycloudflare.com/download/7dbb4ac2e0f740769f5b40953a726a4b/Kronos-Mobile.apk?v=0.5.1-4a9eeadd' -o Kronos-Mobile.apk
-          curl --fail --location --retry 3 --limit-rate 2M --connect-timeout 20 --max-time 300 'https://menu-awesome-planners-wider.trycloudflare.com/download/7dbb4ac2e0f740769f5b40953a726a4b/Kronos-Windows.zip?v=0.5.1-94a027c8' -o Kronos-Windows.zip
-          printf '%s\n' '4a9eeadd3d1852c4331d2c1ab745e03f1d43e1cfa019d264d10ac57cf8180001  Kronos-Mobile.apk' '94a027c880775769e8943c820e4c92cfdb4cd6fed0cb5ba3262a2540c55569f5  Kronos-Windows.zip' > SHA256SUMS
+          curl --fail --location --retry 3 --limit-rate 2M --connect-timeout 20 --max-time 300 'https://menu-awesome-planners-wider.trycloudflare.com/download/7dbb4ac2e0f740769f5b40953a726a4b/Kronos-Mobile.apk?v=0.5.2-436ca9d7' -o Kronos-Mobile.apk
+          curl --fail --location --retry 3 --limit-rate 2M --connect-timeout 20 --max-time 300 'https://menu-awesome-planners-wider.trycloudflare.com/download/7dbb4ac2e0f740769f5b40953a726a4b/Kronos-Windows.zip?v=0.5.2-94a027c8' -o Kronos-Windows.zip
+          printf '%s\n' '436ca9d7ca339eb3cab713c01ed2ff369b47feb0bd984ce7b6ca9826efcb6a7a  Kronos-Mobile.apk' '94a027c880775769e8943c820e4c92cfdb4cd6fed0cb5ba3262a2540c55569f5  Kronos-Windows.zip' > SHA256SUMS
           sha256sum --check SHA256SUMS
-          test "$(stat -c%s Kronos-Mobile.apk)" = 92795588
+          test "$(stat -c%s Kronos-Mobile.apk)" = 92796396
           test "$(stat -c%s Kronos-Windows.zip)" = 78642873
       - name: Publish direct GitHub release downloads
         shell: bash
         run: |
           set -euo pipefail
-          printf '%s\n' 'Windows: download Kronos-Windows.zip, extract the entire ZIP to a folder, then run Play Kronos.cmd. Java is bundled.' '' 'Android: install Kronos-Mobile.apk version 0.5.1-six-systems (versionCode 13) over the existing app to retain its data and control layouts.' '' 'Both clients support the live six-system update and movement subrevision 6. Use ::progress in game.' '' 'SHA256SUMS contains the exact verified file hashes. No source build is needed.' > CLIENT-INSTRUCTIONS.txt
-          printf '%s\n' 'Ready-to-play Windows and Android clients for the live Kronos six-system update.' '' '- Required for the deployed movement subrevision 6.' '- Supports post-99 mastery, armour condition and repairs, Legend progression, boss pet progression, Athletics, and community thanks.' '- Android 0.5.1 preserves the recent rendering, background-session, and optional experimental Mobile HD work.' '- Files are the exact deployed packages, verified against pinned SHA256 hashes and byte sizes; no rebuild occurs in this workflow.' '' 'This repository is private. Downloads require repository access.' > RELEASE-NOTES.md
+          printf '%s\n' 'Windows: download Kronos-Windows.zip, extract the entire ZIP to a folder, then run Play Kronos.cmd. Java is bundled.' '' 'Android: install Kronos-Mobile.apk version 0.5.2-session-close (versionCode 14) over the existing app to retain its data and control layouts.' '' 'Both clients support the live six-system update and movement subrevision 6. Use ::progress in game.' '' 'SHA256SUMS contains the exact verified file hashes. No source build is needed.' > CLIENT-INSTRUCTIONS.txt
+          printf '%s\n' 'Ready-to-play Windows and Android clients for the live Kronos six-system update.' '' '- Required for the deployed movement subrevision 6.' '- Supports post-99 mastery, armour condition and repairs, Legend progression, boss pet progression, Athletics, and community thanks.' '- Android swipe-away now ends the service and embedded game process; ordinary app switching retains the session.' '- Windows is unchanged from the verified six-system release.' '- Android 0.5.2 preserves the recent rendering, background-session, and optional experimental Mobile HD work.' '- Files are the exact deployed packages, verified against pinned SHA256 hashes and byte sizes; no rebuild occurs in this workflow.' '' 'This repository is private. Downloads require repository access.' > RELEASE-NOTES.md
           if gh release view "$RELEASE_TAG" >/dev/null 2>&1; then
             gh release upload "$RELEASE_TAG" Kronos-Mobile.apk Kronos-Windows.zip SHA256SUMS CLIENT-INSTRUCTIONS.txt --clobber
           else
-            gh release create "$RELEASE_TAG" Kronos-Mobile.apk Kronos-Windows.zip SHA256SUMS CLIENT-INSTRUCTIONS.txt --target "$GITHUB_SHA" --title 'Kronos six-system update — Windows and Android 0.5.1' --notes-file RELEASE-NOTES.md --latest
+            gh release create "$RELEASE_TAG" Kronos-Mobile.apk Kronos-Windows.zip SHA256SUMS CLIENT-INSTRUCTIONS.txt --target "$GITHUB_SHA" --title 'Kronos six-system update — Windows and Android 0.5.2' --notes-file RELEASE-NOTES.md --latest
           fi
