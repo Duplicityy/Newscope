@@ -7,7 +7,7 @@ on:
 permissions:
   contents: write
 concurrency:
-  group: publish-clients-0.6.1-newscape
+  group: publish-clients-0.6.1-fresh-cache
   cancel-in-progress: false
 jobs:
   publish:
@@ -16,27 +16,26 @@ jobs:
     env:
       GH_TOKEN: ${{ github.token }}
       GH_REPO: ${{ github.repository }}
-      RELEASE_TAG: clients-0.6.1-newscape
+      RELEASE_TAG: clients-0.6.1-fresh-cache
     steps:
       - name: Download exact deployed clients and verify SHA256
         shell: bash
         run: |
           set -euo pipefail
           curl --fail --location --retry 3 --limit-rate 2M --connect-timeout 20 --max-time 300 'https://menu-awesome-planners-wider.trycloudflare.com/download/7dbb4ac2e0f740769f5b40953a726a4b/Newscape-Mobile.apk?release=16' -o Newscape-Mobile.apk
-          curl --fail --location --retry 3 --limit-rate 2M --connect-timeout 20 --max-time 300 'https://menu-awesome-planners-wider.trycloudflare.com/download/7dbb4ac2e0f740769f5b40953a726a4b/Newscape-Windows.zip?release=16' -o Newscape-Windows.zip
-          curl --fail --location --retry 3 --limit-rate 2M --connect-timeout 20 --max-time 60 'https://menu-awesome-planners-wider.trycloudflare.com/download/7dbb4ac2e0f740769f5b40953a726a4b/Newscape-Update.html?release=16' -o Newscape-Update.html
-          printf '%s\n' 'fd3e18ff6cc09b0b8b3959811317432091e50592a2000b96fe2e2461e8af9d03  Newscape-Mobile.apk' 'c8032005b5481cfc2f7927ab2eeac6ce5ddfb1ecb8aa13e750486721bccd8b6d  Newscape-Windows.zip' '9b63a29988fdb1b70115eb3a9959183e75742fd6507bdc80868c3418609f4f6c  Newscape-Update.html' > SHA256SUMS
+          curl --fail --location --retry 3 --limit-rate 2M --connect-timeout 20 --max-time 300 'https://menu-awesome-planners-wider.trycloudflare.com/download/7dbb4ac2e0f740769f5b40953a726a4b/Newscape-Windows-Full.zip?release=16' -o Newscape-Windows-Full.zip
+          printf '%s\n' 'fd3e18ff6cc09b0b8b3959811317432091e50592a2000b96fe2e2461e8af9d03  Newscape-Mobile.apk' '79c722ab63da2c2906cddb8de180ddd7bc6686c7bdcbe599f2c5a16f9782489c  Newscape-Windows-Full.zip' > SHA256SUMS
           sha256sum --check SHA256SUMS
           test "$(stat -c%s Newscape-Mobile.apk)" = 93326914
-          test "$(stat -c%s Newscape-Windows.zip)" = 79136374
+          test "$(stat -c%s Newscape-Windows-Full.zip)" = 291740837
       - name: Publish GitHub downloads
         shell: bash
         run: |
           set -euo pipefail
-          printf '%s\n' 'Windows: extract Newscape-Windows.zip and run Play Newscape.cmd. Java is bundled.' 'Android: install Newscape-Mobile.apk over your existing app to keep settings and control layouts.' 'Version 0.6.1-dungeoneering-fix / Android code16. Required for live wire184/login8/movement6/cache184728.' 'Newscape-Update.html contains actual game screenshots and verification notes.' 'This repository is private. Downloads require repository access.' > CLIENT-INSTRUCTIONS.txt
-          printf '%s\n' 'Newscape dungeon rendering and item-pickup repair.' '' '- Restored imported material colours, tint and transparency.' '- Fixed high-ID ground-item removal and stack updates.' '- Updated Android HD material capture and alpha sorting.' '- Supplied Newscape login art and blue home teleporter.' '- Existing session lifecycle, controls, signer and player data preserved.' '' 'Verified normal Windows login, populated dungeon, five actual pickups, exact inventory/equipment restoration and normal logout. Offline checks passed on both packaged classpaths. Physical Android and full encounter testing remain for beta testers.' '' 'Exact deployed binaries, verified by SHA256; no rebuild. Repository access is required.' > RELEASE-NOTES.md
+          printf '%s\n' 'Windows: extract Newscape-Windows-Full.zip and run Play Newscape.cmd. Java is bundled.' 'Android: install Newscape-Mobile.apk over your existing app to keep settings and control layouts.' 'Version 0.6.1-dungeoneering-fix / Android code16. Required for live wire184/login8/movement6/cache184728.' 'Windows first launch installs the full bundled clean cache and bypasses legacy cache locations. Close the old game and extract into a new folder.' 'Fresh Cache.cmd reinstalls the managed cache when the game is closed. Login and settings remain in their existing profile.' 'This repository is private. Downloads require repository access.' > CLIENT-INSTRUCTIONS.txt
+          printf '%s\n' 'Newscape full clean-cache Windows edition. Full matching cache installs automatically; native login-screen rendering verified with the fresh installed cache.' '' '- Restored imported material colours, tint and transparency.' '- Fixed high-ID ground-item removal and stack updates.' '- Updated Android HD material capture and alpha sorting.' '- Supplied Newscape login art and blue home teleporter.' '- Existing session lifecycle, controls, signer and player data preserved.' '' 'Verified normal Windows login, populated dungeon, five actual pickups, exact inventory/equipment restoration and normal logout. Offline checks passed on both packaged classpaths. Physical Android and full encounter testing remain for beta testers.' '' 'Exact deployed binaries, verified by SHA256; no rebuild. Repository access is required.' > RELEASE-NOTES.md
           if gh release view "$RELEASE_TAG" >/dev/null 2>&1; then
-            gh release upload "$RELEASE_TAG" Newscape-Mobile.apk Newscape-Windows.zip Newscape-Update.html SHA256SUMS CLIENT-INSTRUCTIONS.txt --clobber
+            gh release upload "$RELEASE_TAG" Newscape-Mobile.apk Newscape-Windows-Full.zip SHA256SUMS CLIENT-INSTRUCTIONS.txt --clobber
           else
-            gh release create "$RELEASE_TAG" Newscape-Mobile.apk Newscape-Windows.zip Newscape-Update.html SHA256SUMS CLIENT-INSTRUCTIONS.txt --target "$GITHUB_SHA" --title "Newscape 0.6.1 — Android and Windows" --notes-file RELEASE-NOTES.md --latest
+            gh release create "$RELEASE_TAG" Newscape-Mobile.apk Newscape-Windows-Full.zip SHA256SUMS CLIENT-INSTRUCTIONS.txt --target "$GITHUB_SHA" --title "Newscape 0.6.1 — Full-cache Windows and Android" --notes-file RELEASE-NOTES.md --latest
           fi
