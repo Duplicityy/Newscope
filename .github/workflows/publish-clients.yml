@@ -1,4 +1,4 @@
-name: Publish Windows and Android clients
+name: Publish Newscape clients
 on:
   push:
     branches: [main]
@@ -7,7 +7,7 @@ on:
 permissions:
   contents: write
 concurrency:
-  group: publish-clients-0.5.2-session-close
+  group: publish-clients-0.6.1-newscape
   cancel-in-progress: false
 jobs:
   publish:
@@ -16,26 +16,27 @@ jobs:
     env:
       GH_TOKEN: ${{ github.token }}
       GH_REPO: ${{ github.repository }}
-      RELEASE_TAG: clients-0.5.2-session-close
+      RELEASE_TAG: clients-0.6.1-newscape
     steps:
       - name: Download exact deployed clients and verify SHA256
         shell: bash
         run: |
           set -euo pipefail
-          curl --fail --location --retry 3 --limit-rate 2M --connect-timeout 20 --max-time 300 'https://menu-awesome-planners-wider.trycloudflare.com/download/7dbb4ac2e0f740769f5b40953a726a4b/Kronos-Mobile.apk?v=0.5.2-436ca9d7' -o Kronos-Mobile.apk
-          curl --fail --location --retry 3 --limit-rate 2M --connect-timeout 20 --max-time 300 'https://menu-awesome-planners-wider.trycloudflare.com/download/7dbb4ac2e0f740769f5b40953a726a4b/Kronos-Windows.zip?v=0.5.2-94a027c8' -o Kronos-Windows.zip
-          printf '%s\n' '436ca9d7ca339eb3cab713c01ed2ff369b47feb0bd984ce7b6ca9826efcb6a7a  Kronos-Mobile.apk' '94a027c880775769e8943c820e4c92cfdb4cd6fed0cb5ba3262a2540c55569f5  Kronos-Windows.zip' > SHA256SUMS
+          curl --fail --location --retry 3 --limit-rate 2M --connect-timeout 20 --max-time 300 'https://menu-awesome-planners-wider.trycloudflare.com/download/7dbb4ac2e0f740769f5b40953a726a4b/Newscape-Mobile.apk?release=16' -o Newscape-Mobile.apk
+          curl --fail --location --retry 3 --limit-rate 2M --connect-timeout 20 --max-time 300 'https://menu-awesome-planners-wider.trycloudflare.com/download/7dbb4ac2e0f740769f5b40953a726a4b/Newscape-Windows.zip?release=16' -o Newscape-Windows.zip
+          curl --fail --location --retry 3 --limit-rate 2M --connect-timeout 20 --max-time 60 'https://menu-awesome-planners-wider.trycloudflare.com/download/7dbb4ac2e0f740769f5b40953a726a4b/Newscape-Update.html?release=16' -o Newscape-Update.html
+          printf '%s\n' 'fd3e18ff6cc09b0b8b3959811317432091e50592a2000b96fe2e2461e8af9d03  Newscape-Mobile.apk' 'c8032005b5481cfc2f7927ab2eeac6ce5ddfb1ecb8aa13e750486721bccd8b6d  Newscape-Windows.zip' '9b63a29988fdb1b70115eb3a9959183e75742fd6507bdc80868c3418609f4f6c  Newscape-Update.html' > SHA256SUMS
           sha256sum --check SHA256SUMS
-          test "$(stat -c%s Kronos-Mobile.apk)" = 92796396
-          test "$(stat -c%s Kronos-Windows.zip)" = 78642873
-      - name: Publish direct GitHub release downloads
+          test "$(stat -c%s Newscape-Mobile.apk)" = 93326914
+          test "$(stat -c%s Newscape-Windows.zip)" = 79136374
+      - name: Publish GitHub downloads
         shell: bash
         run: |
           set -euo pipefail
-          printf '%s\n' 'Windows: download Kronos-Windows.zip, extract the entire ZIP to a folder, then run Play Kronos.cmd. Java is bundled.' '' 'Android: install Kronos-Mobile.apk version 0.5.2-session-close (versionCode 14) over the existing app to retain its data and control layouts.' '' 'Both clients support the live six-system update and movement subrevision 6. Use ::progress in game.' '' 'SHA256SUMS contains the exact verified file hashes. No source build is needed.' > CLIENT-INSTRUCTIONS.txt
-          printf '%s\n' 'Ready-to-play Windows and Android clients for the live Kronos six-system update.' '' '- Required for the deployed movement subrevision 6.' '- Supports post-99 mastery, armour condition and repairs, Legend progression, boss pet progression, Athletics, and community thanks.' '- Android swipe-away now ends the service and embedded game process; ordinary app switching retains the session.' '- Windows is unchanged from the verified six-system release.' '- Android 0.5.2 preserves the recent rendering, background-session, and optional experimental Mobile HD work.' '- Files are the exact deployed packages, verified against pinned SHA256 hashes and byte sizes; no rebuild occurs in this workflow.' '' 'This repository is private. Downloads require repository access.' > RELEASE-NOTES.md
+          printf '%s\n' 'Windows: extract Newscape-Windows.zip and run Play Newscape.cmd. Java is bundled.' 'Android: install Newscape-Mobile.apk over your existing app to keep settings and control layouts.' 'Version 0.6.1-dungeoneering-fix / Android code16. Required for live wire184/login8/movement6/cache184728.' 'Newscape-Update.html contains actual game screenshots and verification notes.' 'This repository is private. Downloads require repository access.' > CLIENT-INSTRUCTIONS.txt
+          printf '%s\n' 'Newscape dungeon rendering and item-pickup repair.' '' '- Restored imported material colours, tint and transparency.' '- Fixed high-ID ground-item removal and stack updates.' '- Updated Android HD material capture and alpha sorting.' '- Supplied Newscape login art and blue home teleporter.' '- Existing session lifecycle, controls, signer and player data preserved.' '' 'Verified normal Windows login, populated dungeon, five actual pickups, exact inventory/equipment restoration and normal logout. Offline checks passed on both packaged classpaths. Physical Android and full encounter testing remain for beta testers.' '' 'Exact deployed binaries, verified by SHA256; no rebuild. Repository access is required.' > RELEASE-NOTES.md
           if gh release view "$RELEASE_TAG" >/dev/null 2>&1; then
-            gh release upload "$RELEASE_TAG" Kronos-Mobile.apk Kronos-Windows.zip SHA256SUMS CLIENT-INSTRUCTIONS.txt --clobber
+            gh release upload "$RELEASE_TAG" Newscape-Mobile.apk Newscape-Windows.zip Newscape-Update.html SHA256SUMS CLIENT-INSTRUCTIONS.txt --clobber
           else
-            gh release create "$RELEASE_TAG" Kronos-Mobile.apk Kronos-Windows.zip SHA256SUMS CLIENT-INSTRUCTIONS.txt --target "$GITHUB_SHA" --title 'Kronos six-system update — Windows and Android 0.5.2' --notes-file RELEASE-NOTES.md --latest
+            gh release create "$RELEASE_TAG" Newscape-Mobile.apk Newscape-Windows.zip Newscape-Update.html SHA256SUMS CLIENT-INSTRUCTIONS.txt --target "$GITHUB_SHA" --title "Newscape 0.6.1 — Android and Windows" --notes-file RELEASE-NOTES.md --latest
           fi
