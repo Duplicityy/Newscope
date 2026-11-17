@@ -1,5 +1,7 @@
 # NewScope — ready-to-play clients
 
+**Windows launcher test** — [Download the small launcher](https://github.com/Duplicityy/Newscope/raw/refs/heads/main/windows-launcher/Newscape-Launcher.exe) to install Java and the client automatically. [Instructions and test status](windows-launcher/README.md).
+
 Download the updated clients for the live six-system release:
 
 | Device | Download | Install |
