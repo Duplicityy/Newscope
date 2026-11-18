@@ -262,7 +262,7 @@ typedef void (^NSCCommand)(Bridge &);
     for (NSString *setting in settings) strings.emplace_back(setting.UTF8String);
     std::vector<JavaVMOption> options;
     options.reserve(strings.size());
-    for (std::string &setting in strings) options.push_back({setting.data(), nullptr});
+    for (std::string &setting : strings) options.push_back({setting.data(), nullptr});
     JavaVMInitArgs args{Java21, static_cast<jint>(options.size()), options.data(), JNI_FALSE};
     JavaVM *vm = nullptr;
     Bridge bridge;
