@@ -1,0 +1,21 @@
+name: iOS native compile check
+
+on:
+  push:
+    branches: [codex/ios-native-check]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  compile:
+    if: ${{ github.event.repository.private }}
+    runs-on: macos-15
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6.1.0
+        with:
+          persist-credentials: false
+      - name: Compile and link the iOS native code with Xcode
+        run: bash Tools/check_native_ios.sh Inputs/AndroidNative "$RUNNER_TEMP/newscape-ios-native"
