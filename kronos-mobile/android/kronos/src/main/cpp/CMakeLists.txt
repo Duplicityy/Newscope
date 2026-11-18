@@ -1,6 +1,0 @@
-cmake_minimum_required(VERSION 3.22.1)
-project(kronosmobile)
-add_library(kronosmobile SHARED kronos_jvm.cpp)
-target_compile_options(kronosmobile PRIVATE -O2)
-target_link_libraries(kronosmobile android log dl)
-target_link_options(kronosmobile PRIVATE "-Wl,-z,max-page-size=16384")
