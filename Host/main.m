@@ -486,8 +486,11 @@
             case 3: [self toggleObserver]; break;
             case 4: [self interfaceSize]; break;
             case 5: [self gameLayout]; break;
-            case 6: [self choose:@"Hotkey" actions:@[@"Hotkey 1", @"Hotkey 2", @"Hotkey 3", @"Hotkey 4", @"Hotkey 5"]
-                            selected:^(NSUInteger slot) { [self chooseHotkey:slot]; }]; break;
+            case 6: {
+                [self choose:@"Hotkey" actions:@[@"Hotkey 1", @"Hotkey 2", @"Hotkey 3", @"Hotkey 4", @"Hotkey 5"]
+                     selected:^(NSUInteger slot) { [self chooseHotkey:slot]; }];
+                break;
+            }
             case 7: [self startEditing]; break;
             case 8: [self->_engine event:12 x:0 y:0 value:[self->_gameState isEqualToString:@"LOGIN_SCREEN"] ? 1 : 3 text:nil]; break;
             case 9: [self->_engine event:10 x:0 y:0 value:27 text:nil]; break;
