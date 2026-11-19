@@ -38,69 +38,21 @@ jobs:
             curl --fail --silent --show-error --location --retry 3 --connect-timeout 15 --max-time 240 "$TRANSFER_URL/$filename" -o "$filename"
           done < TRANSFER.sha256
           sha256sum --check --strict TRANSFER.sha256
-      - name: Commit current source and download instructions
-        id: source
-        run: |
-          set -euo pipefail
-          gh auth setup-git
-          git init checkout
-          git -C checkout remote add origin "https://github.com/$GH_REPO.git"
-          git -C checkout config remote.origin.promisor true
-          git -C checkout config remote.origin.partialclonefilter blob:none
-          git -C checkout sparse-checkout init --cone
-          git -C checkout sparse-checkout set .github
-          git -C checkout fetch --depth=1 --filter=blob:none origin main
-          test "$(git -C checkout rev-parse FETCH_HEAD)" = "$GITHUB_SHA"
-          git -C checkout checkout -b runtime36-publication FETCH_HEAD
-          mkdir -p checkout/docs/releases
-          cp checkout/README.md checkout/docs/releases/legacy-client-downloads.md
-          cp release/README-current.md checkout/README.md
-          python3 - <<'PY'
-          from pathlib import Path, PurePosixPath
-          import hashlib, json, zipfile
-          root = Path("checkout/runtime36-source")
-          root.mkdir(exist_ok=False)
-          with zipfile.ZipFile("release/Newscape-Runtime36-Source.zip") as archive:
-              manifest = json.loads(archive.read("SOURCE-MANIFEST.json"))
-              expected = {row["path"]: row for row in manifest}
-              assert len(manifest) == len(expected)
-              assert set(archive.namelist()) == set(expected) | {"SOURCE-MANIFEST.json"}
-              assert len(archive.namelist()) == len(expected) + 1
-              for name, row in expected.items():
-                  p = PurePosixPath(name)
-                  assert not p.is_absolute() and ".." not in p.parts
-                  data = archive.read(name)
-                  assert len(data) == row["bytes"] and hashlib.sha256(data).hexdigest() == row["sha256"]
-                  target = root / name
-                  target.parent.mkdir(parents=True, exist_ok=True)
-                  target.write_bytes(data)
-              (root / "SOURCE-MANIFEST.json").write_bytes(archive.read("SOURCE-MANIFEST.json"))
-          PY
-          git -C checkout config user.name 'github-actions[bot]'
-          git -C checkout config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git -C checkout add --sparse README.md docs/releases/legacy-client-downloads.md
-          git -C checkout add --sparse --force runtime36-source
-          python3 - <<'PY'
-          import json, pathlib, subprocess
-          root = "runtime36-source/"
-          manifest = json.loads(pathlib.Path("checkout", root, "SOURCE-MANIFEST.json").read_text())
-          expected = {root + row["path"] for row in manifest} | {root + "SOURCE-MANIFEST.json"}
-          tracked = subprocess.check_output(["git", "-C", "checkout", "ls-files", "-z", "--", root], text=True).split("\0")
-          assert set(filter(None, tracked)) == expected
-          PY
-          git -C checkout diff --cached --check -- README.md docs/releases/legacy-client-downloads.md
-          git -C checkout commit -m 'Sync current Newscape Runtime 36 source and client downloads'
-          commit=$(git -C checkout rev-parse HEAD)
-          git -C checkout push origin HEAD:refs/heads/main
-          printf 'commit=%s\n' "$commit" >> "$GITHUB_OUTPUT"
-      - name: Publish private owner release
+      - name: Verify the published source commit
         env:
-          SOURCE_COMMIT: ${{ steps.source.outputs.commit }}
+          SOURCE_COMMIT: a700dc49ce5caf9dd31eb6216108011c16e76b6c
         run: |
           set -euo pipefail
           cd release
-          assets=(Newscape-Mobile-Ultra-Expedition-v46.apk Newscape-Windows-Expedition-v46.zip
-                  Newscape-World-Charter-Server-Overlay.tar.gz Newscape-Runtime36-Source.zip)
+          gh api "repos/$GH_REPO/contents/runtime36-source/SOURCE-MANIFEST.json?ref=$SOURCE_COMMIT" --jq .content | base64 --decode > remote-source-manifest.json
+          unzip -p Newscape-Runtime36-Source.zip SOURCE-MANIFEST.json > local-source-manifest.json
+          cmp remote-source-manifest.json local-source-manifest.json
+      - name: Publish private owner release
+        env:
+          SOURCE_COMMIT: a700dc49ce5caf9dd31eb6216108011c16e76b6c
+        run: |
+          set -euo pipefail
+          cd release
+          assets=(Newscape-Mobile-Ultra-Expedition-v46.apk Newscape-Windows-Expedition-v46.zip Newscape-World-Charter-Server-Overlay.tar.gz Newscape-Runtime36-Source.zip)
           sha256sum "${assets[@]}" > SHA256SUMS
-          gh release create "$RELEASE_TAG" "${assets[@]}" SHA256SUMS --target "$SOURCE_COMMIT" +            --title 'Newscape Runtime 36 / Expedition v46' --notes-file release-notes.md --latest
-
+          gh release create "$RELEASE_TAG" "${assets[@]}" SHA256SUMS --target "$SOURCE_COMMIT" --title 'Newscape Runtime 36 / Expedition v46' --notes-file release-notes.md --latest
