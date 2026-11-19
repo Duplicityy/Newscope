@@ -1,0 +1,106 @@
+name: Publish Runtime 36 owner release
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/publish-runtime36.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: publish-runtime36
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
+      RELEASE_TAG: runtime36-expedition-v46
+    steps:
+      - name: Download verified release packages
+        env:
+          TRANSFER_URL: 'https://declaration-conscious-mercury-der.trycloudflare.com/x4FLhS1jL8EisRHBWNdXtcJuTcpP-N_YEqvwloKLrGI'
+        run: |
+          set -euo pipefail
+          mkdir release
+          cd release
+          cat > TRANSFER.sha256 <<'EOF'
+          5fa515fba83e11b790eac5cb07331c61bf675b58f704074b9c7f7681f08361c4  Newscape-Mobile-Ultra-Expedition-v46.apk
+          e7a52174633697bc184e5699719fb95541a514c554d908076db4e789d3d1d4bf  Newscape-Windows-Expedition-v46.zip
+          c3ac03014cd2020206deea39bbf96ef365a564ac176cd73096be64afc64cfb9a  Newscape-World-Charter-Server-Overlay.tar.gz
+          ccbc3626f6bb41e8c47ca0a22c6d99b618d156153458f29390947996eed76f6d  Newscape-Runtime36-Source.zip
+          3a02409d56de1d187fa734f467aafbc3a71839063390c8f2c99901d3ca7e2026  README-current.md
+          c77f14212993c06618092f02f5d08acf294b512d204a395a272fc95f297d7d00  release-notes.md
+          EOF
+          while read -r digest filename; do
+            curl --fail --silent --show-error --location --retry 3 --connect-timeout 15 --max-time 240 "$TRANSFER_URL/$filename" -o "$filename"
+          done < TRANSFER.sha256
+          sha256sum --check --strict TRANSFER.sha256
+      - name: Commit current source and download instructions
+        id: source
+        run: |
+          set -euo pipefail
+          gh auth setup-git
+          git init checkout
+          git -C checkout remote add origin "https://github.com/$GH_REPO.git"
+          git -C checkout config remote.origin.promisor true
+          git -C checkout config remote.origin.partialclonefilter blob:none
+          git -C checkout sparse-checkout init --cone
+          git -C checkout sparse-checkout set .github
+          git -C checkout fetch --depth=1 --filter=blob:none origin main
+          test "$(git -C checkout rev-parse FETCH_HEAD)" = "$GITHUB_SHA"
+          git -C checkout checkout -b runtime36-publication FETCH_HEAD
+          mkdir -p checkout/docs/releases
+          cp checkout/README.md checkout/docs/releases/legacy-client-downloads.md
+          cp release/README-current.md checkout/README.md
+          python3 - <<'PY'
+          from pathlib import Path, PurePosixPath
+          import hashlib, json, zipfile
+          root = Path("checkout/runtime36-source")
+          root.mkdir(exist_ok=False)
+          with zipfile.ZipFile("release/Newscape-Runtime36-Source.zip") as archive:
+              manifest = json.loads(archive.read("SOURCE-MANIFEST.json"))
+              expected = {row["path"]: row for row in manifest}
+              assert len(manifest) == len(expected)
+              assert set(archive.namelist()) == set(expected) | {"SOURCE-MANIFEST.json"}
+              assert len(archive.namelist()) == len(expected) + 1
+              for name, row in expected.items():
+                  p = PurePosixPath(name)
+                  assert not p.is_absolute() and ".." not in p.parts
+                  data = archive.read(name)
+                  assert len(data) == row["bytes"] and hashlib.sha256(data).hexdigest() == row["sha256"]
+                  target = root / name
+                  target.parent.mkdir(parents=True, exist_ok=True)
+                  target.write_bytes(data)
+              (root / "SOURCE-MANIFEST.json").write_bytes(archive.read("SOURCE-MANIFEST.json"))
+          PY
+          git -C checkout config user.name 'github-actions[bot]'
+          git -C checkout config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git -C checkout add --sparse README.md docs/releases/legacy-client-downloads.md
+          git -C checkout add --sparse --force runtime36-source
+          python3 - <<'PY'
+          import json, pathlib, subprocess
+          root = "runtime36-source/"
+          manifest = json.loads(pathlib.Path("checkout", root, "SOURCE-MANIFEST.json").read_text())
+          expected = {root + row["path"] for row in manifest} | {root + "SOURCE-MANIFEST.json"}
+          tracked = subprocess.check_output(["git", "-C", "checkout", "ls-files", "-z", "--", root], text=True).split("\0")
+          assert set(filter(None, tracked)) == expected
+          PY
+          git -C checkout diff --cached --check -- README.md docs/releases/legacy-client-downloads.md
+          git -C checkout commit -m 'Sync current Newscape Runtime 36 source and client downloads'
+          commit=$(git -C checkout rev-parse HEAD)
+          git -C checkout push origin HEAD:refs/heads/main
+          printf 'commit=%s\n' "$commit" >> "$GITHUB_OUTPUT"
+      - name: Publish private owner release
+        env:
+          SOURCE_COMMIT: ${{ steps.source.outputs.commit }}
+        run: |
+          set -euo pipefail
+          cd release
+          assets=(Newscape-Mobile-Ultra-Expedition-v46.apk Newscape-Windows-Expedition-v46.zip
+                  Newscape-World-Charter-Server-Overlay.tar.gz Newscape-Runtime36-Source.zip)
+          sha256sum "${assets[@]}" > SHA256SUMS
+          gh release create "$RELEASE_TAG" "${assets[@]}" SHA256SUMS --target "$SOURCE_COMMIT" +            --title 'Newscape Runtime 36 / Expedition v46' --notes-file release-notes.md --latest
+
