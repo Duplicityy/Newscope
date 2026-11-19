@@ -1,0 +1,7 @@
+[
+  { "name": "Konar quo Maten", "id": 8623, "x": 2023, "y": 3583, "z": 0, "direction": "S", "walkRange": 0, "world": "PVP" },
+  { "name": "Mazchna", "id": 402, "x": 2026, "y": 3583, "z": 0, "direction": "S", "walkRange": 0, "world": "PVP" },
+  { "name": "Vannaka", "id": 403, "x": 2028, "y": 3583, "z": 0, "direction": "S", "walkRange": 0, "world": "PVP" },
+  { "name": "Chaeldar", "id": 404, "x": 2030, "y": 3583, "z": 0, "direction": "S", "walkRange": 0, "world": "PVP" },
+  { "name": "Krystilia", "id": 7663, "x": 2032, "y": 3583, "z": 0, "direction": "S", "walkRange": 0, "world": "PVP" }
+]

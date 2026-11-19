@@ -1,0 +1,20 @@
+[Unit]
+Description=Newscape private owner gateway
+Wants=network-online.target newscape-game@live.service newscape-cache@live.service
+After=network-online.target newscape-game@live.service newscape-cache@live.service
+PartOf=newscape-game@live.service newscape-cache@live.service
+StartLimitIntervalSec=120
+StartLimitBurst=3
+
+[Service]
+Type=simple
+User=newscape
+Group=newscape
+ExecStart=/usr/bin/python3 /srv/newscape/current/owner-gateway.py --listen 51.38.80.2 --backend 127.0.0.1
+Restart=on-failure
+RestartSec=5
+MemoryMax=128M
+NoNewPrivileges=yes
+
+[Install]
+WantedBy=multi-user.target

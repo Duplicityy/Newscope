@@ -1,0 +1,23 @@
+[Unit]
+Description=Newscape game (%i)
+After=network.target
+StartLimitIntervalSec=300
+StartLimitBurst=3
+
+[Service]
+Type=simple
+User=newscape
+Group=newscape
+UMask=0077
+ExecStart=/bin/bash /srv/newscape/current/run-newscape.sh game %i
+SuccessExitStatus=143
+TimeoutStopSec=90
+Restart=on-failure
+RestartSec=15
+MemoryHigh=5G
+MemoryMax=6G
+OOMPolicy=stop
+NoNewPrivileges=yes
+
+[Install]
+WantedBy=multi-user.target

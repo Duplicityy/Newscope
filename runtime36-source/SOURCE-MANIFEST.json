@@ -1,0 +1,2002 @@
+[
+  {
+    "path": "SOURCE-STATUS.md",
+    "sha256": "ba0f0669520435e3c6abd63dcf9733bd6a8729763b19480c8d0beb3a1718821a",
+    "bytes": 2370
+  },
+  {
+    "path": "android/.gitignore",
+    "sha256": "79954c6f91e36930710b62899703fe310c55f0da5e7a9a447715fa1d7ce26ac7",
+    "bytes": 95
+  },
+  {
+    "path": "android/ULTRA-HD.md",
+    "sha256": "fb777fb99cf87cf22a560f4878528cc104c002e883f474a9b9e4f5d2ae22d45f",
+    "bytes": 6355
+  },
+  {
+    "path": "android/build.gradle.kts",
+    "sha256": "785e8024f5bc9c058f01d68a260b5b0a6bfc3faf6ea2b53ee7a6b52b032ee919",
+    "bytes": 311
+  },
+  {
+    "path": "android/checks/117/fix_position.py",
+    "sha256": "179f26e8d6e036adb8ac26cc2b67574e4888358d1ff454ce48607570c73994b1",
+    "bytes": 1102
+  },
+  {
+    "path": "android/checks/build_frozen_preview.py",
+    "sha256": "abec8668e18e16b71c649033927a00c65f231a3234c0db1242468f14700d2dfe",
+    "bytes": 4102
+  },
+  {
+    "path": "android/checks/ultra-lighting/check_lighting.py",
+    "sha256": "52d5e1460d04cd97e7b4043b02fa222ed61e55e1907e0a060d693c76c95f2dc9",
+    "bytes": 15661
+  },
+  {
+    "path": "android/checks/ultra-lighting/offscreen_gles.py",
+    "sha256": "abc6324f478a5009392c4dcf6ceef592f8289876999ba0354e6045d7b5cee869",
+    "bytes": 8098
+  },
+  {
+    "path": "android/checks/ultra-world/README.md",
+    "sha256": "75e91eff88ade3cf9172665f2e7c6108ee4e28561e05e356d5d3f6f33bbc45c5",
+    "bytes": 3252
+  },
+  {
+    "path": "android/checks/ultra-world/check_world.py",
+    "sha256": "a0ba7baf99beb33d21dd826ea60d2b0f63017d36ac38a50ffe883bc09cdd1f32",
+    "bytes": 6067
+  },
+  {
+    "path": "android/checks/ultra-world/preclip.vert",
+    "sha256": "e5ed99a76ac4e92568abd0d44f5cd01814be4c4589fb835a7c9b10ed75b2a11f",
+    "bytes": 1610
+  },
+  {
+    "path": "android/checks/ultra-world/replay.js",
+    "sha256": "327ab7ff568e2591d9c58a2f070760b31e1be8ca440200adfc82f14af50649ab",
+    "bytes": 20281
+  },
+  {
+    "path": "android/checks/verify_mobile_ultra_apk.py",
+    "sha256": "6a0d9d0b2cb11406ea32ef3d50be6b7c27f5b7472bbfa649f483a362750daa96",
+    "bytes": 4193
+  },
+  {
+    "path": "android/checks/verify_ultra_emitters.py",
+    "sha256": "829b478ccde4b015c313f2e32db231eee5c2c3154833cb444eca82399976cacd",
+    "bytes": 1856
+  },
+  {
+    "path": "android/client-overlays/FirstPersonCameraCheck.java",
+    "sha256": "a19d9e71c1cdc92f11949f22c224674aef9d2ec74d11c8fe67c3b17daae02e27",
+    "bytes": 4961
+  },
+  {
+    "path": "android/client-overlays/MobileMapInputCheck.java",
+    "sha256": "72d90757e0937181ea3a47400ec4e53de4731a3453401379da8382df068b5d19",
+    "bytes": 6873
+  },
+  {
+    "path": "android/client-overlays/NewscapePluginBridge.java",
+    "sha256": "73d9d019122a30c6a9975bb276307bd2b7a44f53abb781a0bf2ebb44fd1ee2b0",
+    "bytes": 425
+  },
+  {
+    "path": "android/client-overlays/OwnerAutomationTransportChecks.java",
+    "sha256": "f898ab55cb5b7f57bba261d57eeef990f04d2757e563ca30780f2fab8995946f",
+    "bytes": 8412
+  },
+  {
+    "path": "android/client-overlays/PatchExpeditionOffer.java",
+    "sha256": "fa0875c612d1c236d6085cce296ac87882c7514f617af5532285976da2cbd8a4",
+    "bytes": 2165
+  },
+  {
+    "path": "android/client-overlays/PatchFirstPersonCamera.java",
+    "sha256": "8c945888070c07f2d53b2cef107793bd17fc5a16784dde9d9ee788d3cde88a87",
+    "bytes": 5824
+  },
+  {
+    "path": "android/client-overlays/PatchMobileMapInput.java",
+    "sha256": "9fdd40ed9ff5cde9eddf58c256e4b739d4dadcd425beabcb83bb44e69e0243a7",
+    "bytes": 5972
+  },
+  {
+    "path": "android/client-overlays/PatchOwnerAutomationClient.java",
+    "sha256": "90847905ea4a675b22cebed911ad9eb3e9bc732ec139ad0e3bc37c6b737a3247",
+    "bytes": 1597
+  },
+  {
+    "path": "android/client-overlays/PatchOwnerAutomationTick.java",
+    "sha256": "4783cce7ae446f0742ab098a8480f874c2e258b625c9753aee8809ca53d33ce5",
+    "bytes": 1748
+  },
+  {
+    "path": "android/client-overlays/PatchRaidClickCommand.java",
+    "sha256": "2ace1d2b669f4b780524adf7e8197c8224f8dd64980425a12e54a478ec40c490",
+    "bytes": 1607
+  },
+  {
+    "path": "android/client-overlays/PatchWorldMap.java",
+    "sha256": "49e6741dc90889cc0f91b9117d656797531b10d6cb6700160cf580a524d7bbce",
+    "bytes": 3818
+  },
+  {
+    "path": "android/client-overlays/UltraSceneLightsCheck.java",
+    "sha256": "4bb012e257cef621b89d374187a4b5af4fc6cdca5c06e7e5a60e7e6fde06b3af",
+    "bytes": 6030
+  },
+  {
+    "path": "android/client-overlays/WorldMapConfirmCheck.java",
+    "sha256": "25e6c5305cd17acfc599db30ea48e03c4117980800301aae18e2226f4a4c470c",
+    "bytes": 4245
+  },
+  {
+    "path": "android/client-overlays/checks/cape/UltraCapeCapture.java",
+    "sha256": "a04ae3981a8984db2241ecdd1cfd3864dfc2f275fddf661a07e2d2d8fdcac0a7",
+    "bytes": 8627
+  },
+  {
+    "path": "android/client-overlays/checks/cape/check_capes.py",
+    "sha256": "23cc4f7ed529c74c820f32808d72bdadc9ff0e6fc8d4b1a4dbe954a76e8f101d",
+    "bytes": 9733
+  },
+  {
+    "path": "android/client-overlays/checks/cape/replay.js",
+    "sha256": "b39d454f9dab9012acdff6d657be61f06acb375ce781338d25674b3ad6efbaae",
+    "bytes": 13013
+  },
+  {
+    "path": "android/client-overlays/src/net/runelite/standalone/CustomDungeoneeringExpedition.java",
+    "sha256": "374daf99e5d9582f090d4af3ae70fb826f0532302ff38435104abda45d7182d6",
+    "bytes": 11081
+  },
+  {
+    "path": "android/client-overlays/src/net/runelite/standalone/CustomLootCompendiumInterface.java",
+    "sha256": "cb160e2320df5a876bdc20b5b25e6b3aa1db3cddff9da9936e4016e2395360a2",
+    "bytes": 21561
+  },
+  {
+    "path": "android/client-overlays/src/net/runelite/standalone/FirstPersonCamera.java",
+    "sha256": "00fadfd8bb8b7d6d76f79ce038a97fa81ca638956138b66360b92b971ee78803",
+    "bytes": 3455
+  },
+  {
+    "path": "android/client-overlays/src/net/runelite/standalone/MobileHdRenderer.java",
+    "sha256": "8a4b4406512deaa783d9d3ddc7d14ef26b6f2772bc8d4f1aa4d45bd1ee289374",
+    "bytes": 19877
+  },
+  {
+    "path": "android/client-overlays/src/net/runelite/standalone/MobileMap.java",
+    "sha256": "ce4346d79a26cb5c21e59b381fc4d85ea0f5ab982adac4b32e433f506721b3c3",
+    "bytes": 5933
+  },
+  {
+    "path": "android/client-overlays/src/net/runelite/standalone/OwnerAutomationClient.java",
+    "sha256": "82e98f9c80afb155bb04e4d0ade75db93b7bde832c9d9e7748ad17b1a7bfc2f1",
+    "bytes": 7447
+  },
+  {
+    "path": "android/client-overlays/src/net/runelite/standalone/RaidClickIndicator.java",
+    "sha256": "9db998a8d6d25a9db3326dcda8ae6998c9587eaa229596fe9d82f01a26a069f4",
+    "bytes": 4497
+  },
+  {
+    "path": "android/client-overlays/src/net/runelite/standalone/UltraSceneLights.java",
+    "sha256": "465fb15b7df7dbcd0c0d74cd8c4cd141b54f99a703f8bf579632b1c71cb782b0",
+    "bytes": 3782
+  },
+  {
+    "path": "android/client-overlays/src/net/runelite/standalone/WorldMapConfirm.java",
+    "sha256": "99cc322cb79eea764c4f5e8dc180534503b299f784789add843619f4ea0c5b4e",
+    "bytes": 6560
+  },
+  {
+    "path": "android/client-overlays/stage_first_person.py",
+    "sha256": "3498c6de807f39de85c9896596c9cfa185ccb85d70c4026e190e2225d45f16b2",
+    "bytes": 2330
+  },
+  {
+    "path": "android/client-overlays/stage_local_map.py",
+    "sha256": "3d72db735b1bf0469924b803a9552291d0e618cec40d62c80806ac0adfdd9045",
+    "bytes": 2054
+  },
+  {
+    "path": "android/client-overlays/stage_mobile_ultra.py",
+    "sha256": "adef89eeb6962a884469cd47abac60aa60c07242ae4d113546815de2ab01f194",
+    "bytes": 2397
+  },
+  {
+    "path": "android/client-overlays/stage_owner_panel.py",
+    "sha256": "5a279e3454694f5f3fae2485d7b624ae36dba254aa0b5d2d1f7f6baded5e272c",
+    "bytes": 1806
+  },
+  {
+    "path": "android/client-overlays/stage_owner_panel_tick.py",
+    "sha256": "ede6f0d9e0ec7be82b62921e9c77235f868585aa5b8d34666d378859c6654e5b",
+    "bytes": 3128
+  },
+  {
+    "path": "android/client-overlays/stage_raid_clicks.py",
+    "sha256": "84cb81e2182bfd6d2a74eee97e915523ec784fc9c6281db396dd118891367d0f",
+    "bytes": 3072
+  },
+  {
+    "path": "android/client-overlays/stage_slayer_settings.py",
+    "sha256": "3a5f756b84f6e9e4d84cee5cba58373c026ceebaf199aed3960d85a2367c83d6",
+    "bytes": 2218
+  },
+  {
+    "path": "android/docs/ANDROID-RENDERER-QUALITY.md",
+    "sha256": "0951c4168a77968025a1ba77965dfc4b0aa83d6b2710d20b9df95cc5d36bfc96",
+    "bytes": 1920
+  },
+  {
+    "path": "android/gradle.properties",
+    "sha256": "f6249e4a8b2f153c5c15745675f0a9d3eb751ce2d8c20844d9c85c082b97ecec",
+    "bytes": 249
+  },
+  {
+    "path": "android/gradle/wrapper/gradle-wrapper.jar",
+    "sha256": "91a239400bb638f36a1795d8fdf7939d532cdc7d794d1119b7261aac158b1e60",
+    "bytes": 60756
+  },
+  {
+    "path": "android/gradle/wrapper/gradle-wrapper.properties",
+    "sha256": "378b5f5cc894b386525a188e725130969132e8c659a5ef9811e9d6a2499a040e",
+    "bytes": 317
+  },
+  {
+    "path": "android/gradlew",
+    "sha256": "f96a757581fe5292465e3f3393380bd11fd8086d450b92e7c693da6513f583fe",
+    "bytes": 8070
+  },
+  {
+    "path": "android/gradlew.bat",
+    "sha256": "c46a27c79007746de5922b17abb6230d64ad8b1ba3ad1585ee5c6543c2a9b129",
+    "bytes": 2674
+  },
+  {
+    "path": "android/graphics117/AndroidGl.java",
+    "sha256": "3ea1da969aeb85f85e5d10dc723c2b54d8541300e436e4ec4d6b18cc76032302",
+    "bytes": 23214
+  },
+  {
+    "path": "android/graphics117/BUFFER-FIX.md",
+    "sha256": "14cfdc47ba7b4d9bdfa86c17c7019e40e8a229d4c2beafdbfd54bc33fb13f3e2",
+    "bytes": 1131
+  },
+  {
+    "path": "android/graphics117/BufferBindingCheck.java",
+    "sha256": "314d8388e3c6341ad496bb889f138b6ed7b49909f1b9a03bfe08945585f11b45",
+    "bytes": 2003
+  },
+  {
+    "path": "android/graphics117/DIRECT-DISPLAY.md",
+    "sha256": "d3c597b5a21471fc47bb0a53aa5ac532697776d68484de5217588b8fbbfdd8eb",
+    "bytes": 2567
+  },
+  {
+    "path": "android/graphics117/DirectHandoffCheck.cpp",
+    "sha256": "be5587163522097541a81ec6d92a712922aada8eae1af59f4cf915e21a374ad5",
+    "bytes": 734
+  },
+  {
+    "path": "android/graphics117/FRAME-PERFORMANCE.md",
+    "sha256": "1f197ed84f6fbbe1ad57879d9b57bded2ad61dd4e56489fca030f0cf7fa31c1f",
+    "bytes": 3056
+  },
+  {
+    "path": "android/graphics117/FramePublicationCheck.java",
+    "sha256": "01f55d14314975d988b88319b579440648e612775be81b814f671230b6a5a8d2",
+    "bytes": 5190
+  },
+  {
+    "path": "android/graphics117/HdPlugin.java",
+    "sha256": "3e90161d7ca2754f4670f9045e1bb39cb324e75f469d8cf2d836c46d64ee1b16",
+    "bytes": 98373
+  },
+  {
+    "path": "android/graphics117/HdPluginConfig.java",
+    "sha256": "b51790107dee07bea7a2c57b6c28ff812383deb099815cf50f03e45e16e0ef8f",
+    "bytes": 13903
+  },
+  {
+    "path": "android/graphics117/NativeBindings.java",
+    "sha256": "a6544ca06021129f5ff6110c4f43e25aa2c7292f55fffb482a0928fbeca3c589",
+    "bytes": 3688
+  },
+  {
+    "path": "android/graphics117/Owner117Frames.java",
+    "sha256": "02780f811728b8ed1eecffafe040830cdbd5d5e5c66b6a84a9474d361a7a7c23",
+    "bytes": 2685
+  },
+  {
+    "path": "android/graphics117/PublicApiCheck.java",
+    "sha256": "8be45b6a0b49cf0458bab96ebbacbacf377160b6d15a26cad1bf20d775180d6b",
+    "bytes": 1266
+  },
+  {
+    "path": "android/graphics117/ReadbackQueueCheck.cpp",
+    "sha256": "ba51431270aa60aa4688520bc76ec3bc28c3ef4fddb67336a7fd3dcbce667c5e",
+    "bytes": 2553
+  },
+  {
+    "path": "android/graphics117/RenderResolution.java",
+    "sha256": "78e6f618edf59f35a88feb6469b824bbc900dcc0c9a25fff63ce2d6e87e225a4",
+    "bytes": 2121
+  },
+  {
+    "path": "android/graphics117/RenderResolutionCheck.java",
+    "sha256": "e6dea3b37ba36388bb617a973dd2b5b88bd80f579b6fbe3177acddaf024b211e",
+    "bytes": 3199
+  },
+  {
+    "path": "android/graphics117/clock/AndroidRenderClock.java",
+    "sha256": "4ca1bbbc5a15af3b2d47631f81bbf5c96a153b53e8e0d2b1296e7081888881fc",
+    "bytes": 1817
+  },
+  {
+    "path": "android/graphics117/clock/PatchRenderClock.java",
+    "sha256": "71183946b49e7e5d5ec5c6b5ad5ce118b7120762a349edf8514e50522def70ae",
+    "bytes": 2417
+  },
+  {
+    "path": "android/graphics117/clock/RenderClockCheck.java",
+    "sha256": "cf7957390643463b80ca84334a3f9f6f282ac137ceb99cda69f0427dfe65a98f",
+    "bytes": 993
+  },
+  {
+    "path": "android/graphics117/newscape117.cpp",
+    "sha256": "744a3867c1e7cc52c4a6e073f1679c9f07c2af15fd50bbd98929807e2975dd87",
+    "bytes": 102133
+  },
+  {
+    "path": "android/graphics117/package_assets.py",
+    "sha256": "c759a534f572272e9c87b0767641f218df6031b00060d7a33f85a58241d6f11e",
+    "bytes": 1712
+  },
+  {
+    "path": "android/graphics117/package_direct_assets.py",
+    "sha256": "14ee430e98163940558eedc0e745c1874ae4995e0c527500b3e97cdf38193b11",
+    "bytes": 2305
+  },
+  {
+    "path": "android/graphics117/readback_queue.h",
+    "sha256": "c9b8aa5d7de296d337b6af9381cc9e6c388817272eb7a1eb0a53f419c663b985",
+    "bytes": 2278
+  },
+  {
+    "path": "android/graphics117/stage_quality_runtime.py",
+    "sha256": "9bab3b2af863d1869d788aa729d850880b62b3cf1d48becefb11dff226c02a78",
+    "bytes": 2518
+  },
+  {
+    "path": "android/kronos/build.gradle.kts",
+    "sha256": "0ca874cfaa82595602f077cf4bc69de13c05715cbcc53a68c7c3a10e8e16b30f",
+    "bytes": 3324
+  },
+  {
+    "path": "android/kronos/src/main/AndroidManifest.xml",
+    "sha256": "09c0c537373c5021a4bf1e89029bc53892a9be98024e2064941c262c49bdaf3b",
+    "bytes": 1717
+  },
+  {
+    "path": "android/kronos/src/main/assets/mobile-hd-notices.txt",
+    "sha256": "ce563b727a0cb9b55104889f96e1933bf067706853ba233eb843765ab83695a1",
+    "bytes": 1536
+  },
+  {
+    "path": "android/kronos/src/main/cpp/CMakeLists.txt",
+    "sha256": "d65ff0b3d460a80bf9e891cf60fb321dc4b345982e9ad004753e4eebfeae96fc",
+    "bytes": 620
+  },
+  {
+    "path": "android/kronos/src/main/cpp/direct117_handoff.h",
+    "sha256": "b1deeae8f1826ef0e6a9ae9022bc023ace46f8393ad19cbb2f68c55150ca3ac3",
+    "bytes": 910
+  },
+  {
+    "path": "android/kronos/src/main/cpp/hd_handoff.h",
+    "sha256": "0ede70f257dfcd93eba834b9f8abb73410ec3d40e65737a1bb83a041768bcd13",
+    "bytes": 1670
+  },
+  {
+    "path": "android/kronos/src/main/cpp/kronos_jvm.cpp",
+    "sha256": "7ea5b911b6917e6a39f72e06cd04aa1d1aba21ab52840ae71fc25cd706108638",
+    "bytes": 28014
+  },
+  {
+    "path": "android/kronos/src/main/cpp/mobile_hd.cpp",
+    "sha256": "d56727157f89c22e18f8826968cab5aea7b395473791db2d5d23eb77d5f0f17f",
+    "bytes": 25977
+  },
+  {
+    "path": "android/kronos/src/main/cpp/mobile_hd.h",
+    "sha256": "7a6b89512d0e2ca8e321e4b947e1e5a44ee6a8c740567c6ff2302b897cad3b42",
+    "bytes": 380
+  },
+  {
+    "path": "android/kronos/src/main/cpp/ultra.h",
+    "sha256": "59a7ef2c996c06298f96453d205f10a5925ea3edc6adfe1f57417b340a440ec8",
+    "bytes": 9568
+  },
+  {
+    "path": "android/kronos/src/main/cpp/ultra_local_lights.h",
+    "sha256": "892a6e39f141598ca4e0184a37c10b6ec2e5876d86798a39b14c1b598cc2b54a",
+    "bytes": 1593
+  },
+  {
+    "path": "android/kronos/src/main/cpp/ultra_shadow_filter.inc",
+    "sha256": "c1f44c71bcefda766ede7cf1413082345c69a553775adad77c56343755b291fa",
+    "bytes": 3327
+  },
+  {
+    "path": "android/kronos/src/main/cpp/ultra_shadow_maps.h",
+    "sha256": "ddc5aea3545336a07cfd62613246a9acbe86aafd2d1018acb235f1b2136a1a30",
+    "bytes": 7618
+  },
+  {
+    "path": "android/kronos/src/main/cpp/ultra_surface.h",
+    "sha256": "56b6b0ca81cbb9a603f8ad3dca02cd83bb5bd906629e10545664728610fd9ad6",
+    "bytes": 7497
+  },
+  {
+    "path": "android/kronos/src/main/java/local/kronos/mobile/AutomationActivity.java",
+    "sha256": "51bd181a71ea0f7711f71c7f74d8f1c207ee690b0673930b64a57cd302356d5a",
+    "bytes": 20058
+  },
+  {
+    "path": "android/kronos/src/main/java/local/kronos/mobile/BackgroundSessionPolicy.java",
+    "sha256": "4c8ce738833fcb4ebd43931da6a186af4d89d2fb3314acc7511d584ab9d14fa0",
+    "bytes": 1184
+  },
+  {
+    "path": "android/kronos/src/main/java/local/kronos/mobile/DesktopPanels.java",
+    "sha256": "eae54265d4b2ac9365ceba2e94913a813472ad8d1dc04eb2449a55d204a6621e",
+    "bytes": 21429
+  },
+  {
+    "path": "android/kronos/src/main/java/local/kronos/mobile/GameRuntime.java",
+    "sha256": "7bb19494b86a66c177404b058c487cd6256b087638f9b5b32e223661538cb818",
+    "bytes": 5256
+  },
+  {
+    "path": "android/kronos/src/main/java/local/kronos/mobile/GameSessionService.java",
+    "sha256": "6aa4d52a41ad9ec09046423de4221978d33ef422af4cc2eb1b6f5c96949ab0d7",
+    "bytes": 5246
+  },
+  {
+    "path": "android/kronos/src/main/java/local/kronos/mobile/LayoutDrag.java",
+    "sha256": "110f2968db311a39e564d2c6fd3feb037715d4b800516795579730c224fc25c9",
+    "bytes": 1308
+  },
+  {
+    "path": "android/kronos/src/main/java/local/kronos/mobile/MainActivity.java",
+    "sha256": "2f2ab62beae4db2d4d1ca0e75bb3c5eb51816089c427aa87a988f0d10b10f67c",
+    "bytes": 48540
+  },
+  {
+    "path": "android/kronos/src/main/java/local/kronos/mobile/OwnerEndpoint.java",
+    "sha256": "5f0f62bbba58d204f778f9025b0dd176f65d78f22a872eedef31883af692726a",
+    "bytes": 399
+  },
+  {
+    "path": "android/kronos/src/main/java/local/kronos/mobile/PluginBridgeClient.java",
+    "sha256": "0e229c03f162df60effcd0b447999aec3f0705465946fc08f31440731649a385",
+    "bytes": 2827
+  },
+  {
+    "path": "android/kronos/src/main/java/local/kronos/mobile/PluginPanel.java",
+    "sha256": "66804555ed8ed2735d649df090bc35c800cec4d1455896c9e866b92730482493",
+    "bytes": 31072
+  },
+  {
+    "path": "android/kronos/src/main/java/local/kronos/mobile/ScreenLayout.java",
+    "sha256": "2c0fb362ea35c43a0422dc8609d84a56dbe17fae908ddd9cf6edfc3983d9c7c4",
+    "bytes": 1066
+  },
+  {
+    "path": "android/kronos/src/main/java/local/kronos/mobile/TouchControls.java",
+    "sha256": "41ebdab3a44feb93e89c98ce3242eaec8653dc73bfda7554c421298b9e0781ca",
+    "bytes": 4158
+  },
+  {
+    "path": "android/kronos/src/main/java/local/kronos/mobile/TouchRegions.java",
+    "sha256": "0024f4bcc18d2e230686ccdbec71685f15128161cb24f536513b221d39298f15",
+    "bytes": 809
+  },
+  {
+    "path": "android/kronos/src/main/res/drawable/ic_kronos.xml",
+    "sha256": "33068c14ad73ab65faf1a3e5f0fc3ab41153dc59e2ef03df2343cfdc48bea994",
+    "bytes": 375
+  },
+  {
+    "path": "android/kronos/src/main/res/drawable/ic_newscape.png",
+    "sha256": "026aa0915e8b013c29677a7ef1f7b7394c56c9b70016824775c52d4264ef0376",
+    "bytes": 30014
+  },
+  {
+    "path": "android/kronos/src/main/res/drawable/ic_owner_test.xml",
+    "sha256": "28830261a5b83452fb0c3f1a08e5e301eebdc7c6ee277ef4eb4956c7a6605060",
+    "bytes": 535
+  },
+  {
+    "path": "android/settings.gradle.kts",
+    "sha256": "8644736c2e57ff63981330a8fdcb3565841bc22f84bc92c1b7e4d0044209b586",
+    "bytes": 332
+  },
+  {
+    "path": "client-packaging/Build-Client-Update.ps1",
+    "sha256": "46c66075ee51a7c91c1b3d80663a5b9096e2eb7bbe373e168de1d7f5dee5728f",
+    "bytes": 3440
+  },
+  {
+    "path": "client-packaging/Sign-Android-Update.ps1",
+    "sha256": "e10314b327045ba3bb39ccf9a8e72900a9150f7fd0c01a043ebeb03330e04425",
+    "bytes": 2563
+  },
+  {
+    "path": "client-packaging/package_apk.py",
+    "sha256": "fa54052a7ec5c6c7243a2b4056f84b0320f5e8b43ecc387b6824c132973b9a22",
+    "bytes": 1379
+  },
+  {
+    "path": "client-packaging/windows/Play Newscape Expedition.cmd",
+    "sha256": "28ebe6b35cc2ce9d0f742436b32d18e77bd2a9d5726dc01c390b85d363187622",
+    "bytes": 862
+  },
+  {
+    "path": "raid-source-reference/Kronos-master/docs/dungeoneering/OWNER-IDUNGEON.md",
+    "sha256": "62058898df6011ae17a4452070ef11b1958e4cab6f9371e4c22e383f033600f2",
+    "bytes": 3542
+  },
+  {
+    "path": "raid-source-reference/Kronos-master/docs/loot-compendium/INTEGRATION.md",
+    "sha256": "a08ebdb3f9a1bd04fc8f2d4729b0457c8ed8919cb530382e00be584de5fbec61",
+    "bytes": 8841
+  },
+  {
+    "path": "raid-source-reference/Kronos-master/docs/raids/ANDROID-RELEASE-BUILD.md",
+    "sha256": "924bfac8a7e7b3360fc14a88fb14428c10c905d0403dfb7a4fda651349568629",
+    "bytes": 2505
+  },
+  {
+    "path": "raid-source-reference/Kronos-master/docs/raids/ASSET-ADAPTER.md",
+    "sha256": "be43c4fa7ff3ce6d4d6fe884358fd37dd2ddf06f675a53c491aaa1b09c704266",
+    "bytes": 10875
+  },
+  {
+    "path": "raid-source-reference/Kronos-master/docs/raids/DROPIN-PACK.md",
+    "sha256": "932eb4091ace6429484f8bf078d952869bce8c3001a8bd5617b19e0321f095a8",
+    "bytes": 17323
+  },
+  {
+    "path": "raid-source-reference/Kronos-master/docs/raids/NEAR-REALITY-EXTRAS-AUDIT.md",
+    "sha256": "dc566ba503897591ad91e163d558b5d731b7d795fb1730ec49f1d5e7b2f0a1d9",
+    "bytes": 8960
+  },
+  {
+    "path": "raid-source-reference/Kronos-master/docs/raids/OWNER-RAID-AUTO.md",
+    "sha256": "29ed50624fed38dedcacf0740a25d82dc7f53c54dfbd0808cea0168773537367",
+    "bytes": 2041
+  },
+  {
+    "path": "raid-source-reference/Kronos-master/docs/raids/PUZZLES-PORT.md",
+    "sha256": "ca655337935564e19382bb5f09c32c2246e1a297329e9427eb01e7f4d276e975",
+    "bytes": 6625
+  },
+  {
+    "path": "raid-source-reference/Kronos-master/docs/raids/TOA-PORT-COVERAGE.md",
+    "sha256": "f1fc822c1f8640923aca8b62485cb2baa16e4a3ee17055957bf358a43d8cbe47",
+    "bytes": 10109
+  },
+  {
+    "path": "raid-source-reference/Kronos-master/docs/raids/TOB-PORT.md",
+    "sha256": "28104b1f8c604d0b3050891a6e0f42175f3a761907e7d363490448d868231098",
+    "bytes": 8959
+  },
+  {
+    "path": "raid-source-reference/Kronos-master/docs/raids/WARDENS-PORT.md",
+    "sha256": "98fc23265b1a5f7515d01b11516d863180b5933d1181798a8c3d2119d935e05a",
+    "bytes": 4645
+  },
+  {
+    "path": "raid-source-reference/Kronos-master/kronos-server/src/main/java/io/ruin/Server.java",
+    "sha256": "369e4efdc5761b527e50083e3acb8bb86799a47d04d88219e6f01c9a15507fce",
+    "bytes": 12091
+  },
+  {
+    "path": "raid-source-reference/Kronos-master/kronos-server/src/main/java/io/ruin/model/activities/dungeoneering/DungeoneeringAssets.java",
+    "sha256": "bb543b6f307d571f158f24af228508f0db71cd662a1eab3dbb8f3837d929c04e",
+    "bytes": 5215
+  },
+  {
+    "path": "raid-source-reference/Kronos-master/kronos-server/src/main/java/io/ruin/model/activities/dungeoneering/DungeoneeringProgress.java",
+    "sha256": "bf9171928230c059b4288c82f1d22f7942f010f66e09b5867f1d7abe8767c262",
+    "bytes": 3144
+  },
+  {
+    "path": "raid-source-reference/Kronos-master/kronos-server/src/main/java/io/ruin/model/activities/dungeoneering/IDungeon.java",
+    "sha256": "437fb1911e71d6b600fd4269de4565761371712281529568f7debf615aae0fa4",
+    "bytes": 18030
+  },
+  {
+    "path": "raid-source-reference/Kronos-master/kronos-server/src/main/java/io/ruin/model/activities/dungeoneering/IDungeonActions.java",
+    "sha256": "1c514487bb12e4ec582bf0208234a7238a36a5a54f1d9971f6e2f3fed8ce7278",
+    "bytes": 9197
+  },
+  {
+    "path": "raid-source-reference/Kronos-master/kronos-server/src/main/java/io/ruin/model/activities/dungeoneering/IDungeonBossPlanner.java",
+    "sha256": "183ea75af51bc89b250af8b3e40cdb58432c0493d159b2d9c80c0f5e8701fd5d",
+    "bytes": 15973
+  },
+  {
+    "path": "raid-source-reference/Kronos-master/kronos-server/src/main/java/io/ruin/model/activities/dungeoneering/IDungeonCombatPlanner.java",
+    "sha256": "ca388ab6e5acadfc40b1dafe3e8a7182f5024b459e6acefac0d921314502b29b",
+    "bytes": 14897
+  },
+  {
+    "path": "raid-source-reference/Kronos-master/kronos-server/src/main/java/io/ruin/model/activities/dungeoneering/IDungeonInterface.java",
+    "sha256": "cfe2790c2268b72fb7853537555fd808cb550641e4666a5288afa167de2074c9",
+    "bytes": 9507
+  },
+  {
+    "path": "raid-source-reference/Kronos-master/kronos-server/src/main/java/io/ruin/model/activities/dungeoneering/IDungeonPath.java",
+    "sha256": "5579c9857180ab5673c0eebe5a5250a0f6a01789c331b7f8ac23115a74a46ed3",
+    "bytes": 2734
+  },
+  {
+    "path": "raid-source-reference/Kronos-master/kronos-server/src/main/java/io/ruin/model/activities/dungeoneering/IDungeonPuzzlePlanner.java",
+    "sha256": "6be371e95bcf7f8c0732cf24c114a73700746a3d115d9b288330bd8aeb55d2f3",
+    "bytes": 14873
+  },
+  {
+    "path": "raid-source-reference/Kronos-master/kronos-server/src/main/java/io/ruin/model/activities/dungeoneering/IDungeonSettings.java",
+    "sha256": "3105af8c3af20235dcb40e6583d2c4e7a0ac790e67a1a9bd2fdfd6b73d55b88e",
+    "bytes": 2677
+  },
+  {
+    "path": "raid-source-reference/Kronos-master/kronos-server/src/main/java/io/ruin/model/activities/raids/NearRealityRaidAssets.java",
+    "sha256": "6246830ef3f1b8316225a7635a8ed472c18986d4231572a635858ef8d5feab4e",
+    "bytes": 11527
+  },
+  {
+    "path": "raid-source-reference/Kronos-master/kronos-server/src/main/java/io/ruin/model/activities/raids/auto/RaidAuto.java",
+    "sha256": "a60eb33d7c6c334e63c51dae017892d829a07400bb8d781136dbbff5ef01736e",
+    "bytes": 13728
+  },
+  {
+    "path": "raid-source-reference/Kronos-master/kronos-server/src/main/java/io/ruin/model/activities/raids/auto/RaidAutoAccess.java",
+    "sha256": "7e6519ee43f5fda253ca8609979e1dd1fd5c5520567974a21bf0f9f74af3ca36",
+    "bytes": 4663
+  },
+  {
+    "path": "raid-source-reference/Kronos-master/kronos-server/src/main/java/io/ruin/model/activities/raids/auto/RaidAutoActions.java",
+    "sha256": "a6a73af65be861dcc05f90cbdd57f2c1f9c43ac1219c2a3e4d20e04b4b06f4ca",
+    "bytes": 11870
+  },
+  {
+    "path": "raid-source-reference/Kronos-master/kronos-server/src/main/java/io/ruin/model/activities/raids/toa/port/AkkhaEncounter.java",
+    "sha256": "649cf2f11aa3a9412af7bf58cf826b8a5e387d9d90ab89e4972a1df62bc08dc8",
+    "bytes": 10802
+  },
+  {
+    "path": "raid-source-reference/Kronos-master/kronos-server/src/main/java/io/ruin/model/activities/raids/toa/port/BabaEncounter.java",
+    "sha256": "11f4847d688c93e60076b8fdadfce97fb45d8b7ea85970406c0f1b0d1e7b7619",
+    "bytes": 10022
+  },
+  {
+    "path": "raid-source-reference/Kronos-master/kronos-server/src/main/java/io/ruin/model/activities/raids/toa/port/KephriEncounter.java",
+    "sha256": "16a507576e0fc3ee291004d4a7ee4edde3c1f8067538a19ce33c5ffee33b9ab3",
+    "bytes": 14074
+  },
+  {
+    "path": "raid-source-reference/Kronos-master/kronos-server/src/main/java/io/ruin/model/activities/raids/toa/port/KephriRules.java",
+    "sha256": "8bf77cd9879306372b2cb531d68995c3b0a1b0e24d1a6d8d0545fb58180284c5",
+    "bytes": 1337
+  },
+  {
+    "path": "raid-source-reference/Kronos-master/kronos-server/src/main/java/io/ruin/model/activities/raids/toa/port/NativeToaEncounter.java",
+    "sha256": "a8d4faa8ed8410d6ff25d2198f608a3b9241e36f9c379b5144f62179a3c4e6c3",
+    "bytes": 7442
+  },
+  {
+    "path": "raid-source-reference/Kronos-master/kronos-server/src/main/java/io/ruin/model/activities/raids/toa/port/NativeToaRewards.java",
+    "sha256": "66af3bb8dc9876e0561f623887c9c946bde13d7861eb6f97e710f0c4bf78da2f",
+    "bytes": 4651
+  },
+  {
+    "path": "raid-source-reference/Kronos-master/kronos-server/src/main/java/io/ruin/model/activities/raids/toa/port/RootToaPuzzleData.java",
+    "sha256": "c4f99e56f016c4c12b1968f507390a412583f923c49fa508a49d9696bf316301",
+    "bytes": 8157
+  },
+  {
+    "path": "raid-source-reference/Kronos-master/kronos-server/src/main/java/io/ruin/model/activities/raids/toa/port/RootToaPuzzles.java",
+    "sha256": "dd885339bcaee6047ee3f6503b2ba48f5f44cf5a0d14c7c1dee7ae6bef55a8af",
+    "bytes": 49825
+  },
+  {
+    "path": "raid-source-reference/Kronos-master/kronos-server/src/main/java/io/ruin/model/activities/raids/toa/port/ToaAutoBossPlanner.java",
+    "sha256": "105bbc50e83a70eee11132d7c799c15b337c3a356537bf42c838c6a23bc51a02",
+    "bytes": 30262
+  },
+  {
+    "path": "raid-source-reference/Kronos-master/kronos-server/src/main/java/io/ruin/model/activities/raids/toa/port/ToaAutoPuzzlePlanner.java",
+    "sha256": "2b73f3ec70501ddb240b61a06e2ea82b27a29193dbdb21b02694e045f99c86d4",
+    "bytes": 34558
+  },
+  {
+    "path": "raid-source-reference/Kronos-master/kronos-server/src/main/java/io/ruin/model/activities/raids/toa/port/ToaEncounter.java",
+    "sha256": "6fbbe5debd6a596c4b9466b512e6aecb9bff0a77dfb12fce837b2086ab870704",
+    "bytes": 220
+  },
+  {
+    "path": "raid-source-reference/Kronos-master/kronos-server/src/main/java/io/ruin/model/activities/raids/toa/port/ToaGeometry.java",
+    "sha256": "e2302136f8ffc2a2ba86bb431eba24ef9542e2f393501f0cc759c3079ffb98e0",
+    "bytes": 5091
+  },
+  {
+    "path": "raid-source-reference/Kronos-master/kronos-server/src/main/java/io/ruin/model/activities/raids/toa/port/ToaRaidAuto.java",
+    "sha256": "1447481fbb1ea312a8c1207c0ee777c73fd639ace5d267a2ad968813643e7d6a",
+    "bytes": 20665
+  },
+  {
+    "path": "raid-source-reference/Kronos-master/kronos-server/src/main/java/io/ruin/model/activities/raids/toa/port/ToaRestRooms.java",
+    "sha256": "a873796649361ff6e80a7c59b511fb92ab650282de034071be5b2991a21d82ef",
+    "bytes": 3530
+  },
+  {
+    "path": "raid-source-reference/Kronos-master/kronos-server/src/main/java/io/ruin/model/activities/raids/toa/port/ToaRewardClaims.java",
+    "sha256": "a3bd9434d8d98f2f314d1a185de465607f7177d777996d7084ae548948a76f34",
+    "bytes": 6810
+  },
+  {
+    "path": "raid-source-reference/Kronos-master/kronos-server/src/main/java/io/ruin/model/activities/raids/toa/port/ToaRewardMath.java",
+    "sha256": "1cbc50c9cc10a58c83fb1f9ae11ee726c8312f4a530f0b59dd65babfcf36f495",
+    "bytes": 811
+  },
+  {
+    "path": "raid-source-reference/Kronos-master/kronos-server/src/main/java/io/ruin/model/activities/raids/toa/port/ToaRoom.java",
+    "sha256": "e2bf1c26c692a4553ee41b719ade3c2586a08d8f4aa82c2a77163fb876afa1c2",
+    "bytes": 998
+  },
+  {
+    "path": "raid-source-reference/Kronos-master/kronos-server/src/main/java/io/ruin/model/activities/raids/toa/port/ToaSupplies.java",
+    "sha256": "b0cf7cec68229f1dc7a65475546e8d24aa1ab56a8b54b860d75bb0a35bedb542",
+    "bytes": 13632
+  },
+  {
+    "path": "raid-source-reference/Kronos-master/kronos-server/src/main/java/io/ruin/model/activities/raids/toa/port/TombsOfAmascutRaid.java",
+    "sha256": "01847ed5d08f9cbf20d393dca7df6c2b7c69fd11cbc9000335c3ccde542b0ed9",
+    "bytes": 20222
+  },
+  {
+    "path": "raid-source-reference/Kronos-master/kronos-server/src/main/java/io/ruin/model/activities/raids/toa/port/WardensEncounter.java",
+    "sha256": "d9c132fe133c22113252965e6ea42f1a9dcf3ee675aca7fc0c4a22cbf636fef9",
+    "bytes": 32848
+  },
+  {
+    "path": "raid-source-reference/Kronos-master/kronos-server/src/main/java/io/ruin/model/activities/raids/toa/port/WardensPatternData.java",
+    "sha256": "c40b1d67948d855d6fac96edcbfeb5ef10e8b16e2fca6481d096590064de8a55",
+    "bytes": 42344
+  },
+  {
+    "path": "raid-source-reference/Kronos-master/kronos-server/src/main/java/io/ruin/model/activities/raids/toa/port/ZebakEncounter.java",
+    "sha256": "7ef616d5c6e330e234f51d29be3cc338d36097c6d1f43623ec8f0fe1565f1ac8",
+    "bytes": 17119
+  },
+  {
+    "path": "raid-source-reference/Kronos-master/kronos-server/src/main/java/io/ruin/model/activities/raids/toa/port/ZebakRules.java",
+    "sha256": "35046fa4681a704e42b22542a5f7f88cb852812b12300fec3bc31e540ac8781f",
+    "bytes": 980
+  },
+  {
+    "path": "raid-source-reference/Kronos-master/kronos-server/src/main/java/io/ruin/model/activities/raids/tob/port/TheatreCombat.java",
+    "sha256": "626d2e24d74f2be6a859d56c5cdcde5f01d14cb156eff9cc834522385f0ced27",
+    "bytes": 17986
+  },
+  {
+    "path": "raid-source-reference/Kronos-master/kronos-server/src/main/java/io/ruin/model/activities/raids/tob/port/TheatreDawnbringer.java",
+    "sha256": "228ffe73e6d71e65f53e00caa9eb8fc1ea9d8e619651eb399f962330a10f885f",
+    "bytes": 6560
+  },
+  {
+    "path": "raid-source-reference/Kronos-master/kronos-server/src/main/java/io/ruin/model/activities/raids/tob/port/TheatreOfBloodRaid.java",
+    "sha256": "6881e2b16931fec45048e9d79b6a2e54f319f92c6a5bdc2e15cbc17bc7fd5704",
+    "bytes": 24920
+  },
+  {
+    "path": "raid-source-reference/Kronos-master/kronos-server/src/main/java/io/ruin/model/activities/raids/tob/port/TheatreProgress.java",
+    "sha256": "c438264be043b9f14594be49542b20fd366ab3db1faa39f41e684d7b0fa14625",
+    "bytes": 537
+  },
+  {
+    "path": "raid-source-reference/Kronos-master/kronos-server/src/main/java/io/ruin/model/activities/raids/tob/port/TheatreRaidAuto.java",
+    "sha256": "678202c97a306433f013f4dcdc632678eefec9c1b7b64b3f7f364d78efeaeaaa",
+    "bytes": 25713
+  },
+  {
+    "path": "raid-source-reference/Kronos-master/kronos-server/src/main/java/io/ruin/model/activities/raids/tob/port/TheatreVerzik.java",
+    "sha256": "d1fcf2f37cea3e3e6a3685fff27647ca8317f5159cb53ac403eb58193b16d31c",
+    "bytes": 13036
+  },
+  {
+    "path": "raid-source-reference/Kronos-master/kronos-server/src/main/java/io/ruin/model/entity/npc/NPC.java",
+    "sha256": "2fe8f1f2b544a450d25097130f365b4cfa767eea3fbdc13c4b57ef5b6e8218ba",
+    "bytes": 13171
+  },
+  {
+    "path": "raid-source-reference/Kronos-master/kronos-server/src/main/java/io/ruin/model/entity/player/Player.java",
+    "sha256": "1af08fd1ba91fc01450b9e7a8adc0b72f669fa54ffc2b66310b66d3acb5d552a",
+    "bytes": 51233
+  },
+  {
+    "path": "raid-source-reference/Kronos-master/kronos-server/src/main/java/io/ruin/model/entity/player/PlayerCombat.java",
+    "sha256": "b717a3825499aa0bf52fa44869570ae655b51500c048c6d2068772584edfbfd4",
+    "bytes": 65224
+  },
+  {
+    "path": "raid-source-reference/Kronos-master/kronos-server/src/main/java/io/ruin/model/entity/shared/Movement.java",
+    "sha256": "0f6ec7171211628bc405215d5dac82f3de10a212b2156baff0ea867b9b61657c",
+    "bytes": 3653
+  },
+  {
+    "path": "raid-source-reference/Kronos-master/kronos-server/src/main/java/io/ruin/model/inter/handlers/TeleportInterface.java",
+    "sha256": "69bbab77f2e8a6987103fc23c769fbcf6aa0bf223192815b9a19963eca97fc03",
+    "bytes": 25981
+  },
+  {
+    "path": "raid-source-reference/Kronos-master/kronos-server/src/main/java/io/ruin/model/inter/loot/LootCompendium.java",
+    "sha256": "ac78442597efc2c48cb3a08810bcd5e6ca94962dba7979c4962728ce1e5483cd",
+    "bytes": 20353
+  },
+  {
+    "path": "raid-source-reference/Kronos-master/kronos-server/src/main/java/io/ruin/model/inter/loot/LootCompendiumRates.java",
+    "sha256": "1fc1d72976a798da10a8dc1108d436511267ca338949fbddb9aa499830874d07",
+    "bytes": 3495
+  },
+  {
+    "path": "raid-source-reference/Kronos-master/kronos-server/src/main/java/io/ruin/model/inter/loot/LootCompendiumSources.java",
+    "sha256": "afb1e11deb68d52db886b68a21f73980b4afaf56e9b96bad919b43139cab768c",
+    "bytes": 22580
+  },
+  {
+    "path": "raid-source-reference/Kronos-master/kronos-server/src/main/java/io/ruin/model/item/containers/Trade.java",
+    "sha256": "70afb0ad74d561331432b1ef5e5f81ea741dd4f55fd69132d307207270d957c5",
+    "bytes": 18217
+  },
+  {
+    "path": "raid-source-reference/Kronos-master/kronos-server/src/main/java/io/ruin/model/item/containers/bank/Bank.java",
+    "sha256": "b97482397897bafc09e191f51655699468b9f0821ca09fbff32311d70112b67a",
+    "bytes": 34617
+  },
+  {
+    "path": "raid-source-reference/Kronos-master/kronos-server/src/main/java/io/ruin/model/map/Region.java",
+    "sha256": "ec199ffad35bfb3c1b911d29e3ce22826555a4ca8c3dbc046a7cb658e0dd7251",
+    "bytes": 8457
+  },
+  {
+    "path": "raid-source-reference/Kronos-master/kronos-server/src/main/java/io/ruin/model/map/route/routes/TargetRoute.java",
+    "sha256": "a392b9b92ae8b9a69519830d87262214870d100cae7f6416d79a3168659270cb",
+    "bytes": 7929
+  },
+  {
+    "path": "raid-source-reference/Kronos-master/kronos-server/src/main/java/io/ruin/network/incoming/IncomingDecoder.java",
+    "sha256": "3074e265c742963b05e7baedd6461329f9952a7a7d5f8db120314ca2f891898f",
+    "bytes": 2324
+  },
+  {
+    "path": "raid-source-reference/Kronos-master/kronos-server/src/main/java/io/ruin/network/incoming/handlers/ActionButtonHandler.java",
+    "sha256": "6b796155ed5000bc0100d56ac6b11e06f09101f7ddaa109797197f83c81e8f95",
+    "bytes": 5465
+  },
+  {
+    "path": "raid-source-reference/Kronos-master/kronos-server/src/main/java/io/ruin/network/incoming/handlers/CommandHandler.java",
+    "sha256": "b4c7253d50e60f2f4f74ffb547ac5c8d6d1140dc40768d806d3df28be8e3b60a",
+    "bytes": 150009
+  },
+  {
+    "path": "raid-source-reference/Kronos-master/kronos-server/src/main/java/io/ruin/network/incoming/handlers/DisplayHandler.java",
+    "sha256": "9399d5377fa650e5c025bed152a07e5286d9b3dd0c14dbd7f2551bec79d23b3d",
+    "bytes": 6416
+  },
+  {
+    "path": "raid-source-reference/Kronos-master/kronos-server/src/main/java/io/ruin/network/incoming/handlers/NPCActionHandler.java",
+    "sha256": "7c9c215332b0d95288220293593c1eee94539c64814be5774e1d55c30c7b40b1",
+    "bytes": 5729
+  },
+  {
+    "path": "raid-source-reference/Kronos-master/runelite/runelite-client/src/main/java/net/runelite/standalone/CustomDropViewerInterface.java",
+    "sha256": "ab13205823db4ff5b0c31df1f6c5809b84b80e2579ce6105a6cfe9814bc7dc22",
+    "bytes": 9383
+  },
+  {
+    "path": "raid-source-reference/Kronos-master/runelite/runelite-client/src/main/java/net/runelite/standalone/CustomLootCompendiumInterface.java",
+    "sha256": "6be80d76a9077762c3c0ecb46aa8dbea61f45df6c0e6f7b6d9605bd879cac908",
+    "bytes": 19314
+  },
+  {
+    "path": "raid-source-reference/Kronos-master/runelite/runelite-client/src/main/java/net/runelite/standalone/Widget.java",
+    "sha256": "7fb297db7e0bfafb875cc9ab375ea63c84d014b4e34deb8c8d361bec83f29382",
+    "bytes": 65340
+  },
+  {
+    "path": "raid-source-reference/Kronos-master/tools/content242/StopRaidReleaseGame.java",
+    "sha256": "9d79c5769341982000cf75375fcbd5defcdc98e65a67755dbd5aeea42a977e4f",
+    "bytes": 5785
+  },
+  {
+    "path": "raid-source-reference/Kronos-master/tools/content242/windows/RAIDS-FULL-BUNDLE.md",
+    "sha256": "ee7758cf73b533d9b04c2a52b99f71ac45794b3ae5c5290d47c14642c1488a91",
+    "bytes": 2732
+  },
+  {
+    "path": "raid-source-reference/Kronos-master/tools/content242/windows/WindowsCacheSelectionChecks.java",
+    "sha256": "9d0c9e8a581bd2a99d7b0ab1ccbe0873391668b3b7af6519d5eeb7cd34b25702",
+    "bytes": 1794
+  },
+  {
+    "path": "raid-source-reference/Kronos-master/tools/content242/windows/WindowsFreshCacheLauncher.java",
+    "sha256": "3260ab458d8ed0fe96ff820c934f7e629f32fa6158803f081ffccc3355d3fc04",
+    "bytes": 13551
+  },
+  {
+    "path": "raid-source-reference/Kronos-master/tools/content242/windows/WindowsFreshCacheLauncherChecks.java",
+    "sha256": "97305b5ced5e1763b8279feaf3840ffa9f20beabf77720a985c9802111384967",
+    "bytes": 9859
+  },
+  {
+    "path": "raid-source-reference/Kronos-master/tools/content242/windows/WindowsFreshCacheLoginChecks.java",
+    "sha256": "fa5e49c77ae94cab3e782e729975f4407eb4f8d51b54c77d115813426ff78f4d",
+    "bytes": 2079
+  },
+  {
+    "path": "raid-source-reference/licenses/NearReality-PROVENANCE.txt",
+    "sha256": "879451e5897a14560b5051b76f9d2e4a3c5e991d08f44ebcf37dbe4a6f9cd1ed",
+    "bytes": 278
+  },
+  {
+    "path": "raid-source-reference/licenses/RuneLite-LICENSE.txt",
+    "sha256": "28da8594629dd92c78c0ae7c8d0a6809d5804461bf4eaad7005b96f302a17a18",
+    "bytes": 1359
+  },
+  {
+    "path": "server/Kronos-master/docs/dungeoneering/WINDOWS-FRESH-CACHE.md",
+    "sha256": "7faef04c8e67316d13dadf8bd73e0735af0c7f120848d1639e7f667c1b035b62",
+    "bytes": 2254
+  },
+  {
+    "path": "server/Kronos-master/docs/universal-pets/README.md",
+    "sha256": "c2ef0d021d333e0788e601864732e45dcc0a43be7c11c622a9a630d6031b7b9c",
+    "bytes": 2730
+  },
+  {
+    "path": "server/Kronos-master/docs/universal-pets/VerifyPetCandidate.java",
+    "sha256": "e08af07fa0b3d5281a330392c8b2823e01a1704d2dec63692a4326ba6b7c5354",
+    "bytes": 2897
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/data/npcs/combat/Cow_calf.json",
+    "sha256": "d9045dbe53d1a03d72e08cbfd5c338b05ecd12ac0a621ef3b7323363751c241c",
+    "bytes": 991
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/data/npcs/drops/eco/Cow_calf.json",
+    "sha256": "7ef9a5822bea508f8b5dc560b3a67dbdb22dd19ead7900c015be0f20330f0f71",
+    "bytes": 224
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/data/npcs/drops/pvp/Cow_calf.json",
+    "sha256": "7ef9a5822bea508f8b5dc560b3a67dbdb22dd19ead7900c015be0f20330f0f71",
+    "bytes": 224
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/data/npcs/spawns/charter_crews.json",
+    "sha256": "fa9082fab8b79512600281c819f52f9effec11bc2707d1f55237ee564016a401",
+    "bytes": 291
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/data/npcs/spawns/dungeons/gnome_stronghold.json",
+    "sha256": "f628aa9e9f1d21f5dc195b26ba13c0e9512a5ee6a796120d6de553c59cd6230b",
+    "bytes": 7589
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/data/npcs/spawns/dungeons/smoke_devil_dungeon.json",
+    "sha256": "3f86f452d17d5042f57a75b347fbbe0475c1e7c896424ca5a036a2adb83a5bc5",
+    "bytes": 6741
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/data/npcs/spawns/fishing_guild.json",
+    "sha256": "3e95ef54053fd57b2521b2f64f502097694788212851b53171ca2b2861177b22",
+    "bytes": 5112
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/data/npcs/spawns/slayer_masters_home.json",
+    "sha256": "2687f5af64927ef2fe924217313c2e406e39d589f396717c027a144a55d35457",
+    "bytes": 596
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/data/world-examines.json",
+    "sha256": "ba02c3815e7c7890a0bffba2604c76e1e7588f00f0d393a6e29daf1e3ad05c78",
+    "bytes": 30330
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/data/world-vertical-travel.json",
+    "sha256": "e270121953ff649e280532845c43048e4295c77997b21914d941939c3ccae2c9",
+    "bytes": 59680
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/src/main/java/io/ruin/cache/NPCDef.java",
+    "sha256": "7373ad781d62b7dd38a5b2bf75ae241383da50f847bbd28b1f26c1c45715dc89",
+    "bytes": 19452
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/src/main/java/io/ruin/content/content242/World242.java",
+    "sha256": "733ddfc40b89d25b70ad323b65335836df893b81fdef35b096a1fa4d6ff10a6c",
+    "bytes": 14271
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/src/main/java/io/ruin/content/content242/World242ObjectActions.java",
+    "sha256": "8df6874386658baf99dc2d5d6c7631305c0767c53783c14cd056afa71d2231d9",
+    "bytes": 4633
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/src/main/java/io/ruin/content/content242/WorldNpcDialogues.java",
+    "sha256": "a7a332224da4c09f663be33ef4f3aadb0629a585d25b2003679f8469ce0b20af",
+    "bytes": 12018
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/src/main/java/io/ruin/content/content242/WorldTravel242.java",
+    "sha256": "6a16b45be9faebc0b9871fab4d9b88093dc58397aef065f7401846aaea44dc36",
+    "bytes": 8720
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/src/main/java/io/ruin/content/content242/WorldVerticalTravel.java",
+    "sha256": "e65ce86b28434a6b3f754fd13d3e13c016a89efd8e1d94f4a253fdbcbacd46a9",
+    "bytes": 13320
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/src/main/java/io/ruin/content/content242/bosses/Boss242Instances.java",
+    "sha256": "9150ed765dcc6c68abf56ce5c977a5efb3f93f09ef70f641be4bda89d77febff",
+    "bytes": 6517
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/src/main/java/io/ruin/content/pets/UniversalPets.java",
+    "sha256": "a7d55fe07d5929de7290ebae95e2df9fb5892ad4524f97c060ed672a737ae16a",
+    "bytes": 17913
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/src/main/java/io/ruin/content/sixsystems/SixSystems.java",
+    "sha256": "9957d889232846b77090285e174067d87505b155e0c2d1f7c4aef05d2121e9f2",
+    "bytes": 4727
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/src/main/java/io/ruin/content/worldquest/RiverWatch.java",
+    "sha256": "97a7f5cc331dd2926848c6b4b8064bda4b99134bc85167042d18cefce9eda3c2",
+    "bytes": 2539
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/src/main/java/io/ruin/content/worldquest/WorldQuestBook.java",
+    "sha256": "55e5f357f559a9d4275ba0724c827915c014331819fd0bc4b74c11d88c968946",
+    "bytes": 13620
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/src/main/java/io/ruin/content/worldquest/WorldQuestState.java",
+    "sha256": "580befa22a4866e3c676fe5a7c13923bb0507d8de6f9fc0a7c723e3042a859d9",
+    "bytes": 1339
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/src/main/java/io/ruin/data/impl/world_examines.java",
+    "sha256": "3b6aed0f66234d39b05792757ee04df849c9eeb7b46e46de40f0ce096d66ae49",
+    "bytes": 2785
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/src/main/java/io/ruin/model/activities/automation/AutomationActionSource.java",
+    "sha256": "f83bc3edf733e078fb9a59480c3a05bf24504f2aee6bc00b2238f6cc2ce1d446",
+    "bytes": 317
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/src/main/java/io/ruin/model/activities/automation/AutomationDriver.java",
+    "sha256": "aba92b626115d2d64328ba1274d33900ad64d640feadc654261160fc4a0df05c",
+    "bytes": 376
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/src/main/java/io/ruin/model/activities/automation/AutomationPolicy.java",
+    "sha256": "91b558042a9f378552723645f8f3b182548ddca88a758c8167dd30545a657fe0",
+    "bytes": 1485
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/src/main/java/io/ruin/model/activities/automation/AutomationPreferences.java",
+    "sha256": "ada73f6208ac45832b2bdb6ef2bbb921a8f4a286cc28270b305fff2da0a00de2",
+    "bytes": 752
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/src/main/java/io/ruin/model/activities/automation/CombatAutomation.java",
+    "sha256": "48dfba6b3beed8bff16abc671b3dc3c864a34773cfe97c39f06f0aa3e0d86e20",
+    "bytes": 27223
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/src/main/java/io/ruin/model/activities/automation/ConstructionAutomation.java",
+    "sha256": "6358a464ea6594af612c7d673893439509724e768d12b34f15d321ae5e690426",
+    "bytes": 10607
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/src/main/java/io/ruin/model/activities/automation/FarmingAutomation.java",
+    "sha256": "937e43ea02ff57d7f5fa3b4ad16a0f3f30b82d1a0c6ea06c4c9044c9906a8adc",
+    "bytes": 13834
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/src/main/java/io/ruin/model/activities/automation/FishingAutomation.java",
+    "sha256": "a413d4bef83b5bc74738c843c18f1249e701f3699551c3956815feb6e91f9499",
+    "bytes": 8119
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/src/main/java/io/ruin/model/activities/automation/HunterAutomation.java",
+    "sha256": "2d39e658ce8bc3e470ce80967ca1d386cf1ac5f070f8e3e62ab5107245d3226a",
+    "bytes": 14370
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/src/main/java/io/ruin/model/activities/automation/LocalGatheringAutomation.java",
+    "sha256": "a7b0e2090f7d1440e351533ede971d98b5975ad1c4d6d26f3d392d7c8b57aa07",
+    "bytes": 12854
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/src/main/java/io/ruin/model/activities/automation/MiningAutomation.java",
+    "sha256": "8b8c1c6aaa3d0c18ecf0d4d2c587ac1a1394ffff68fdb94f59bd8d8d24dc9c9d",
+    "bytes": 14045
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/src/main/java/io/ruin/model/activities/automation/OwnerAutomation.java",
+    "sha256": "9de8dd2959a79ca9a7d73e57c8a6b8962bc6c2a2e323f40968f4e78697291aec",
+    "bytes": 45761
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/src/main/java/io/ruin/model/activities/automation/ProductionAutomation.java",
+    "sha256": "001a8371bf1b396bdc9126b5f984ba51ca4c9de814a5eff328758ab731cc0df8",
+    "bytes": 21469
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/src/main/java/io/ruin/model/activities/automation/SlayerAdditionalRoutes.java",
+    "sha256": "cb4850fcd9190c7eb15bed343202cb3627aa322c4dbfa5d6b01ac8520ff5c0a0",
+    "bytes": 9899
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/src/main/java/io/ruin/model/activities/automation/SlayerAssignmentPolicy.java",
+    "sha256": "8f2b0fe97bd8971a13f29808ba10615d7c1d47c0197f35e9dcf8a614f787cb02",
+    "bytes": 3119
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/src/main/java/io/ruin/model/activities/automation/SlayerAutomation.java",
+    "sha256": "9c6cc26611058c4bdb104a61160e7ea04b2cd1b8e0cfcb6d2b9c8371df0ce9a8",
+    "bytes": 26200
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/src/main/java/io/ruin/model/activities/automation/SlayerDragonRoutes.java",
+    "sha256": "afa9580d240892f2f88fbc34183b8c3f3f889407c3a392b172fbf052c9952ff1",
+    "bytes": 2157
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/src/main/java/io/ruin/model/activities/automation/SlayerKaruulmRoutes.java",
+    "sha256": "32a85f9242ce79f146c706827a230d71d53a3ac5b09a9bdc2240ef661889840c",
+    "bytes": 2510
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/src/main/java/io/ruin/model/activities/automation/SlayerLoadout.java",
+    "sha256": "f674d24e7cd49edee6e9bcc3b485e8bf1b253c6a5348fbdb78c8bede2d2dc9ef",
+    "bytes": 27463
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/src/main/java/io/ruin/model/activities/automation/SlayerRangedTargeting.java",
+    "sha256": "31eb28cbc9b23437152b79a3ae061a4c7dd6041559cff5a9642e584aa6b7acb9",
+    "bytes": 2322
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/src/main/java/io/ruin/model/activities/automation/SlayerRouteCorridors.java",
+    "sha256": "3c7b3d3277451a1a49535347275b11e42a07c2cef4bc358455fc79754d3079d8",
+    "bytes": 2922
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/src/main/java/io/ruin/model/activities/automation/SlayerSettings.java",
+    "sha256": "b94897a3856aa649aeca7abf5a12579fe5aa3929500f2044eafbb797d83c131f",
+    "bytes": 739
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/src/main/java/io/ruin/model/activities/automation/SlayerTowerRoutes.java",
+    "sha256": "0b8fc625bb17c78568ef4b7bb7e5e4eb3f7cb1e3b432cfbf15a2fd544e65f262",
+    "bytes": 1468
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/src/main/java/io/ruin/model/activities/automation/SlayerWorld.java",
+    "sha256": "328d48bcc89ba2e258b15fa5ea754b782d56f577241a506ad262ee8c9db3538a",
+    "bytes": 20232
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/src/main/java/io/ruin/model/activities/automation/StrongholdSlayerRoutes.java",
+    "sha256": "e451fbdbd8b572fc16c90a84467b5e0febce0a737bf727cd86a9742af79d3ddd",
+    "bytes": 4909
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/src/main/java/io/ruin/model/activities/automation/UtilitySkillAutomation.java",
+    "sha256": "be9cacb8d7183476aa7d6e5ac6776417bc0340044afc5f41451da44e649b862f",
+    "bytes": 11714
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/src/main/java/io/ruin/model/activities/automation/VorkathAutomation.java",
+    "sha256": "28e7088214a935e0c8d1eeb8240f943404c78ed4981835bc083987416486c9ae",
+    "bytes": 24768
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/src/main/java/io/ruin/model/activities/automation/WoodcuttingAutomation.java",
+    "sha256": "328fe8af4bc0c99ffe2526d8b9f6e81c3a4341a92f878f995b977aa8b6e9b990",
+    "bytes": 4199
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/src/main/java/io/ruin/model/activities/automation/ZulrahAutomation.java",
+    "sha256": "93f17030b434ebaa056fb6788bc1c188498703ca095abf2d97145894376b9904",
+    "bytes": 20092
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/src/main/java/io/ruin/model/activities/bosses/vorkath/Vorkath.java",
+    "sha256": "23bcc7f27cda4a490172af2f8feab37dba4fcb363ac5d0db566491c133b1613f",
+    "bytes": 15775
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/src/main/java/io/ruin/model/activities/bosses/zulrah/Zulrah.java",
+    "sha256": "8b1bf52ae2ce1a2b6479809bf91aa9948e778d7d11ba69c5b21a03b2c2b98690",
+    "bytes": 20961
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/src/main/java/io/ruin/model/activities/cluescrolls/ClueObjects.java",
+    "sha256": "a05123c53f119070d9ca9fcad8a7c908810463e95a4189afa47de59dfe87bde3",
+    "bytes": 5044
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/src/main/java/io/ruin/model/activities/dungeoneering/Dungeoneering.java",
+    "sha256": "70cb33bd26e11d4386134a803ecb67dd93495a894ca37bc9f1208aa4273ef0fa",
+    "bytes": 30507
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/src/main/java/io/ruin/model/activities/dungeoneering/DungeoneeringCombat.java",
+    "sha256": "15ee680e353818a7dddae5492f327739c296c30cd42746ea5d6271a45c36a4ae",
+    "bytes": 25117
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/src/main/java/io/ruin/model/activities/dungeoneering/DungeoneeringExpedition.java",
+    "sha256": "19b4ac3e1ad8941fb1ddb525f140b93c597ecce02e346a0aabb7b47bcbd9317c",
+    "bytes": 23316
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/src/main/java/io/ruin/model/activities/dungeoneering/DungeoneeringExpeditionSupplies.java",
+    "sha256": "34d81340f8ee55aaf04f7d6c44007b6577b6b066e8ed381f881e648b8a3163a6",
+    "bytes": 8078
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/src/main/java/io/ruin/model/activities/dungeoneering/DungeoneeringFloor.java",
+    "sha256": "8eb4bd8be75d82a12066f09afc6896583248f029e60815fb80d0ad5e65692505",
+    "bytes": 24194
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/src/main/java/io/ruin/model/activities/dungeoneering/DungeoneeringLobby.java",
+    "sha256": "06319d16fe3096f6ec4c7e2858a3b19e598922d4c2aa169c972a82b184b194e6",
+    "bytes": 8696
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/src/main/java/io/ruin/model/activities/dungeoneering/DungeoneeringProgress.java",
+    "sha256": "d48fb1ffb97456e676d1d85abbb93b35548c4c6934acefa4878463d12bfb9b57",
+    "bytes": 3864
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/src/main/java/io/ruin/model/activities/dungeoneering/DungeoneeringSkills.java",
+    "sha256": "efaccfe2e91d11884e7e5ba621ef40cc2806d793108ab2f4457a19fd8cb807a6",
+    "bytes": 36962
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/src/main/java/io/ruin/model/activities/dungeoneering/DungeoneeringUtilityRewards.java",
+    "sha256": "b3058bfd66a070f38b495afcbb3885222494477a28a5714516686c9ffd53ae81",
+    "bytes": 13726
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/src/main/java/io/ruin/model/activities/hollowdepths/HollowDepths.java",
+    "sha256": "5bae9885ffe3a0a09d0bedb39125f92dc1c4f8d0ac95e514b1ea91167f48504e",
+    "bytes": 21114
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/src/main/java/io/ruin/model/activities/raids/toa/port/NativeToaEncounter.java",
+    "sha256": "51cd343c7dbd8a4f2054938a05e364a3471e010f2f2a6fd52258d2d18b59db7d",
+    "bytes": 7960
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/src/main/java/io/ruin/model/activities/raids/toa/port/RootToaPuzzles.java",
+    "sha256": "cfc6140735988ffe3d3217d88e79ef84f29ce077ffc2047a50cb1424ad910919",
+    "bytes": 50061
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/src/main/java/io/ruin/model/activities/raids/toa/port/ToaEncounter.java",
+    "sha256": "03b3aa14cee5279ac9765ab130990b403c77dc0e2eed8b373d09f98e8c859609",
+    "bytes": 293
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/src/main/java/io/ruin/model/activities/raids/toa/port/TombsOfAmascutRaid.java",
+    "sha256": "6e96f12690a52d91a27dfe5215820080374b76159892f8d45862f68c608e75fe",
+    "bytes": 23812
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/src/main/java/io/ruin/model/activities/raids/toa/port/ZebakEncounter.java",
+    "sha256": "bfba9b928f46b72fca02aaa509956b8397580249fd082fcdbb2436fcd2b0613e",
+    "bytes": 17399
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/src/main/java/io/ruin/model/activities/raids/tob/port/TheatreCombat.java",
+    "sha256": "fda08600c0a61f5000c1670357ef6bf146c413102a1b3e20dd12c6dc22d959f6",
+    "bytes": 18203
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/src/main/java/io/ruin/model/activities/summerevent/SummerTokens.java",
+    "sha256": "94c375c11cdcbc73b7aad153df1fa6b6ed3d25df5a6295a84b5f0d80c8ca9945",
+    "bytes": 1386
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/src/main/java/io/ruin/model/entity/npc/NPCCombat.java",
+    "sha256": "8a52200720c60310479aad440db0511e4285f2ba63c6e71e5434a140e36c6b68",
+    "bytes": 24017
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/src/main/java/io/ruin/model/entity/npc/actions/edgeville/SlayerMaster.java",
+    "sha256": "cc3617476b4855d3fe21d415564aadf09a48995fa7570e42b40797977eded55e",
+    "bytes": 13669
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/src/main/java/io/ruin/model/entity/npc/actions/guild/fishing/Roachey.java",
+    "sha256": "f293a010b1ad43e4cc4e941c54a2e3d636cc695acd2b4f14823dd26107f27baf",
+    "bytes": 944
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/src/main/java/io/ruin/model/entity/npc/actions/piscatoris/ArnoldLydspor.java",
+    "sha256": "8be58b32b86b4a8d9a364ba97e9f65f7934c7810862e0cf2f1ef57752b2f217b",
+    "bytes": 2743
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/src/main/java/io/ruin/model/entity/npc/actions/traveling/CharterTravel.java",
+    "sha256": "c32b3c9844b6a2aeb5c4e8a34d217e4aef0e2409f6649116a4bc9563cb1cfe86",
+    "bytes": 9415
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/src/main/java/io/ruin/model/entity/npc/actions/traveling/LokarSearunner.java",
+    "sha256": "c72495d40256026a749190f1aa4523fa39c13467121e79975d23effa866eb2f1",
+    "bytes": 1366
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/src/main/java/io/ruin/model/entity/npc/actions/traveling/PassengerBoats.java",
+    "sha256": "d64d75f84c5e6b5902b97ba6ae135049b0af690fa548d970ef7e8e991168fa28",
+    "bytes": 9925
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/src/main/java/io/ruin/model/entity/npc/actions/zeah/Tynan.java",
+    "sha256": "caf036e839993c32155e72cbbdf30b41cd93fe2a543bd9845d8ef103a4415d99",
+    "bytes": 1107
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/src/main/java/io/ruin/model/entity/player/Player.java",
+    "sha256": "33b536ef18892abbe7317936a00218f6ad042406b8b911f35f76f7117c8d73a7",
+    "bytes": 49644
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/src/main/java/io/ruin/model/entity/player/PlayerAttributes.java",
+    "sha256": "7ded78b776a74e11dd959c6bbed43be34f2e9d007a74fa985e78a25873d53a13",
+    "bytes": 39010
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/src/main/java/io/ruin/model/inter/handlers/IKOD.java",
+    "sha256": "f2cda4da03cbce52814fae910936d2e4906fa3f82aa3b86fa37505af84d1d6f9",
+    "bytes": 22706
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/src/main/java/io/ruin/model/inter/handlers/TeleportInterface.java",
+    "sha256": "d90ea3f6cc643ad886ff0d19ff5d4edf171f95dc178fccbb182846b3014103cf",
+    "bytes": 28166
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/src/main/java/io/ruin/model/inter/loot/LootCompendium.java",
+    "sha256": "13fae1d2da03d709c155d77968ce07e672871a6350595291cf05a808120e0230",
+    "bytes": 21081
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/src/main/java/io/ruin/model/item/actions/impl/Pet.java",
+    "sha256": "6d681c22850eae792881ea7e01462a036da52a4eb0e97da5b545af4926583590",
+    "bytes": 75542
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/src/main/java/io/ruin/model/item/actions/impl/jewellery/BoundBloodFury.java",
+    "sha256": "7c6f02ad5c15a6b02b32bac3818a4c7d4db84b7e9c4478d83a6f85a63dd84793",
+    "bytes": 6014
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/src/main/java/io/ruin/model/map/object/actions/impl/Door.java",
+    "sha256": "71572ec7890b8ed48464ba11718e3b270c2e4c660d4d6d4f21b4f77eec95f565",
+    "bytes": 24900
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/src/main/java/io/ruin/model/map/object/actions/impl/FairyRing.java",
+    "sha256": "ea6216dfb0cb14c2cd8e561ff1cce0796370577f3f6617fca58d5334ddeee68f",
+    "bytes": 14934
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/src/main/java/io/ruin/model/map/object/actions/impl/Ladder.java",
+    "sha256": "2ccdeef5397a74394387b0b7ceb5f46cbf994e96dc484b0b2ef08482896eadd9",
+    "bytes": 5693
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/src/main/java/io/ruin/model/map/route/MapWalkPath.java",
+    "sha256": "80e2000e288e82c5d04759025e81d1b6b292f1a2692401c08cb2894d167711e9",
+    "bytes": 6205
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/src/main/java/io/ruin/model/map/route/MapWalkRoute.java",
+    "sha256": "748393e7ffbf521cccf724cc43da51e80a87f8fca94972d31be02fa8f36fb444",
+    "bytes": 13916
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/src/main/java/io/ruin/model/map/route/RouteFinder.java",
+    "sha256": "fc56b9d8806ad39ed953d163c7c72a524e518619cf9d9eea72cb716d0448b565",
+    "bytes": 52883
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/src/main/java/io/ruin/model/skills/construction/actions/SuperiorGarden.java",
+    "sha256": "74e7038d1730075e9c5e7172581644eb6ac06e937a2142c2027667cc8000afb1",
+    "bytes": 4243
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/src/main/java/io/ruin/model/skills/cooking/Cooking.java",
+    "sha256": "62dc77e4b6e1f30662079e29a2374371d406c474e80bbbdc568f162dd24d798a",
+    "bytes": 8158
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/src/main/java/io/ruin/model/skills/magic/spells/HomeTeleport.java",
+    "sha256": "6e5ff367c68264322c09e6486a517af6632b5a05da31813be3637bb658b90cbe",
+    "bytes": 3291
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/src/main/java/io/ruin/model/skills/mining/Mining.java",
+    "sha256": "620cac4f2af08dc228a061f8a3689b432ab91ee4f23671c13ed13b121265c8c2",
+    "bytes": 18102
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/src/main/java/io/ruin/model/skills/slayer/Slayer.java",
+    "sha256": "27fedf5a18e4c79be4358c2c2e494d6d62bd8e62a419e4d59f5fcc728ac92322",
+    "bytes": 10989
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/src/main/java/io/ruin/model/skills/woodcutting/Woodcutting.java",
+    "sha256": "415210c0eafbf326a3e10cedab00c5ef662d3be8166cacb21c53ae1349deb094",
+    "bytes": 11514
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/src/main/java/io/ruin/network/incoming/handlers/ActionButtonHandler.java",
+    "sha256": "302c84317fb8fecc4ed1b3da04340078a4aa20f2c426d00beabeec628b350bdf",
+    "bytes": 5751
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/src/main/java/io/ruin/network/incoming/handlers/NPCActionHandler.java",
+    "sha256": "39e17ad794c37604d25f01a2eab7c5a8520cbce66734ca80266400e147eec644",
+    "bytes": 5666
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/src/main/java/io/ruin/network/incoming/handlers/ObjectActionHandler.java",
+    "sha256": "b0397cae1a96519205e421591f1fd24f264496ac3b5dfb40749224cab06045c6",
+    "bytes": 5039
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/src/main/java/io/ruin/network/incoming/handlers/WalkHandler.java",
+    "sha256": "750029bea87e8d70606e21a0a591ba777a5f0bad3e0dfbf6a6bab0841fb94277",
+    "bytes": 3282
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/src/test/java/io/ruin/content/worldquest/WorldQuestStateChecks.java",
+    "sha256": "57b74b9a013584ed90a63a1f96c6dc22e575408bb1420cf3aa4f16ff134505cc",
+    "bytes": 4296
+  },
+  {
+    "path": "server/Kronos-master/kronos-server/src/test/java/io/ruin/model/activities/dungeoneering/ExpeditionChecks.java",
+    "sha256": "a4ffff92874a86bdf69f15fc487ef0d0d8edc77d3afd9457c41670ac1b2f7691",
+    "bytes": 4019
+  },
+  {
+    "path": "server/Kronos-master/runelite/runelite-client/src/main/java/net/runelite/standalone/WorldMapRegion.java",
+    "sha256": "6a3dccb3f053a651ccad93bbc48fd0875d73821b23e4570376913414ae9fef6f",
+    "bytes": 44421
+  },
+  {
+    "path": "server/Kronos-master/tools/content242/Build-WindowsFreshCache.ps1",
+    "sha256": "a4caf808914b208c975d8c712e3fa178be74e03b14299c7b1a57b0ca4d060a0b",
+    "bytes": 3194
+  },
+  {
+    "path": "server/Kronos-master/tools/content242/windows/Fresh Cache.cmd",
+    "sha256": "b5f48f7c39d80880868cea48058f2a08d4c32b0eabfdbcf9dc1fbcc31fad4a09",
+    "bytes": 357
+  },
+  {
+    "path": "server/Kronos-master/tools/content242/windows/Play Newscape.cmd",
+    "sha256": "5e9485600dde2bf86c76446ed8419f40e3fce9e3985fb0be51b0ca37c2e92bcf",
+    "bytes": 349
+  },
+  {
+    "path": "server/Kronos-master/tools/content242/windows/READ ME.txt",
+    "sha256": "3b196a00f936f99ebb31841ef614058515e068174f5bab839268f12c2b37167f",
+    "bytes": 650
+  },
+  {
+    "path": "server/Kronos-master/tools/content242/windows/WindowsCacheSelectionChecks.java",
+    "sha256": "bd084a31b4b5fbc069e8a03ccabe3ca50294d7addc8646bd56d0c9c8550a4dd4",
+    "bytes": 1694
+  },
+  {
+    "path": "server/Kronos-master/tools/content242/windows/WindowsFreshCacheLauncher.java",
+    "sha256": "028b9f0e07246ca6be3c6e5d64c067e1e4a6e11f0a68bc29a07b6a2b3cd6438d",
+    "bytes": 13546
+  },
+  {
+    "path": "server/Kronos-master/tools/content242/windows/WindowsFreshCacheLauncherChecks.java",
+    "sha256": "97305b5ced5e1763b8279feaf3840ffa9f20beabf77720a985c9802111384967",
+    "bytes": 9859
+  },
+  {
+    "path": "server/Kronos-master/tools/content242/windows/WindowsFreshCacheLoginChecks.java",
+    "sha256": "fa5e49c77ae94cab3e782e729975f4407eb4f8d51b54c77d115813426ff78f4d",
+    "bytes": 2079
+  },
+  {
+    "path": "server/content-tools/Build-OwnerAutomation.ps1",
+    "sha256": "c476ab4251fcaeb2c41be59fbfb7c4a4f31b167af38e54aa71ab304aa7aa60db",
+    "bytes": 3408
+  },
+  {
+    "path": "server/content-tools/Build-World242Dev.ps1",
+    "sha256": "7891b17a2f6ed69fd7bf4c4f2c026d752b11e07f9eeaa332d867aabf0d3c91ef",
+    "bytes": 7484
+  },
+  {
+    "path": "server/content-tools/Check-World242Access.ps1",
+    "sha256": "d5511af0a14bb404feca2875ad50547c9faedc99b804b222940c21033ded2c71",
+    "bytes": 1637
+  },
+  {
+    "path": "server/content-tools/PatchBoundBloodFury.java",
+    "sha256": "40f092a1b04b64f8999a155e1c70d62e7f6a152fd970dce037311809760a9423",
+    "bytes": 8987
+  },
+  {
+    "path": "server/content-tools/PatchOwnerAutomation.java",
+    "sha256": "180c0732451809edbeb3f1fc8b3b81cc579784ff3fa62236ce8d24ff90342cff",
+    "bytes": 8821
+  },
+  {
+    "path": "server/content-tools/Test-World242Dev.ps1",
+    "sha256": "ba52356736bfcb909915d68b17bac9412fe94dacfc0fc58906eb12e6b5ee6fec",
+    "bytes": 5722
+  },
+  {
+    "path": "server/content-tools/UNIVERSAL-NPC-PETS.md",
+    "sha256": "2d1e7459988f3552c0141d1dc419b661b7c37cd7f4c1e484a846755f82f5d94a",
+    "bytes": 2645
+  },
+  {
+    "path": "server/content-tools/audit_world242.py",
+    "sha256": "0839183dfbe0031f230e4aa46553f29f7b8db8891d6f5d7518ac6c434516504b",
+    "bytes": 12407
+  },
+  {
+    "path": "server/content-tools/audit_world242_resources.py",
+    "sha256": "205ad0a951778f372643358e55a17a6c007a1d744435e76a283a895d394f5c64",
+    "bytes": 4172
+  },
+  {
+    "path": "server/content-tools/check_world_combat_animations.py",
+    "sha256": "ee8e7d0571dad9e4e1d0a7e6393313f4e3fd205e6fba11dc568352b70c64aa2b",
+    "bytes": 3603
+  },
+  {
+    "path": "server/content-tools/checks/CharterTravelChecks.java",
+    "sha256": "3c7b28d528f498aaa72d252edbf5251750ce00fc797743f836e2ea849d87b213",
+    "bytes": 16725
+  },
+  {
+    "path": "server/content-tools/checks/MapWalkChecks.java",
+    "sha256": "ff0474de5a5b2f4d884ac5e9b657bd6f6000f558c356362b97e00ae049b0f9f8",
+    "bytes": 14976
+  },
+  {
+    "path": "server/content-tools/checks/OwnerAutomationLeaseChecks.java",
+    "sha256": "71a4e90007f62dea5420ac730112f17d62c1bba7bd90567a24fab05fd78f3a9b",
+    "bytes": 4356
+  },
+  {
+    "path": "server/content-tools/checks/OwnerAutomationNativeChecks.java",
+    "sha256": "301a2bfca2d7609dbb9f6d4eb4d134499c4374254fa1a84a304270e0a6703ebf",
+    "bytes": 14144
+  },
+  {
+    "path": "server/content-tools/checks/OwnerAutomationPolicyChecks.java",
+    "sha256": "1cb52b359332c177deecf3efd301516b811ff835d84a9d26040e2ad40bf212b9",
+    "bytes": 6824
+  },
+  {
+    "path": "server/content-tools/checks/OwnerAutomationProductionChecks.java",
+    "sha256": "09993691238856619aeac1d1d38456e7a50399fdb73761dbf0521e4830614ac8",
+    "bytes": 14594
+  },
+  {
+    "path": "server/content-tools/checks/OwnerCombatAutomationChecks.java",
+    "sha256": "834c884ca8a808b30650b2f66602673203e31190f49bd5151819fad4ae559e75",
+    "bytes": 12015
+  },
+  {
+    "path": "server/content-tools/checks/OwnerGatheringNativeChecks.java",
+    "sha256": "08fc938e114589e637439a3faa92175f899db7c41d75df5b5cce084c92ad1641",
+    "bytes": 9430
+  },
+  {
+    "path": "server/content-tools/checks/OwnerVorkathAutomationChecks.java",
+    "sha256": "6fb50d2643f8b6aa9fd100d65192e784967e608ef41d6189c896c18e2c252ad3",
+    "bytes": 10305
+  },
+  {
+    "path": "server/content-tools/checks/OwnerZulrahAutomationChecks.java",
+    "sha256": "b29ab12b3d22c293db5cc4fc750b63a4b4aba5a3be3ff8b0e9f302f31692d0b5",
+    "bytes": 4521
+  },
+  {
+    "path": "server/content-tools/checks/PassengerBoatChecks.java",
+    "sha256": "0fabe2acb6690cc1e157bf15ff2cc79bc701b27d0d77d3346e0475a5acf79b67",
+    "bytes": 13778
+  },
+  {
+    "path": "server/content-tools/checks/PetCatalogCapture.java",
+    "sha256": "3373004995aeab0f028213fa80bad0867cc07b1c32e0dbd1d93c1549fb19e365",
+    "bytes": 10459
+  },
+  {
+    "path": "server/content-tools/checks/PetInventoryIconChecks.java",
+    "sha256": "ab13635d215c0607dd70b3d1b6f51dd662878406c827ba7eacba334118453036",
+    "bytes": 4057
+  },
+  {
+    "path": "server/content-tools/checks/PetRuntimeChecks.java",
+    "sha256": "3d35e82991a7daf796918b41e9c03fad597df24d4799cc512628906c7af9089c",
+    "bytes": 22761
+  },
+  {
+    "path": "server/content-tools/checks/World242AccessChecks.java",
+    "sha256": "13d75ce6bb45fcdcc0a8034137240d4ff44d6c726a176c06b1ee4740458f279f",
+    "bytes": 25034
+  },
+  {
+    "path": "server/content-tools/checks/World242LandscapeChecks.java",
+    "sha256": "696489104b278c032b5f855acb9a3941a57cf9af400f24b7143d674454cce501",
+    "bytes": 4345
+  },
+  {
+    "path": "server/content-tools/checks/World242ResourceChecks.java",
+    "sha256": "2f7ae0f60524bca2b89c3bc9090e02e1273ceba99eba92ff1ac5d0adb5d32aba",
+    "bytes": 4646
+  },
+  {
+    "path": "server/content-tools/checks/WorldDoorChecks.java",
+    "sha256": "eb6e748a7ae864e48b717c79795e90d2d01a9d56b2d13a9339b1d60d6ca10a76",
+    "bytes": 6335
+  },
+  {
+    "path": "server/content-tools/checks/WorldExamineChecks.java",
+    "sha256": "141aa64ee45931b31968e40711b38d5bffe4741666bb34dd98baf193a778b528",
+    "bytes": 6930
+  },
+  {
+    "path": "server/content-tools/checks/WorldFairyRingChecks.java",
+    "sha256": "4bda9323af54c8fc614f3a3ba63658dd93d3e40a7e972a3cd61e215758431284",
+    "bytes": 12500
+  },
+  {
+    "path": "server/content-tools/checks/WorldNpcAudit.java",
+    "sha256": "4431c85d7e6a513807ff151dac79561cf17cf804b228cac55c51540e485c80ae",
+    "bytes": 9087
+  },
+  {
+    "path": "server/content-tools/checks/WorldNpcDialogueChecks.java",
+    "sha256": "b79233a26eb50b56d2b5681fcc1d44ba5a416d6957d8be81e4fa300b6d581ecd",
+    "bytes": 7530
+  },
+  {
+    "path": "server/content-tools/checks/WorldRedDragonAnimationChecks.java",
+    "sha256": "4b5a5a2310e791d5c823e9115f8d0f2e2760294e90083d27ad86d370e70e3849",
+    "bytes": 6168
+  },
+  {
+    "path": "server/content-tools/checks/WorldTraversalAudit.java",
+    "sha256": "519c0dcfc1449f069de78099d4b4ae80ea58ea41b9dc40c5b9e8a94be23813bd",
+    "bytes": 7363
+  },
+  {
+    "path": "server/content-tools/checks/WorldVerticalTravelChecks.java",
+    "sha256": "8221d26caf0fda312a626805fe44e7b4c2d1003916beb19fb2a95cd914448a7e",
+    "bytes": 12385
+  },
+  {
+    "path": "server/content-tools/checks/world_action_coverage.py",
+    "sha256": "8061cff02abf48109ef58262b3c77ad30d8404bed3cc6d28702880f869364f9a",
+    "bytes": 3461
+  },
+  {
+    "path": "server/content-tools/checks/world_dialogue_coverage.py",
+    "sha256": "a598ff561abf26a609aefc3f9916e16afd4ba9dc1ac5d55ed4ec465fa09ad225",
+    "bytes": 2225
+  },
+  {
+    "path": "server/content-tools/combat_animation_roles.py",
+    "sha256": "6a874a523cb37877322a05a4103e907ec9968f5ebd11869cdb60a02f6393017e",
+    "bytes": 5229
+  },
+  {
+    "path": "server/content-tools/pet-catalog-template.html",
+    "sha256": "92f4bf2b3f33704f8f2f35ad9ffa426c5bcae6eb59737e39d13709545ec0b040",
+    "bytes": 8242
+  },
+  {
+    "path": "server/content-tools/reconcile_world_vertical_travel.py",
+    "sha256": "3506cc0b08ce67c7c22e0ba83673433828ec224b4385c44e68ad58129ed12d8a",
+    "bytes": 3717
+  },
+  {
+    "path": "server/content-tools/refresh_pet_icons.py",
+    "sha256": "8d1b475927a38c1949f07a1a5c8f46b18e3b60778ce8438a5abd6f71787e07ec",
+    "bytes": 4008
+  },
+  {
+    "path": "server/content-tools/registries/owner-bound-items.json",
+    "sha256": "0f8d094ed034d1ff842042f5f466df47c0798624ddd98c3403ad5479d67cbc60",
+    "bytes": 115
+  },
+  {
+    "path": "server/content-tools/registries/universal-npc-pets.json",
+    "sha256": "c21d4dfb18a71ed2cd430b66b4d3f989ce0f69a05b30a3aae9e75b6899c286a5",
+    "bytes": 362876
+  },
+  {
+    "path": "server/content-tools/registries/world242-landscape-key-repairs.json",
+    "sha256": "2ce646c726f80994e24b8de89a8ab0041cdd1d133a38bb1377d3709f1568c0c7",
+    "bytes": 9195
+  },
+  {
+    "path": "server/content-tools/registries/world_combat_sequence_roles.json",
+    "sha256": "b5e47bf7aec28773ea48ffce08d5348147e02205608b796a01510927f6bc5907",
+    "bytes": 4304
+  },
+  {
+    "path": "server/content-tools/resolve_world242_landscapes.py",
+    "sha256": "7a750cda1df0c2fb3a5fc77e1eb4483fda004dcbf4643ace1f43b748f4095660",
+    "bytes": 5760
+  },
+  {
+    "path": "server/content-tools/stage_npc_pet_definitions.py",
+    "sha256": "25882d05aa0c2e19facb4333aadc81d688cbae50d2c64e6dce6e4a22050b8999",
+    "bytes": 14359
+  },
+  {
+    "path": "server/content-tools/test_audit_world242.py",
+    "sha256": "4669b47792c362d4e1135d41bfabff74a0ed658036b461edefb1111f3d4b4a3e",
+    "bytes": 2915
+  },
+  {
+    "path": "server/content-tools/test_world242_population.py",
+    "sha256": "ad3c8169d4601d3f061305a69c52470d507ef2e5d55c0f21a4b2a1a513bf009c",
+    "bytes": 2824
+  },
+  {
+    "path": "server/content-tools/test_world242_pve.py",
+    "sha256": "5265dadca94b5e13eb973160cdc23fcf1cff4f8b55964606e11a4e2cfc2870f5",
+    "bytes": 6546
+  },
+  {
+    "path": "server/content-tools/test_world_data.py",
+    "sha256": "cc63ec138deb0475a9ae7e006818ac1bfc0ac8fce921a6bc8ecaa436ec6e8162",
+    "bytes": 10108
+  },
+  {
+    "path": "server/content-tools/world242_population.py",
+    "sha256": "133b84fc3a54e23fc7afde8dcae4347007be545b6d0a840eb6a4ab1aad7e76c9",
+    "bytes": 9520
+  },
+  {
+    "path": "server/content-tools/world_combat_animations.py",
+    "sha256": "ea314342bcec4ec59519acfdccba6f9190ab3abd8b213c8b250a6938400b8cc1",
+    "bytes": 14595
+  },
+  {
+    "path": "server/content-tools/world_data.py",
+    "sha256": "999c208dad71de20ae56a4ecc5a5ce8caba0fe87e401bd3697336a2d243e2904",
+    "bytes": 23177
+  },
+  {
+    "path": "server/docs/automation/AUTOMATION_ARCHITECTURE.md",
+    "sha256": "4e388056fe44883177c78121ab6428fed99499fc54a6d5ce9100b0e17eb0bfc7",
+    "bytes": 2513
+  },
+  {
+    "path": "server/docs/automation/AUTOMATION_CHANGELOG.md",
+    "sha256": "8dee7aea55d215894add8fd6ddf186e20b15e82a6c6e81d4930332e60a285a46",
+    "bytes": 1105
+  },
+  {
+    "path": "server/docs/automation/AUTOMATION_IMPLEMENTATION_MATRIX.md",
+    "sha256": "d41f53c128af0e671b26373c00dfdfdaadf80a614f8323705f6fa0514b875129",
+    "bytes": 8539
+  },
+  {
+    "path": "server/docs/automation/AUTOMATION_NEXT_STEPS.md",
+    "sha256": "ff92728101433ca314ee1848b32c3accfabf96ecbd66116e78b131a2bfffde87",
+    "bytes": 1388
+  },
+  {
+    "path": "server/docs/automation/AUTOMATION_OWNER_COMMANDS.md",
+    "sha256": "cb16c3edaff0bc7f7568e59a95f21a131a821aec6577a5fb302db7306e4ce06b",
+    "bytes": 1798
+  },
+  {
+    "path": "server/docs/automation/AUTOMATION_REPOSITORY_RESEARCH.md",
+    "sha256": "ad225e1097b0a17baadc975a67ef6a6a81235b6f32c9c82d3c2a1c13182b489b",
+    "bytes": 23918
+  },
+  {
+    "path": "server/docs/automation/AUTOMATION_SERVER_AUDIT.md",
+    "sha256": "858f10f4ac00132d8bfa239e1dd2edbb5d1fbdeed37fd32a004780fb9af73079",
+    "bytes": 11813
+  },
+  {
+    "path": "server/docs/automation/AUTOMATION_TEST_REPORT.md",
+    "sha256": "ac8534a37c8b75dc1741e8e4c035287edc20c28ed4a966cd1a80e93469e9b1ed",
+    "bytes": 3600
+  },
+  {
+    "path": "server/docs/automation/AUTONOMOUS_SLAYER.md",
+    "sha256": "dc70a07817a60a5b6a60c5b2009f2cb268054bc11e0c7d1b31852d876b1b3cbf",
+    "bytes": 8146
+  },
+  {
+    "path": "server/docs/world/ARCHITECTURE.md",
+    "sha256": "85c4e6fa8d6fb29509108c6f895630ab88a8306b09b532462de8e73af4c079fd",
+    "bytes": 2849
+  },
+  {
+    "path": "server/docs/world/BOSSES_AND_QUESTS.md",
+    "sha256": "691ffb455cacb8e56b0a9509661edfdbca209efe84fd0f24ade2b8e6dbbe1261",
+    "bytes": 2107
+  },
+  {
+    "path": "server/docs/world/CHARTER_TRAVEL.md",
+    "sha256": "7ea0250794e567ff1ece984f24caed789556ca10e961d57603158f8b316b8278",
+    "bytes": 3751
+  },
+  {
+    "path": "server/docs/world/COMBAT_ANIMATIONS.md",
+    "sha256": "dc3f1d1e330798edca84956085e14069b4ebdccf24485f22059c3a162419565a",
+    "bytes": 5256
+  },
+  {
+    "path": "server/docs/world/COVERAGE.md",
+    "sha256": "130712871ab71bd9044c56427172756d4730550c04ec53c19e86714b2306b366",
+    "bytes": 8850
+  },
+  {
+    "path": "server/docs/world/EXAMINES.md",
+    "sha256": "9ee53579e910dec39feae8e40d2c3b6586fbf6469a69c2437e6bf324e777d14f",
+    "bytes": 2717
+  },
+  {
+    "path": "server/docs/world/FAIRY_RING_TRAVEL.md",
+    "sha256": "bd65d96201698552700f0e53a31df40f45070f1d1b7aa77285763db7bf3c5217",
+    "bytes": 2893
+  },
+  {
+    "path": "server/docs/world/GAMEPLAY.md",
+    "sha256": "16115ad54f6ccec09ce402f56e6db28d61b59fe7588623af83e0c7d9277aa838",
+    "bytes": 4212
+  },
+  {
+    "path": "server/docs/world/KNOWN_LIMITATIONS.md",
+    "sha256": "a1428cb693fd6095560bfcb3cb6e96e59834c21eb9b7848c800958d35dea71ff",
+    "bytes": 2797
+  },
+  {
+    "path": "server/docs/world/LANDSCAPE_RESEARCH.md",
+    "sha256": "8360583c8530385dbadf0289120d4ce29c38f2f00709ac4949d90c40b6d189f2",
+    "bytes": 9048
+  },
+  {
+    "path": "server/docs/world/NPC_DIALOGUE.md",
+    "sha256": "820528b645d34a796bae5ccc8ffb7a7d801e4a5bc479d12b59b3523924a1cb46",
+    "bytes": 4655
+  },
+  {
+    "path": "server/docs/world/NPC_STATUS.md",
+    "sha256": "ccf4274d9e1818cd42545e597df6816d2d6ecbe828aea1469537e77605d7c45a",
+    "bytes": 4751
+  },
+  {
+    "path": "server/docs/world/PVE_REPAIR.md",
+    "sha256": "484704488445bf2b0fdb1991481248cd2a84397dd21456414b0e7180b3d70c9c",
+    "bytes": 6129
+  },
+  {
+    "path": "server/docs/world/QUESTS.md",
+    "sha256": "cf0eb6ad493db36898fb35edb3f4019f974799920a97d85a4df964637d5b29f7",
+    "bytes": 9452
+  },
+  {
+    "path": "server/docs/world/SOURCES.md",
+    "sha256": "2e74b88d4fb825bb0c210d382001273e42b1af046db4d4892c501d002670e8f7",
+    "bytes": 5027
+  },
+  {
+    "path": "server/docs/world/TEST_RESULTS.md",
+    "sha256": "506fda3353f348cd092578d6f6e1c3d06dde7d089e6565c4a7867a10558e090d",
+    "bytes": 5597
+  },
+  {
+    "path": "server/docs/world/VERTICAL_TRAVEL.md",
+    "sha256": "3375f840d22acefa0a2e5f69659f139d83f54cc03a310c9bb30cc07a8c217ac6",
+    "bytes": 3594
+  },
+  {
+    "path": "server/docs/world/WORLD_ACTIONS.md",
+    "sha256": "918ed7416d1a0711531c6f00063ead4d3ed39a286f6dcf95c1b9a588c0709d12",
+    "bytes": 5796
+  },
+  {
+    "path": "server/docs/world/WORLD_PERFECTION.md",
+    "sha256": "0a7dd2a4e9befb148e984f69f4d2312b2590beccf68066f1dd09756cb5529e30",
+    "bytes": 4829
+  },
+  {
+    "path": "ubuntu/newscape-cache@.service",
+    "sha256": "ada921e20114e8f4b98508b2025ab75d8b19105c3fa89a2f0f53b6dc448d646c",
+    "bytes": 411
+  },
+  {
+    "path": "ubuntu/newscape-game@.service",
+    "sha256": "178cb222f588dbf494fc1d2a61491f62b6d050d85301cf7a6fb2e706dfefc522",
+    "bytes": 405
+  },
+  {
+    "path": "ubuntu/newscape-owner-gateway.service",
+    "sha256": "93def06ce9ab3f83daae311a641dfe004627f8955c2023a31a719319a8707706",
+    "bytes": 585
+  },
+  {
+    "path": "ubuntu/owner-gateway.py",
+    "sha256": "4be79ab6446837c90b83cac273a6215bf79ae71ea43dc71014657900762c59d1",
+    "bytes": 2409
+  },
+  {
+    "path": "ubuntu/run-newscape.sh",
+    "sha256": "3ea1dfbe508359fc2e699a7cec1b5a1bd5c83979fb9d11e3c535092bc9f45115",
+    "bytes": 2012
+  },
+  {
+    "path": "ubuntu/runtime36/Cutover-UbuntuRelease.sh",
+    "sha256": "2fac2e3942d45d8a57da15d8f043576476265908c697c62696869d5a4f85cb1a",
+    "bytes": 4110
+  },
+  {
+    "path": "ubuntu/runtime36/Prepare-UbuntuRelease.sh",
+    "sha256": "288fee281b6c34ae686f45d3091521aee2737b25680285980eeb1253b41428a9",
+    "bytes": 3665
+  },
+  {
+    "path": "ubuntu/verify-endpoint.py",
+    "sha256": "3aa3ad0afeebda3949b0fdce23ab81f7153b5aa3b6695d122f840b223522d2ff",
+    "bytes": 1152
+  }
+]

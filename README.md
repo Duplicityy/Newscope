@@ -1,29 +1,18 @@
-# NewScope — ready-to-play clients
+# Newscape
 
-**Windows launcher test** — [Download the small launcher](https://github.com/Duplicityy/Newscope/raw/refs/heads/main/windows-launcher/Newscape-Launcher.exe) to install Java and the client automatically. [Instructions and test status](windows-launcher/README.md).
+The current owner release is **Runtime 36 / Expedition v46**. The private Ubuntu server is running the matching server update.
 
-Download the updated clients for the live six-system release:
+| Platform | Download | Installation |
+| --- | --- | --- |
+| Windows | [Expedition v46 Windows update](https://github.com/Duplicityy/Newscope/releases/download/runtime36-expedition-v46/Newscape-Windows-Expedition-v46.zip) | Install or initialize the [Newscape Launcher](windows-launcher/README.md) first. Extract the update into its own folder and run `Play Newscape Expedition.cmd`. |
+| Android | [Expedition v46 APK](https://github.com/Duplicityy/Newscope/releases/download/runtime36-expedition-v46/Newscape-Mobile-Ultra-Expedition-v46.apk) | Install the signed APK over the existing owner app to retain its settings. |
 
-| Device | Download | Install |
-|---|---|---|
-| Windows | [Kronos-Windows.zip](https://github.com/Duplicityy/Newscope/releases/download/clients-0.5.2-session-close/Kronos-Windows.zip) — 78.6 MB | Extract the entire ZIP, then run Play Kronos.cmd. Java is bundled. |
-| Android | [Kronos-Mobile.apk](https://github.com/Duplicityy/Newscope/releases/download/clients-0.5.2-session-close/Kronos-Mobile.apk) — 92.8 MB | Install version 0.5.2-session-close (versionCode 14) over the existing app to retain its data and controls. |
+Both packages use the same accounts, cache handshake, and world. The release adds the Daemonheim Expedition Ledger, updated teleport destinations, NPC dialogue and animation fixes, repaired doors and floor transitions, fairy-ring fixes, passenger journeys, and 48 charter sailings across eight eligible ports.
 
-**Updated clients are required for the live movement subrevision 6.** Open `::progress` in game for mastery, armour condition and Horvik repairs, Legend, boss pets, Athletics, and community thanks. Android retains the recent rendering, background-session, and optional experimental Mobile HD work. Version 0.5.2 also closes the game engine and network process when the app is swiped away from Recents; ordinary app switching keeps the session.
+## Source and verification
 
-**This repository and its downloads are private.** Sign in with a GitHub account that has repository access. The owner must invite your friend as a collaborator if they do not already have access.
+- [Runtime 36 source changes and build inputs](runtime36-source/SOURCE-STATUS.md)
+- [Release assets, exact server overlay and SHA-256 checksums](https://github.com/Duplicityy/Newscope/releases/tag/runtime36-expedition-v46)
+- [Archived build and download instructions](docs/releases/legacy-client-downloads.md)
 
-No source build or asset-restoration step is needed to play. Both downloads are the exact deployed packages, verified by SHA256 and file size before publication; the upload workflow does not rebuild them.
-
-[Release page, checksums and instructions](https://github.com/Duplicityy/Newscope/releases/tag/clients-0.5.2-session-close)
-
-- Android SHA256: `436ca9d7ca339eb3cab713c01ed2ff369b47feb0bd984ce7b6ca9826efcb6a7a`
-- Windows SHA256: `94a027c880775769e8943c820e4c92cfdb4cd6fed0cb5ba3262a2540c55569f5`
-
-The project uses the existing revision-184 client architecture with revision-242 content and a matching movement extension. It is not a claim of complete OSRS gameplay parity.
-
-## Project source
-
-The full sanitized Kronos project is in this private repository: server source under `kronos-osrs-184/Kronos-master/`, Android client source under `kronos-mobile/`, Windows client files under `windows-client/`, build scripts at the repository root, and the revision 242 asset payload under `assets-payload/`. See `PUBLISH-AND-BUILD.txt` and `SOURCE_EXPORT_CHANGES.txt` for setup and export notes. The cache payload is split into text parts for GitHub transport; restore it before building or editing models.
-
-Private player saves, account passwords, local keys, and live server configuration are intentionally excluded. The Soulbound Ancestral model generator and its outputs are not included.
+The repository is private. Account data, player saves, server backups, signing keys and private deployment configuration are kept outside it.

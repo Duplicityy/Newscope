@@ -1,0 +1,13 @@
+# Universal NPC pets offline candidate
+
+The candidate at D:/Newscape-Pets/candidate uses the selected runtime30 data and its overlay classes. Feature activation uses -Dkronos.universalPets=true and the paired cache in this candidate. The compile classpath used during staging is retained locally in D:/Newscape-Pets/build/classpath.txt. Put candidate/classes ahead of the normal overlays. The staged runtime has no production accounts, public listener configuration, or launch authorization.
+
+Regular NPC completions roll for the credited killer, and the ToA actor death listener uses its native killer. Once-per-spawn tracking prevents repeated callbacks from rerolling. Legacy loot and pet hooks run as before. The manifest default is 1 in 5,000 with optional per-record rate denominators. A successful roll reserves ownership and a pending claim in a durable save. Use ::npcpets to claim item tokens or pick up an active pet. Drop a claimed token to release the follower. Existing attack animations can be previewed from the follower's second interaction. Missing attack bindings are reported in game.
+
+The isolated pet test account contains 122 legacy pets and 678 generated pets in the bank. The 1,782 remaining generated pets are in the paged claim list because the bank supports 800 slots. The account has normal player permissions and uses the candidate's standalone account registry.
+
+The candidate compiles and passes event weaving, JVM class linkage, isolated account authentication, definition and asset reference validation, and a detached Gson pet state round trip. Full-player decoding in a detached JVM requires initialized interface and journal data. An attempted full-player decode stopped at that dependency. Login, rewards and interactions require paired-client testing. The current normal downloads have no companion cache release for the candidate. Do not point any client at an independently exposed candidate updater until cache capability and profile separation have been verified.
+
+The definition inventory covers 2,460 generated source IDs. Twenty-three morphing entries and two unnamed model-less entries require manual disposition. Scripted reward paths beyond the normal death hook and ToA actor callback still need a coverage audit, including scripted terminal phases, room-credit attribution and dynamic Dungeoneering actors. The present manifest is provisional and source listings may include encounter helpers. Build notes and exact staged counts are in STAGE.json. Original cache config archives are backed up under D:/Newscape-Pets/backup.
+
+No graphics, models, textures, icons or animations were created. The definition entries reference existing cache assets. Rendering code was not changed.

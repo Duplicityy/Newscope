@@ -1,0 +1,5 @@
+The reported DirectByteBuffer upload failed during reflective dispatch because the Java registration allowlist and JNI registration table included only allocation, FloatBuffer and IntBuffer glBufferData overloads. Add the ByteBuffer overload to both tables and forward through the existing byte-count/position-aware buffer helper with element size one. The existing bounded() adapter handles direct and heap ByteBuffers without changing the caller's cursor.
+
+Verification performed with the built Java registry and native source. All 94 registry signatures exist in the JNI registration table. BufferBindingCheck passed 21 overload resolutions plus content, offset, limit and oversize checks. Host calls reached the expected unlinked native boundary. The native Android arm64 library compiled with NDK27 and 16KB page alignment. APK25 signature and metadata verified. Device GPU upload and subsequent plugin startup remain for owner testing.
+
+Previous code24 APK and original graphics JAR/library/tag are retained. The new runtime tag causes installed clients to extract the corrected embedded graphics files on their next launch.

@@ -1,0 +1,377 @@
+{
+  "schemaVersion": 1,
+  "baselineRegionKeysSha256": "de45d50d73e2e67b37513caf10154bf4e9bc8927810f7037249ea4a1187b62c3",
+  "cacheFilesSha256": {
+    "main_file_cache.dat2": "65ab6701aef67c9ac409f11145240fb40c958f8894d062789d9109d8edf7d812",
+    "main_file_cache.idx5": "4f4548312cf9aabe698f9b95ae2297ce16d891f6b6f93c3178a7291bea4e8c2d",
+    "main_file_cache.idx255": "fffea764c290caa4f4f3c2dcdba7cfdb0fdf8c10a966f9ff09d6cdf7929bab2b"
+  },
+  "repairs": [
+    {
+      "mapSquare": 9634,
+      "landscapeGroup": 3639,
+      "oldKeys": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "keys": [
+        -200678318,
+        -1176350218,
+        -853021804,
+        1507732981
+      ],
+      "ciphertextSha256": "6e86d3bb879366e307467503a39d6b893aae228b57af8dbbc3f76fd490e15556",
+      "decodedSha256": "52432b3e842bf8d2ec6b906754fb62bc0a835d268990ad4e5f68bce8910f0cf8",
+      "placements": 868,
+      "openrs2Snapshot": 106
+    },
+    {
+      "mapSquare": 9635,
+      "landscapeGroup": 3641,
+      "oldKeys": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "keys": [
+        -1967835133,
+        713533223,
+        1704336237,
+        -1802635256
+      ],
+      "ciphertextSha256": "729a9341700f750afc1b75662cdbb25664285c3f449666a59f3fb2b2c3017b84",
+      "decodedSha256": "dc4e0d6538be5d1a762d98e9bf3c6075ffb9cd83d4077f1ba230d1bf3611dad8",
+      "placements": 308,
+      "openrs2Snapshot": 106
+    },
+    {
+      "mapSquare": 9790,
+      "landscapeGroup": 1641,
+      "oldKeys": null,
+      "keys": [
+        1768582729,
+        -1374645893,
+        -820783502,
+        -341260049
+      ],
+      "ciphertextSha256": "e354a738972ba4242dbe0634e59469bcfacf33e7591c697a2376623779b69404",
+      "decodedSha256": "6ffb1a57909a7634e21289fce8df1e7205ec9131795e1fbd72d27a4d2ccf762c",
+      "placements": 402,
+      "openrs2Snapshot": 106
+    },
+    {
+      "mapSquare": 9890,
+      "landscapeGroup": 3635,
+      "oldKeys": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "keys": [
+        -168985191,
+        -1821696758,
+        -792961419,
+        -823930041
+      ],
+      "ciphertextSha256": "fef650b5b73c705c763a9f242c85e2f33818eee19a88336994a3f45c49bfa9bc",
+      "decodedSha256": "08e120cdd2ff269ceff704519327449cabefa08c96801fa9d5023fe73115d4f0",
+      "placements": 2010,
+      "openrs2Snapshot": 106
+    },
+    {
+      "mapSquare": 9891,
+      "landscapeGroup": 3637,
+      "oldKeys": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "keys": [
+        1550367494,
+        -1753583808,
+        1269484265,
+        309952136
+      ],
+      "ciphertextSha256": "9103ec5d2fb263149777a26135abf915a4638ebc9ee9805cb9377bdf02c36295",
+      "decodedSha256": "441336af885d26200f993d938f17793562af1444fc7a8ac3226ec2ea523fbbf3",
+      "placements": 796,
+      "openrs2Snapshot": 106
+    },
+    {
+      "mapSquare": 12086,
+      "landscapeGroup": 113,
+      "oldKeys": [
+        -1256972626,
+        -1806987610,
+        -906381735,
+        -340326042
+      ],
+      "keys": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "ciphertextSha256": "91634d69fbb997717345a09ba78bd73dbcb03c7e67ec2ce1a0b4ce9e86d49c76",
+      "decodedSha256": "d99f6dbaf682fa931e5088120898e1ad42cc62e06f97c5f948f87d77fbf3d823",
+      "placements": 2721,
+      "openrs2Snapshot": null
+    },
+    {
+      "mapSquare": 13898,
+      "landscapeGroup": 1971,
+      "oldKeys": null,
+      "keys": [
+        -1138469563,
+        -677143094,
+        1189511568,
+        1449523377
+      ],
+      "ciphertextSha256": "10164e724e7ceef28b495a2c3ae515fdfdd3162448e51164d759ffa11f2e835d",
+      "decodedSha256": "0e10d2bc254474714da366ab5e48bd2b238f3704d0b09c50d851071e8903b33d",
+      "placements": 3413,
+      "openrs2Snapshot": 95
+    },
+    {
+      "mapSquare": 15245,
+      "landscapeGroup": 3307,
+      "oldKeys": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "keys": [
+        -1893044710,
+        2025747767,
+        -375565547,
+        324439056
+      ],
+      "ciphertextSha256": "49e77d07346e38b40aa476be653d2951be75acbafa06cf6732ec19fbbaaa51a9",
+      "decodedSha256": "c099272bb9dba5a021c164285b94732e4255c3b6c5eed1428e79b4fc1cfedbe1",
+      "placements": 1273,
+      "openrs2Snapshot": 73
+    },
+    {
+      "mapSquare": 15246,
+      "landscapeGroup": 3301,
+      "oldKeys": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "keys": [
+        2101341694,
+        1290533211,
+        1031419378,
+        1573525401
+      ],
+      "ciphertextSha256": "6317e8b3ceb2a3bb62b2704c67cb3ce342fdcb0cd9114b31d9c2aff4bee412a5",
+      "decodedSha256": "410291064b7101aa34546352532a30a583f61e0496a4ee054a13fb9d8244baa8",
+      "placements": 5090,
+      "openrs2Snapshot": 73
+    },
+    {
+      "mapSquare": 15501,
+      "landscapeGroup": 3305,
+      "oldKeys": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "keys": [
+        1997255044,
+        1184635724,
+        -704797593,
+        -1571988808
+      ],
+      "ciphertextSha256": "8dbcf9b12a0510e18809746396cc710e43a68e38ee842861761927c8e400dda9",
+      "decodedSha256": "fac600aecaf609d1a9fe9d465621dd312991db9b1eb1d45b6aa56d7e0b1f1d8b",
+      "placements": 1270,
+      "openrs2Snapshot": 73
+    },
+    {
+      "mapSquare": 15502,
+      "landscapeGroup": 3303,
+      "oldKeys": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "keys": [
+        -391512506,
+        -755978995,
+        1346917531,
+        1536284691
+      ],
+      "ciphertextSha256": "bc592fe74bd2883510c5d86ef0f1c9a81cfb3e413a688d4bec40841fb7446465",
+      "decodedSha256": "03c365d30303635301603d934c3b02dc693bda101f5f35d3ab829ed90fbd19b7",
+      "placements": 5093,
+      "openrs2Snapshot": 73
+    },
+    {
+      "mapSquare": 16014,
+      "landscapeGroup": 3425,
+      "oldKeys": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "keys": [
+        -1902366783,
+        1965123166,
+        -559229557,
+        934319174
+      ],
+      "ciphertextSha256": "c7e1d38590864379e7105b81b0b027a83efd16873ba49de2ff6e836eed3d8aea",
+      "decodedSha256": "09866ec1e94f4dbc38da06123940f72a72dab069c6b2e4c405ffe4fac54ea4cd",
+      "placements": 6426,
+      "openrs2Snapshot": 81
+    },
+    {
+      "mapSquare": 16270,
+      "landscapeGroup": 3423,
+      "oldKeys": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "keys": [
+        -1019884360,
+        -1722312448,
+        1196595898,
+        -595081270
+      ],
+      "ciphertextSha256": "3c2fbc7658211547ef8d6c406e1ca2ac6f20e0d7bac5f0139a3570f227319b3a",
+      "decodedSha256": "b9ad6ded7de2808c3e1e776fa5d83646ee36244eedd08730aa35d09148fc8a7d",
+      "placements": 6436,
+      "openrs2Snapshot": 81
+    }
+  ],
+  "unresolved": [
+    {
+      "mapSquare": 4924,
+      "landscapeGroup": 3475,
+      "verifiedCandidates": 0,
+      "historicalKeysChecked": 2
+    },
+    {
+      "mapSquare": 6486,
+      "landscapeGroup": 3273,
+      "verifiedCandidates": 0,
+      "historicalKeysChecked": 1
+    },
+    {
+      "mapSquare": 6487,
+      "landscapeGroup": 3299,
+      "verifiedCandidates": 0,
+      "historicalKeysChecked": 1
+    },
+    {
+      "mapSquare": 6743,
+      "landscapeGroup": 3263,
+      "verifiedCandidates": 0,
+      "historicalKeysChecked": 1
+    },
+    {
+      "mapSquare": 11326,
+      "landscapeGroup": 1679,
+      "verifiedCandidates": 0,
+      "historicalKeysChecked": 3
+    },
+    {
+      "mapSquare": 13128,
+      "landscapeGroup": 3027,
+      "verifiedCandidates": 0,
+      "historicalKeysChecked": 1
+    },
+    {
+      "mapSquare": 13146,
+      "landscapeGroup": 3457,
+      "verifiedCandidates": 0,
+      "historicalKeysChecked": 0
+    },
+    {
+      "mapSquare": 13147,
+      "landscapeGroup": 3459,
+      "verifiedCandidates": 0,
+      "historicalKeysChecked": 0
+    },
+    {
+      "mapSquare": 13402,
+      "landscapeGroup": 3453,
+      "verifiedCandidates": 0,
+      "historicalKeysChecked": 0
+    },
+    {
+      "mapSquare": 13403,
+      "landscapeGroup": 3455,
+      "verifiedCandidates": 0,
+      "historicalKeysChecked": 0
+    },
+    {
+      "mapSquare": 14910,
+      "landscapeGroup": 3123,
+      "verifiedCandidates": 0,
+      "historicalKeysChecked": 1
+    },
+    {
+      "mapSquare": 16012,
+      "landscapeGroup": 3519,
+      "verifiedCandidates": 0,
+      "historicalKeysChecked": 0
+    },
+    {
+      "mapSquare": 16013,
+      "landscapeGroup": 3429,
+      "verifiedCandidates": 0,
+      "historicalKeysChecked": 0
+    },
+    {
+      "mapSquare": 16268,
+      "landscapeGroup": 3517,
+      "verifiedCandidates": 0,
+      "historicalKeysChecked": 0
+    },
+    {
+      "mapSquare": 16269,
+      "landscapeGroup": 3427,
+      "verifiedCandidates": 0,
+      "historicalKeysChecked": 0
+    },
+    {
+      "mapSquare": 16781,
+      "landscapeGroup": 3445,
+      "verifiedCandidates": 0,
+      "historicalKeysChecked": 0
+    },
+    {
+      "mapSquare": 16782,
+      "landscapeGroup": 3443,
+      "verifiedCandidates": 0,
+      "historicalKeysChecked": 0
+    },
+    {
+      "mapSquare": 17037,
+      "landscapeGroup": 3447,
+      "verifiedCandidates": 0,
+      "historicalKeysChecked": 0
+    },
+    {
+      "mapSquare": 17038,
+      "landscapeGroup": 3449,
+      "verifiedCandidates": 0,
+      "historicalKeysChecked": 0
+    }
+  ]
+}

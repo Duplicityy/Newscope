@@ -1,0 +1,11 @@
+# Windows full fresh cache edition
+
+The friend reported a black window after upgrading from the old base client. The exact cause on that PC is not established. Inspection found a concrete stale-cache path: native WorldMapRegion.method337 follows saved absolute locators and then scans legacy global directories. A new ZIP or different user.home alone cannot reliably avoid those caches.
+
+The new Windows-only launcher includes all24files of the frozen native-cache-v14 snapshot (257169388bytes). It verifies lengths and SHA256 values, installs a fresh cache atomically beneath the existing client profile's newscape-cache/184728-fresh1, and passes an explicit newscape.cache.dir. The native selector returns that checked directory before reading any legacy locator or performing migration. The existing user.home is retained for account/settings continuity. No player saves, source or account registry are distributed.
+
+Play Newscape.cmd installs once and starts the game. Fresh Cache.cmd archives and reinstalls the managed cache when the game is closed. No legacy or global cache is deleted. Installation and JVM-lifetime session locks prevent concurrent managed-cache replacement. Startup failures are logged to %LOCALAPPDATA%/Kronos-Windows/newscape-launcher.log with a visible error dialog where possible. This improves diagnostics but does not establish the precise fault on the friend's PC.
+
+Verification:28real filesystem/session-lock checks,10actual packaged cache-selector checks, full seed installation, native cache-directory identity, and a populated Newscape login-screen capture using the bundled Windows JVM. No account login was attempted. The client process exited after capture. Server and Android artifacts are unchanged; wire184/login8/movement6/cache184728 remain compatible.
+
+Rebuild with tools/content242/Build-WindowsFreshCache.ps1 -Workspace <workspace> -Work <selected-dungeoneering-work> -Output <new-directory>. It requires the frozen paired candidate05 baseline and V14 cache. It refuses existing output and verifies cache hashes before packing. Bootstrap and selector tests are in tools/content242/windows. Current packaged proof and screenshot are in WORK/windows-fresh-cache-01. Friend-PC verification is still required.

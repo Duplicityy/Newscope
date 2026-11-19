@@ -1,0 +1,9 @@
+NEWSCAPE WINDOWS - FULL FRESH CACHE EDITION
+1. Close all old game windows.
+2. Extract this entire ZIP into a new folder.
+3. Run Play Newscape.cmd. The full matching cache installs automatically on first launch.
+
+This package includes the entire 184728 game cache. It ignores old cache locators and legacy cache folders. Login details and settings keep their existing profile.
+If you need another clean cache, close the game and run Fresh Cache.cmd. The previous managed cache is archived, not deleted.
+Startup log: %LOCALAPPDATA%\Kronos-Windows\newscape-launcher.log
+Game protocol184 / login8 / movement6. Existing Android code16 remains compatible.

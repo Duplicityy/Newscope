@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Newscape Pet Catalog</title>
+<style>
+:root { color-scheme:dark; --background:#161715; --surface:#21231f; --edge:#42453b; --text:#efebdf; --subtle:#c2beaf; --gold:#eacc86; }
+* {box-sizing:border-box}
+body {margin:0;background:var(--background);color:var(--text);font:16px/1.5 "Segoe UI",system-ui,sans-serif}
+main {width:min(100% - 2rem,1160px);margin:2rem auto 4rem}
+h1 {font-family:Georgia,serif;font-size:clamp(2.1rem,5vw,3.6rem);line-height:1.1;font-weight:500;color:var(--gold);margin:0 0 .55rem}
+.intro {max-width:75ch;margin:0 0 1.3rem;color:var(--subtle)}
+.toolbar {display:flex;flex-wrap:wrap;gap:.8rem;padding:1rem;border:1px solid var(--edge);border-radius:12px;background:var(--surface)}
+label {display:flex;flex-direction:column;gap:.3rem;font-size:.86rem;color:var(--subtle)}
+label.search {flex:1 1 16rem}
+input,select,button {font:inherit;color:var(--text);border:1px solid var(--edge);background:#191b18;border-radius:7px;padding:.55rem .68rem;min-height:42px}
+button {cursor:pointer;padding-inline:.85rem}
+button:disabled {opacity:.52;cursor:default}
+:focus-visible {outline:2px solid var(--gold);outline-offset:2px}
+nav {display:flex;align-items:center;justify-content:space-between;gap:.65rem;margin:1.1rem 0}
+.page-buttons {display:flex;align-items:center;gap:.5rem}
+.stats,.page-label {font-size:.88rem;color:var(--subtle)}
+.grid {display:grid;grid-template-columns:repeat(auto-fill,minmax(225px,1fr));gap:.75rem}
+article {padding:.75rem;background:var(--surface);border:1px solid var(--edge);border-radius:10px;min-width:0}
+.preview {height:110px;display:grid;place-items:center;background:#191b18;border-radius:6px}
+.preview img {width:96px;height:96px;object-fit:contain}
+article h2 {font-size:1rem;margin:.65rem 0 .32rem;line-height:1.22;color:var(--gold);overflow-wrap:anywhere}
+dl {font-size:.85rem;margin:0;display:grid;grid-template-columns:max-content minmax(0,1fr);gap:.2rem .75rem;line-height:1.35}
+dt {color:var(--subtle)}
+dd {margin:0;overflow-wrap:anywhere}
+footer {margin-top:1.9rem;color:var(--subtle);font-size:.88rem;max-width:90ch}
+.empty {color:var(--subtle);margin:.5rem 0 1rem}
+@media(max-width:560px){main{width:calc(100% - 1rem);margin-top:1rem}.grid{grid-template-columns:repeat(auto-fill,minmax(155px,1fr))}article{padding:.55rem}dl{display:block}dd{margin:0 0 .25rem}nav{flex-wrap:wrap}label{flex:1 1 8rem}h1{font-size:2.1rem}}
+</style>
+</head>
+<body>
+<main>
+<header>
+<h1>Newscape Pet Catalog</h1>
+<p class="intro">Browse NPC pets and existing pets. Search by name or ID to see the drop rate, follower size, and available forms.</p>
+</header>
+<div class="toolbar" role="search">
+<label class="search">Find a pet<input type="search" id="search" placeholder="Name, NPC ID, or item ID" autocomplete="off"></label>
+<label>Collection<select id="collection"><option value="all">All pets</option><option value="generated">NPC pets</option><option value="legacy">Existing pets</option></select></label>
+<label>Form<select id="form"><option value="all">Any form</option><option value="half">Half scale</option><option value="original">Original scale</option><option value="alternate">Mapped or alternate form</option></select></label>
+</div>
+<nav aria-label="Catalog pages">
+<span class="stats" id="stats" role="status"></span>
+<div class="page-buttons"><button id="previous" type="button">Previous</button><span class="page-label" id="page"></span><button id="next" type="button">Next</button></div>
+</nav>
+<section id="results" class="grid" aria-label="Pets"></section>
+<button id="more" type="button" hidden>Next page</button>
+<footer>
+<p>NPC pets use a separate roll after an eligible kill. Existing pets retain their own rules. A listed base roll excludes progression guarantees and activity-specific modifiers. An activity source may set its own rate.</p>
+<p>Each image is a capture of an existing cache model. Previews fit their cards, so use the listed scale for in-game size. Where a model could not be captured, the card shows the pet’s existing inventory model and labels it.</p>
+</footer>
+</main>
+<script type="application/json" id="pet-data">__PET_DATA__</script>
+<script>
+"use strict";
+const pets = JSON.parse(document.querySelector("#pet-data").textContent);
+const search = document.querySelector("#search");
+const collection = document.querySelector("#collection");
+const form = document.querySelector("#form");
+const results = document.querySelector("#results");
+const stats = document.querySelector("#stats");
+const countLabel = document.querySelector("#page");
+const previous = document.querySelector("#previous");
+const next = document.querySelector("#next");
+const more = document.querySelector("#more");
+const number = new Intl.NumberFormat("en-US");
+const pageSize = 24;
+let current = 0;
+function textElement(tag, text) {
+  const element = document.createElement(tag);
+  element.textContent = text;
+  return element;
+}
+function line(list, label, value) {
+  list.append(textElement("dt", label), textElement("dd", value));
+}
+function hasForm(pet) {
+  return pet.legacy ? pet.meta >= 0 : pet.id !== pet.appearance;
+}
+function matches(pet, query) {
+  if (collection.value === "generated" && pet.legacy) return false;
+  if (collection.value === "legacy" && !pet.legacy) return false;
+  if (form.value === "half" && !pet.half) return false;
+  if (form.value === "original" && pet.half) return false;
+  if (form.value === "alternate" && !hasForm(pet)) return false;
+  return query.every(word => pet.lookup.includes(word));
+}
+function card(pet) {
+  const article = document.createElement("article");
+  const preview = document.createElement("div");
+  preview.className = "preview";
+  const image = document.createElement("img");
+  image.loading = "lazy";
+  image.alt = pet.tokenPreview ? "Existing inventory model for " + pet.name : pet.name;
+  image.src = "data:image/png;base64," + pet.preview;
+  preview.append(image);
+  const list = document.createElement("dl");
+  const drop = pet.divisor ? "1 in " + number.format(pet.divisor) : "Varies by source";
+  line(list, pet.legacy ? "Base drop" : "Drop", drop);
+  line(list, "Scale", pet.legacy ? "Existing scale" : pet.half ? "50% of source" : "Original scale");
+  if (hasForm(pet)) {
+    const target = pet.legacy ? pet.meta : pet.appearance;
+    line(list, pet.legacy ? "Transforms to" : "Uses form", (pet.formName || "NPC") + " (" + target + ")");
+  } else {
+    line(list, "Form", pet.legacy ? "Fixed" : "Fixed source form");
+  }
+  line(list, pet.legacy ? "Follower ID" : "Source NPC", pet.id);
+  line(list, "Item ID", pet.item);
+  if (pet.tokenPreview) line(list, "Image", "Inventory model");
+  article.append(preview, textElement("h2", pet.name), list);
+  return article;
+}
+pets.sort((a,b) => a.name.localeCompare(b.name) || a.id-b.id);
+for (const pet of pets) {
+  pet.lookup = [pet.name, pet.id, pet.item, pet.appearance, pet.follower, pet.formName].join(" ").toLowerCase();
+}
+function render() {
+  const terms = search.value.trim().toLowerCase().split(/\s+/).filter(Boolean);
+  const selected = pets.filter(pet => matches(pet, terms));
+  const pages = Math.max(1, Math.ceil(selected.length / pageSize));
+  current = Math.min(Math.max(current, 0), pages-1);
+  stats.textContent = number.format(selected.length) + " of " + number.format(pets.length) + " pets";
+  countLabel.textContent = (current+1) + " / " + pages;
+  previous.disabled = current === 0;
+  next.disabled = current === pages-1;
+  more.hidden = next.disabled;
+  results.replaceChildren();
+  if (!selected.length) {
+    const empty = textElement("p", "No pets match the current search.");
+    empty.className = "empty";
+    results.append(empty);
+  }
+  for (const pet of selected.slice(current*pageSize,(current+1)*pageSize)) {
+    results.append(card(pet));
+  }
+}
+for (const input of [search,collection,form]) {
+  input.addEventListener("input", () => { current = 0; render(); });
+}
+previous.addEventListener("click", () => { current--; render(); });
+next.addEventListener("click", () => { current++; render(); });
+more.addEventListener("click", () => { current++; render(); next.focus(); });
+render();
+</script>
+</body>
+</html>
