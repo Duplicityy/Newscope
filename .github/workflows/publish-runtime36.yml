@@ -40,7 +40,7 @@ jobs:
           sha256sum --check --strict TRANSFER.sha256
       - name: Verify the published source commit
         env:
-          SOURCE_COMMIT: a700dc49ce5caf9dd31eb6216108011c16e76b6c
+          SOURCE_COMMIT: ${{ github.sha }}
         run: |
           set -euo pipefail
           cd release
@@ -49,10 +49,10 @@ jobs:
           cmp remote-source-manifest.json local-source-manifest.json
       - name: Publish private owner release
         env:
-          SOURCE_COMMIT: a700dc49ce5caf9dd31eb6216108011c16e76b6c
+          SOURCE_COMMIT: ${{ github.sha }}
         run: |
           set -euo pipefail
           cd release
           assets=(Newscape-Mobile-Ultra-Expedition-v46.apk Newscape-Windows-Expedition-v46.zip Newscape-World-Charter-Server-Overlay.tar.gz Newscape-Runtime36-Source.zip)
           sha256sum "${assets[@]}" > SHA256SUMS
-          gh release create "$RELEASE_TAG" "${assets[@]}" SHA256SUMS --target "$SOURCE_COMMIT" --title 'Newscape Runtime 36 / Expedition v46' --notes-file release-notes.md --latest
+          gh release create "$RELEASE_TAG" "${assets[@]}" SHA256SUMS --target main --title 'Newscape Runtime 36 / Expedition v46' --notes-file release-notes.md --latest
