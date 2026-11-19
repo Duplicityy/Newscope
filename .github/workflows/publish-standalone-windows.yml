@@ -1,0 +1,27 @@
+name: Publish standalone Windows v46
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/publish-standalone-windows.yml'
+permissions:
+  contents: write
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
+      TRANSFER_URL: 'https://waiting-protection-coding-muslim.trycloudflare.com/QBe_zMCjnWYltBIZjPqwOlmkNKRY8xCfslaPa8fVOOI'
+      TRANSFER_RESOLVE: 'waiting-protection-coding-muslim.trycloudflare.com:443:104.16.231.132'
+    steps:
+      - name: Verify and upload the Windows executable
+        shell: bash
+        run: |
+          set -euo pipefail
+          file='Newscape-Windows-Expedition-v46.exe'
+          curl --fail --silent --show-error --retry 2 --connect-timeout 15 --max-time 280 --resolve "$TRANSFER_RESOLVE" "$TRANSFER_URL/$file" -o "$file"
+          test "$(stat -c %s "$file")" = '302154240'
+          printf '%s  %s\n' 'f3d443d3c9e98e5a0fb326b49e0ee2d727dd3e16b93172d320d8797c3235f10d' "$file" | sha256sum -c -
+          gh release upload runtime36-expedition-v46 "$file"
