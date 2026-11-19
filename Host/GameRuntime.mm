@@ -237,7 +237,7 @@ typedef void (^NSCCommand)(Bridge &);
         [@"-Djava.io.tmpdir=" stringByAppendingString:temporary],
         [@"-Dnewscape.117.library=" stringByAppendingString:renderer],
         [@"-XX:ErrorFile=" stringByAppendingString:Asset(storage, @"hs_err_pid%p.log")],
-        @"-Dkronos.host=51.91.58.148",
+        @"-Dkronos.host=51.38.80.2",
         @"-Dkronos.athletics.client=true",
         @"-Dkronos.dungeoneering.enabled=true",
         @"-Djava.awt.headless=false",

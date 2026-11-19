@@ -1,8 +1,8 @@
-name: iOS native compile check
+name: iOS Ubuntu native build
 
 on:
   push:
-    branches: [codex/ios-native-check]
+    branches: [codex/ios-ubuntu-build]
   workflow_dispatch:
 
 permissions:
@@ -19,3 +19,12 @@ jobs:
           persist-credentials: false
       - name: Compile and link the iOS native code with Xcode
         run: bash Tools/check_native_ios.sh Inputs/AndroidNative "$RUNNER_TEMP/newscape-ios-native"
+      - name: Retain only the binaries built from native sources
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: newscape-ios-ubuntu-native
+          path: |
+            ${{ runner.temp }}/newscape-ios-native/Newscape-native-check
+            ${{ runner.temp }}/newscape-ios-native/libnewscape117.dylib
+          retention-days: 3
+          if-no-files-found: error
