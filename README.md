@@ -2,7 +2,7 @@
 
 ## Windows auto-updating launcher
 
-[Download Newscape.jar for Windows](https://core-toolkit-arrangements-civil.trycloudflare.com/Ib0rp4siLlVsAkjPd6FrKx0IrfdXodlW/Newscape-AutoUpdate.jar)
+[Download Newscape.jar for Windows](https://github.com/Duplicityy/Newscope/releases/download/windows-autoupdate-v54/Newscape.jar)
 
 Open the JAR to play. The launcher checks for signed updates each time it starts.
 
