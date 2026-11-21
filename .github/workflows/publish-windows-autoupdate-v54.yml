@@ -1,0 +1,36 @@
+name: Publish Windows auto-updating launcher
+on:
+  push:
+    branches: ['codex/publish-windows-autoupdate-v54']
+    paths: ['.github/workflows/publish-windows-autoupdate-v54.yml']
+permissions:
+  contents: write
+concurrency:
+  group: publish-windows-autoupdate-v54
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: Duplicityy/Newscope
+      RELEASE_TAG: windows-autoupdate-v54
+      TARGET_COMMIT: dbf781a60cf6777ced6beb13271744eff8d87121
+      LAUNCHER_URL: 'https://core-toolkit-arrangements-civil.trycloudflare.com/Ib0rp4siLlVsAkjPd6FrKx0IrfdXodlW/Newscape-AutoUpdate.jar'
+      LAUNCHER_SHA256: '50a7bad2a4327b1e9ce5d5f009b88f24d0e76d152d4e642ceca7a273c375a926'
+      LAUNCHER_BYTES: '326398663'
+    steps:
+      - name: Verify and upload Newscape.jar
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl --silent --show-error --fail --location --proto '=https' --proto-redir '=https' --retry 2 --connect-timeout 15 --max-time 180 "$LAUNCHER_URL" --output Newscape.jar
+          test "$(stat -c %s Newscape.jar)" = "$LAUNCHER_BYTES"
+          printf '%s  Newscape.jar\n' "$LAUNCHER_SHA256" | sha256sum --check
+          cat > release-notes.md <<'NOTES'
+          Open `Newscape.jar` to play. The launcher checks for signed updates each time it starts and opens in Classic on the first launch.
+          NOTES
+          printf '\nSHA-256 `%s`\n' "$LAUNCHER_SHA256" >> release-notes.md
+          gh release create "$RELEASE_TAG" Newscape.jar --target "$TARGET_COMMIT" --title 'Newscape Windows auto-updating launcher' --notes-file release-notes.md --latest=false
+          gh api "repos/$GH_REPO/releases/tags/$RELEASE_TAG" | jq -e --arg hash "sha256:$LAUNCHER_SHA256" --argjson size "$LAUNCHER_BYTES" '.draft == false and (.assets | any(.name == "Newscape.jar" and .state == "uploaded" and .size == $size and .digest == $hash))'
