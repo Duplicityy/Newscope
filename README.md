@@ -1,6 +1,14 @@
 # Newscape
 
-The current owner release is **Runtime 36 / Expedition v46**. The private Ubuntu server is running the matching server update.
+## Windows auto-updating launcher
+
+[Download Newscape.jar for Windows](https://core-toolkit-arrangements-civil.trycloudflare.com/Ib0rp4siLlVsAkjPd6FrKx0IrfdXodlW/Newscape-AutoUpdate.jar)
+
+Open the JAR to play. The launcher checks for signed updates each time it starts.
+
+## Expedition v46
+
+The following downloads are for **Runtime 36 / Expedition v46**.
 
 | Platform | Download | Installation |
 | --- | --- | --- |
